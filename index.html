@@ -13,8 +13,9 @@
     <title>tidystats</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
+        <img src="img/tidystats-logo.svg"  class="d-inline-block align-top mr-2" width="50px" height="40px" />
         <a class="navbar-brand" href="#">tidystats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,69 +41,138 @@
         </div>
       </div>
     </nav>
-    
 
-    <div class="text-center">
-      <div class="col-md-10 mx-auto my-5">
-        <svg class="d-inline-block align-top" width="4em" height="4em" viewBox="0 0 16 16" class="bi bi-bar-chart-fill" xmlns="http://www.w3.org/2000/svg">
-          <rect width="2" height="5" x="1" y="10" fill="#2E86C1"/>
-          <rect width="2" height="13" x="6" y="2" fill="#2E86C1"/>
-          <rect width="2" height="9" x="11" y="6" fill="#2E86C1"/>
-        </svg>
-        <h1>tidystats</h1>
-        <p class="lead">Reproducibly report statistics.</p>
-      </div>
+    <div class="text-center bg-light py-5">
+      <img src="img/tidystats-logo.svg"  class="d-inline-block align-top img-fluid" width="160px" height="160px" />
+      <h1>tidystats</h1>
+      <p class="lead">Reproducibly report statistics.</p>
     </div>
-
     
-    <div class="text-center bg-light">
-      <div class="col-md-10 mx-auto my-5 py-5">
-        <h1>What is tidystats?</h1>
-        <p class="lead">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+    <div class="col-md-10 mx-auto my-5 py-4">
+      <h2>What is tidystats?</h2>
+      <p class="lead">tidystats is a software solution designed to help researchers report the output of statistical analyses. It consists of an R package whose main function is to gather the statistics from statistical analyses and a Microsoft Word add-in to reproducibly report statistics.</p>
+    </div>
+    
+    <div class="bg-light p-5">
+      <div class="row col-12 mx-auto">
+      <div class="col-md-9">
+        <h2>R package</h2>
+        <p class="lead">The tidystats R package is available on CRAN. Install the package using R by running <code>install.packages("tidystats")</code>. For more information about the package, including documentation for the functions and tutorials on how to use tidystats, click the button below.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      </div>
+        <div class="col">
+          <img class="img-fluid" src="img/R-logo.svg" width="200px" height="200px">
+        </div>
       </div>
     </div>
     
     <div class="container py-5">
+      <div class="text-center pb-5">
+        <h2>Supported R functions</h2>  
+      </div>
+      <div class="row justify-content-md-center">
+        <div class="col px-5">
+          <h5><strong>stats</strong></h5>
+          <ul>
+            <li><code>t.test()</code></li>
+            <li><code>cor.test()</code></li>
+            <li><code>chisq.test()</code></li>
+            <li><code>wilcox.test()</code></li>
+            <li><code>fisher.test()</code></li>
+            <li><code>oneway.test()</code></li>
+            <li><code>aov()</code></li>
+            <li><code>lm()</code></li>
+            <li><code>anova()</code></li>
+          </ul>
+        </div>
+        <div class="col px-5">
+          <h5><strong>lme4</strong></h5>
+          <ul>
+            <li><code>lmer()</code></li>
+          </ul>
+          
+          <h5><strong>lmerTest</strong></h5>
+          <ul>
+            <li><code>lmer()</code></li>
+          </ul>
+          
+          <h5><strong>tidystats</strong></h5>
+          <ul>
+            <li><code>describe_data()</code></li>
+            <li><code>count_data()</code></li>
+          </ul>
+        </div>
+        <div class="col px-5">
+          <h5><strong>BayesFactor</strong></h5>
+          <ul>
+            <li><code>generalTestBF()</code></li>
+            <li><code>lmBF()</code></li>
+            <li><code>regressionBF()</code></li>
+            <li><code>ttestBF()</code></li>
+            <li><code>anovaBF()</code></li>
+            <li><code>correlationBF()</code></li>
+            <li><code>contingencyTableBF()</code></li>
+            <li><code>meta.ttestBF()</code></li>
+          </ul>
+        </div>
+        </div>
+      
+    </div>
+    
+    <div class="bg-light py-5">
+      <div class="container">
+        <div class="row p-5">
+          <div class="col">
+            <img class="mb-2 img-fluid" src="img/word.svg" width="200px" height="200px">
+          </div>
+          <div class="col-9">
+            <h2>Microsoft Word add-in</h2>
+            <p class="lead">The tidystats Word-addin is currently in development. It will soon be available in the Office Add-in Store. Once released, you will be able to able add statistics to your document using the file created with the tidystats R package.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container py-5">
+      <h2 class="text-center">Support</h2>
       <div class="row">
-        <div class="col-4">
-          <img class="mb-2 img-fluid" src="img/Rlogo.svg" width="200px" height="200px">
+        <div class="col-lg-4 text-center">
+          
+          <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-question-circle-fill mt-5 mb-2" fill="#18bc9c" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
+          </svg>
+          <h4 class="my-3">FAQ</h4>
         </div>
-        <div class="col-8">
-          <h2>tidystats R package</h2>
-          <p class="lead">Reproducibly report statistics.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <div class="col-lg-4 text-center">
+          
+          <img class="mt-5 mb-2" src="img/twitter.svg" alt="Generic placeholder image" width="140" height="140">
+          <h4 class="my-3">Twitter</h4>       
         </div>
-      </div>
+        <div class="col-lg-4 text-center">
+          
+          <svg width="140" height="140" viewBox="0 0 16 16" class="bi bi-envelope-fill mt-5 mb-2" fill="#f39c12" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+          </svg>
+          <h4 class="my-3">E-mail</h4>
+        </div>
       </div>
     </div>
     
-    <div class="bg-light">
-      <div class="row p-5">
-        <div class="col-8">
-          <h2>tidystats for Microsoft Word</h2>
-          <p class="lead">Reproducibly report statistics.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div class="bg-light p-5">
+      <div class="row col-12 mx-auto">
+        <div class="col-md-9">
+          <h2>Citing</h2>
+          <p class="lead">Please consider citing tidystats if you found it useful.</p>
+          
+          
+          <p class="lead">Sleegers, W.W.A. (2020) tidystats: Save output of statistical tests (Version 0.5) [R package]. https://doi.org/10.5281/zenodo.4041859 </p>
         </div>
-        <div class="col-4">
-          <img class="mb-2 img-fluid" src="img/Rlogo.svg" width="200px" height="200px">
-        </div>
-      </div>
       </div>
     </div>
     
-    <div class="text-center bg-light">
-      <div class="col-md-10 mx-auto my-5 py-5">
-        <h1>What is tidystats?</h1>
-        <p class="lead">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-      </div>
-    </div>
-    
-    <div class="d-flex align-items-center flex-column bg-dark">                
-      <img class="mb-2 img-fluid" src="img/logo.svg" width="400px" height="400px">
-    </div>
-    
-    
-    <div class="d-flex align-items-center flex-column">
+    <div class="container my-5 d-flex align-items-center flex-column">
       <div class="row col-md-10">
       <div class="col-6 col-md">
         <h5>R package</h5>
@@ -121,19 +191,17 @@
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>Resources</h5>
+        <h5>Support</h5>
         <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="#">Business</a></li>
-        <li><a class="text-muted" href="#">Education</a></li>
-        <li><a class="text-muted" href="#">Government</a></li>
-        <li><a class="text-muted" href="#">Gaming</a></li>
+        <li><a class="text-muted" href="#">FAQ</a></li>
+        <li><a class="text-muted" href="#">Twitter</a></li>
+        <li><a class="text-muted" href="#">Contact</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
         <h5>About</h5>
         <ul class="list-unstyled text-small">
         <li><a class="text-muted" href="#">Team</a></li>
-        <li><a class="text-muted" href="#">Locations</a></li>
         <li><a class="text-muted" href="#">Privacy</a></li>
         <li><a class="text-muted" href="#">Terms</a></li>
         </ul>
@@ -143,8 +211,7 @@
     
     <footer>
       <div class="text-center">
-        Willem Sleegers
-        <small class="d-block mb-3 text-muted">&copy; 2020</small>
+        <small class="d-block mb-3 text-muted">Willem Sleegers &copy; 2020</small>
       </div>
     </footer>
 
