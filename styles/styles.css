@@ -1,0 +1,17 @@
+body {
+	min-height: 100vh;
+}
+
+#avatar {
+	border-radius: 50%;
+}
+
+#support a:hover svg {
+	transition: transform .2s;
+	transform: scale(1.05);
+}
+
+#support a:hover img {
+	transition: transform .2s;
+	transform: scale(1.05);
+}
