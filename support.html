@@ -67,141 +67,15 @@
       </div>
     </nav>
 
-    <div class="text-center bg-light py-5">
-      <img
-        src="images/tidystats-logo.svg"
-        class="img-fluid"
-        width="160"
-        height="160"
-        alt="tidystats logo"
-      />
-      <h1>tidystats</h1>
-      <p class="lead">Reproducibly report statistics</p>
-    </div>
-
-    <div id="about" class="col-md-10 mx-auto my-5 py-4 px-4">
-      <h2>What is tidystats?</h2>
-      <p class="lead">
-        tidystats is a software solution designed to help researchers report the
-        output of statistical analyses. It consists of an R package whose main
-        function is to gather the statistics from statistical analyses and a
-        Microsoft Word add-in to reproducibly report statistics.
-      </p>
-    </div>
-
-    <div id="r-package" class="bg-light">
-      <div class="row col-md-10 mx-auto py-5 px-4">
-        <div class="col-md-8 px-0">
-          <h2>R package</h2>
-          <p class="lead">
-            The tidystats R package is available on CRAN. Install the package
-            using R by running <code>install.packages("tidystats")</code> in R.
-            For more information about the package, including documentation for
-            the functions and tutorials on how to use tidystats, click the
-            button below.
-          </p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://willemsleegers.github.io/tidystats/"
-            role="button"
-            >Learn more</a
-          >
-        </div>
-        <div class="col-md py-5 text-center">
-          <img
-            class="img-fluid"
-            src="images/R-logo.svg"
-            width="200"
-            height="200"
-            alt="R logo"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="container py-5">
-      <div class="text-center pb-5">
-        <h2>Supported R functions</h2>
-      </div>
-      <div class="row justify-content-md-center">
-        <div class="col px-5">
-          <h5><strong>stats</strong></h5>
-          <ul>
-            <li><code>t.test()</code></li>
-            <li><code>cor.test()</code></li>
-            <li><code>chisq.test()</code></li>
-            <li><code>wilcox.test()</code></li>
-            <li><code>fisher.test()</code></li>
-            <li><code>oneway.test()</code></li>
-            <li><code>aov()</code></li>
-            <li><code>lm()</code></li>
-            <li><code>anova()</code></li>
-          </ul>
-        </div>
-        <div class="col px-5">
-          <h5><strong>lme4</strong></h5>
-          <ul>
-            <li><code>lmer()</code></li>
-          </ul>
-
-          <h5><strong>lmerTest</strong></h5>
-          <ul>
-            <li><code>lmer()</code></li>
-          </ul>
-
-          <h5><strong>tidystats</strong></h5>
-          <ul>
-            <li><code>describe_data()</code></li>
-            <li><code>count_data()</code></li>
-          </ul>
-        </div>
-        <div class="col px-5">
-          <h5><strong>BayesFactor</strong></h5>
-          <ul>
-            <li><code>generalTestBF()</code></li>
-            <li><code>lmBF()</code></li>
-            <li><code>regressionBF()</code></li>
-            <li><code>ttestBF()</code></li>
-            <li><code>anovaBF()</code></li>
-            <li><code>correlationBF()</code></li>
-            <li><code>contingencyTableBF()</code></li>
-            <li><code>meta.ttestBF()</code></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div id="word-add-in" class="bg-light py-5">
-      <div class="row col-md-10 mx-auto py-5">
-        <div class="col-md pb-5 text-center">
-          <img
-            class="img-fluid"
-            src="images/word.svg"
-            width="200"
-            height="200"
-            alt="Microsoft Word logo"
-          />
-        </div>
-        <div class="col-md-9 pl-3 px-0">
-          <h2>Microsoft Word add-in</h2>
-          <p class="lead">
-            The tidystats Word-addin is currently in development. It will soon
-            be available in the Office Add-in Store. Once released, you will be
-            able to able add statistics to your document using the file created
-            with the tidystats R package.
-          </p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://github.com/WillemSleegers/tidystats-Word-add-in"
-            role="button"
-            >Learn more</a
-          >
-        </div>
-      </div>
-    </div>
-
     <div id="support" class="container py-5">
       <h2 class="text-center">Support</h2>
+      
+      <div class="pt-5 col-md-11 mx-auto flex-fill">
+        <p class="lead">
+          Do you have a question about tidystats or is something not working? Please check the frequently asked questions (FAQ) or contact me via Twitter or e-mail.
+        </p>
+      </div>
+      
       <div class="row col-md-9 pb-3 mx-auto">
         <div class="col-md text-center">
           <a href="/FAQ.html">
@@ -253,30 +127,7 @@
         </div>
       </div>
     </div>
-
-    <div class="bg-light py-5 px-3">
-      <div class="col-md-10 mx-auto">
-        <h2>Citation</h2>
-        <p class="lead">
-          Please consider citing tidystats if you found it useful.
-        </p>
-
-        <br />
-
-        <p class="lead">
-          Sleegers, W.W.A. (2020) tidystats: Save output of statistical tests
-          (Version 0.5) [R package]. https://doi.org/10.5281/zenodo.4041859
-        </p>
-        <a
-          id="citationButton"
-          class="btn btn-primary btn-lg"
-          role="button"
-          onclick="copyCitation()"
-          style="display: block; width: 145px"
-          >Copy citation</a
-        >
-      </div>
-    </div>
+      
 
     <div
       id="links"
@@ -385,3 +236,4 @@
     ></script>
   </body>
 </html>
+	

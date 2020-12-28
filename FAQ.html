@@ -1,30 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <meta name="description" content="tidystats website">
-    <meta name="author" content="Willem Sleegers">
-    
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="tidystats website" />
+    <meta name="author" content="Willem Sleegers" />
+
     <!-- Flatly bootstrap theme -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+
     <!-- My CSS styles -->
-    <link rel="stylesheet" href="styles/styles.css">
-  
-    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="styles/styles.css" />
+
+    <link rel="icon" href="images/favicon.ico" />
     <title>tidystats</title>
   </head>
   <body class="d-flex flex-column">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
-        <img src="images/tidystats-logo.svg"  class="d-inline-block align-top mr-2" width="50px" height="40px" />
+        <img
+          src="images/tidystats-logo.svg"
+          class="d-inline-block align-top mr-2"
+          width="50"
+          height="40"
+          alt="tidystats logo"
+        />
         <a class="navbar-brand" href="index.html">tidystats</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -37,10 +54,10 @@
               <a class="nav-link" href="index.html#word-add-in">Word add-in</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#support">Support</a>
+              <a class="nav-link" href="support.html">Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#support">Citation</a>
+              <a class="nav-link" href="index.html#citation">Citation</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html#links">Links</a>
@@ -52,71 +69,149 @@
 
     <div class="col-md-10 mx-auto flex-fill">
       <h2 class="text-center mb-3 py-5">Frequently Asked Questions</h2>
-      
+
       <div class="container mb-4">
         <h4><strong>How much does tidystats cost?</strong></h4>
-        <p class="lead">tidystats is free to use. However, please consider citing it if tidystats proved useful to you.</p>
+        <p class="lead">
+          tidystats is free to use. However, please consider citing it if
+          tidystats proved useful to you.
+        </p>
       </div>
-      
+
       <div class="container mb-4">
         <h4><strong>Does tidystats require an internet connection?</strong></h4>
-        <p class="lead">The R package only requires an internet connection when you install the package, just like any R package. The Microsoft Word add-in does require an internet connection because the add-in is technically a web-app that runs inside your document. </p>
+        <p class="lead">
+          The R package only requires an internet connection when you install
+          the package, just like any R package. The Microsoft Word add-in does
+          require an internet connection because the add-in is technically a
+          web-app that runs inside your document.
+        </p>
       </div>
-      
+
       <div class="container mb-4">
-        <h4><strong>Does this mean that the tidystats Word add-in saves my data somewhere on a server?</strong></h3>
-        <p class="lead">No. The Word add-in only retrieves information from the server when the add-in is opened. Once open, the add-in will perform all computations on your computer.</p>
-        
-        <p class="lead">For more privacy information, see the <a href="privacy.html">Privacy Statement</a>.</p>
+        <h4>
+          <strong
+            >Does this mean that the tidystats Word add-in saves my data
+            somewhere on a server?</strong
+          >
+        </h4>
+        <p class="lead">
+          No. The Word add-in only retrieves information from the server when
+          the add-in is opened. Once open, the add-in will perform all
+          computations on your computer.
+        </p>
+
+        <p class="lead">
+          For more privacy information, see the
+          <a href="privacy.html">Privacy Statement</a>.
+        </p>
       </div>
-      
     </div>
-    
-    <div id="links" class="container mt-5 mb-4 d-flex align-items-center flex-column">
+
+    <div
+      id="links"
+      class="container mt-5 mb-4 d-flex align-items-center flex-column"
+    >
       <div class="row col-md-10">
-      <div class="col-6 col-md">
-      <h5>R package</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="https://cran.r-project.org/web/packages/tidystats/index.html">CRAN</a></li>
-        <li><a class="text-muted" href="https://willemsleegers.github.io/tidystats/">Documentation</a></li>
-        <li><a class="text-muted" href="https://github.com/WillemSleegers/tidystats">Github</a></li>
-        <li><a class="text-muted" href="https://github.com/WillemSleegers/tidystats/issues">Bug report</a></li>
-      </ul>
+        <div class="col-6 col-md">
+          <h5>R package</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="text-muted"
+                href="https://cran.r-project.org/web/packages/tidystats/index.html"
+                >CRAN</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-muted"
+                href="https://willemsleegers.github.io/tidystats/"
+                >Documentation</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-muted"
+                href="https://github.com/WillemSleegers/tidystats"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-muted"
+                href="https://github.com/WillemSleegers/tidystats/issues"
+                >Bug report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Word add-in</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="text-muted"
+                href="https://github.com/WillemSleegers/tidystats-Word-add-in"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-muted"
+                href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
+                >Bug report</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Support</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
+            <li>
+              <a class="text-muted" href="https://twitter.com/tidystats"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a class="text-muted" href="mailto:tidystats@gmail.com"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="me.html">Me</a></li>
+            <li><a class="text-muted" href="privacy.html">Privacy</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="col-6 col-md">
-      <h5>Word add-in</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="https://github.com/WillemSleegers/tidystats-Word-add-in">Github</a></li>
-        <li><a class="text-muted" href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues">Bug report</a></li>
-      </ul>
-      </div>
-      <div class="col-6 col-md">
-      <h5>Support</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
-        <li><a class="text-muted" href="https://twitter.com/tidystats">Twitter</a></li>
-        <li><a class="text-muted" href="mailto:tidystats@gmail.com?subject=tidystats question/feedback">Contact</a></li>
-      </ul>
-      </div>
-      <div class="col-6 col-md">
-      <h5>About</h5>
-      <ul class="list-unstyled text-small">
-        <li><a class="text-muted" href="me.html">Me</a></li>
-        <li><a class="text-muted" href="privacy.html">Privacy</a></li>
-      </ul>
-      </div>
-      </div>
-      
+
       <footer class="mt-3 mb-0">
-      <div class="text-center">
-        <small class="d-block text-muted">Willem Sleegers &copy; 2020</small>
-      </div>
+        <div class="text-center">
+          <small class="d-block text-muted">Willem Sleegers &copy; 2020</small>
+        </div>
       </footer>
     </div>
-    
+
     <script src="scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    </body>
-  </html>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
