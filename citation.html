@@ -21,6 +21,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
   </head>
+  <!-- Add d-flex and flex-column to have the link section float at the bottom -->
   <body class="d-flex flex-column">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
@@ -66,58 +67,60 @@
       </div>
     </nav>
 
-    <div class="col-md-10 mx-auto flex-fill">
-      <h2 class="text-center mb-3 py-5">Frequently Asked Questions</h2>
+    <!-- Set flex-grow-1 to have the section fill up the space so the link section is placed at the bottom -->
+    <div class="container flex-grow-1">
+      <div class="col-md-10 mx-auto">
+        <h2 class="text-center my-5">Citation</h2>
 
-      <div class="container mb-4">
-        <h4>
-          <strong
-            >Which versions of Word support the tidystats Word add-in?</strong
+        <p class="lead">
+          tidystats is free to use, but please consider citing the tidystats
+          software if you found it useful. This is the best way to support me
+          developing this software.
+        </p>
+
+        <p class="lead">For now, I recommend citing only the R package.</p>
+
+        <div id="reference" class="alert alert-light lead">
+          Sleegers, W.W.A. (2020) tidystats: Save output of statistical tests
+          (Version 0.5) [Computer software].
+          https://doi.org/10.5281/zenodo.4041859
+        </div>
+
+        <p class="lead">
+          Below are several ways to cite this citation. You can copy the
+          reference to paste it in the References list or copy the BibTex to
+          import it into a reference manager such as
+          <a href="http://zotero.org">Zotero</a>.
+        </p>
+
+        <div class="row">
+          <a
+            id="citationButton"
+            class="btn btn-success btn-lg ml-3"
+            role="button"
+            onclick="copyCitation()"
+            style="width: 145px"
+            >Copy citation</a
           >
-        </h4>
-        <p class="lead">The tidystats Word add-in is supported by:</p>
-        <ul class="lead">
-          <li>Word 2016+</li>
-          <li>Word 2016 for Mac</li>
-          <li>Word Online</li>
-        </ul>
-      </div>
-
-      <div class="container mb-4">
-        <h4><strong>How much does tidystats cost?</strong></h4>
-        <p class="lead">
-          Both the tidystats R package and the Word add-in are completely free
-          to use. However, please consider <a href="citation.html">citing</a> it
-          if tidystats proved useful to you.
-        </p>
-      </div>
-
-      <div class="container mb-4">
-        <h4><strong>Does tidystats require an internet connection?</strong></h4>
-        <p class="lead">
-          The R package only requires an internet connection when you install
-          the package, just like any R package. The Microsoft Word add-in does
-          require an internet connection because the add-in is technically a
-          web-app that runs inside your document.
-        </p>
-      </div>
-
-      <div class="container mb-4">
-        <h4>
-          <strong
-            >Does this mean that the tidystats Word add-in saves my data
-            somewhere on a server?</strong
+          <a
+            id="bibTexButton"
+            class="btn btn-success btn-lg ml-3"
+            role="button"
+            onclick="copyBibTex()"
+            style="width: 145px"
+            >Copy BibTex</a
           >
-        </h4>
-        <p class="lead">
-          No. The Word add-in only retrieves information from the server when
-          the add-in is opened. Once open, the add-in will perform all
-          computations on your computer.
-        </p>
+        </div>
 
-        <p class="lead">
-          For more privacy information, see the
-          <a href="privacy.html">Privacy Statement</a>.
+        <p class="lead mt-3">
+          Additionally, please consider reviewing the Word add-in. You can leave
+          a review by going to My Add-ins. Click on the three dots button and
+          select Rate and review. Alternatively, visit the
+          <a
+            href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+            >AppSource</a
+          >
+          page of tidystats and leave a review there.
         </p>
       </div>
     </div>

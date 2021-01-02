@@ -21,7 +21,7 @@
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
   </head>
-  <body class="d-flex flex-column">
+  <body>
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
         <img
@@ -66,59 +66,127 @@
       </div>
     </nav>
 
-    <div class="col-md-10 mx-auto flex-fill">
-      <h2 class="text-center mb-3 py-5">Frequently Asked Questions</h2>
+    <div class="text-center bg-light py-5">
+      <img
+        src="images/word.svg"
+        class="img-fluid"
+        width="160"
+        height="160"
+        alt="tidystats logo"
+      />
+    </div>
 
-      <div class="container mb-4">
-        <h4>
-          <strong
-            >Which versions of Word support the tidystats Word add-in?</strong
-          >
-        </h4>
-        <p class="lead">The tidystats Word add-in is supported by:</p>
+    <div class="container py-5">
+      <div class="col-md-10 mx-auto">
+        <h2 class="text-center mb-4">Word Add-in</h2>
+        <p class="lead">
+          The tidystats Word add-in can be used to report statistics in a
+          Microsoft Word document, using a file created with the tidystats R
+          package.
+        </p>
+
+        <h3>Main features</h3>
+
         <ul class="lead">
-          <li>Word 2016+</li>
-          <li>Word 2016 for Mac</li>
-          <li>Word Online</li>
+          <li>
+            A user-friendly point-and-click interface to insert statistics in
+            APA-style
+          </li>
+          <li>Insert multiple statistics with a single click</li>
+          <li>
+            Customize which statistics to include when inserting multiple
+            statistics
+          </li>
+          <li>Update reported statistics with new statistics</li>
         </ul>
-      </div>
 
-      <div class="container mb-4">
-        <h4><strong>How much does tidystats cost?</strong></h4>
-        <p class="lead">
-          Both the tidystats R package and the Word add-in are completely free
-          to use. However, please consider <a href="citation.html">citing</a> it
-          if tidystats proved useful to you.
-        </p>
-      </div>
-
-      <div class="container mb-4">
-        <h4><strong>Does tidystats require an internet connection?</strong></h4>
-        <p class="lead">
-          The R package only requires an internet connection when you install
-          the package, just like any R package. The Microsoft Word add-in does
-          require an internet connection because the add-in is technically a
-          web-app that runs inside your document.
-        </p>
-      </div>
-
-      <div class="container mb-4">
-        <h4>
-          <strong
-            >Does this mean that the tidystats Word add-in saves my data
-            somewhere on a server?</strong
-          >
-        </h4>
-        <p class="lead">
-          No. The Word add-in only retrieves information from the server when
-          the add-in is opened. Once open, the add-in will perform all
-          computations on your computer.
-        </p>
+        <h3>Installation</h3>
 
         <p class="lead">
-          For more privacy information, see the
-          <a href="privacy.html">Privacy Statement</a>.
+          The tidystats Word add-in is available in the Office Add-in store. You
+          can find this store in your Word document by going to the Add-in
+          section of the Insert tab. Simply search for 'tidystats' and you
+          should find the add-in.
         </p>
+        <p class="lead">
+          Once installed, a button saying 'Insert Statistics' will be added to
+          the Insert tab of your Word document.
+        </p>
+
+        <h3>Usage</h3>
+
+        <p class="lead">
+          Using the tidystats add-in is relatively straightforward. You open the
+          tidystats add-in by clicking on the 'Insert Statistics' button found
+          in the Insert pane of your Word document. After tidystats opens, click
+          on 'Upload statistics' to select the file created with the tidystats R
+          package. This will reveal a list of analyses. Click on the dropdown
+          arrows to reveal the statistics of each analysis.
+        </p>
+
+        <img
+          class="mb-3"
+          src="images/screenshot.png"
+          style="
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+          alt="tidystats add-in screenshot"
+        />
+
+        <p class="lead">
+          You can click on an individual statistic or on a list of statistics
+          (by clicking on 'Statistics:') to insert statistics into your
+          document, at the location of your cursor.
+        </p>
+
+        <p class="lead">
+          It is possible to customize exactly which statistics will be reported
+          when inserting multiple statistics. Click on the gear icon next to
+          'Statistics:' to reveal checkboxes next to each statistic. By default,
+          all checkboxes are checked. Unchecking a checkbox will prevent that
+          statistic from being inserted when inserting multiple statistics at
+          once.
+        </p>
+
+        <p class="lead">
+          You can update reported statistics by uploading a new file and
+          clicking on the 'Update statistics' button. This will automatically
+          update all reported statistics with the statistics from the new file.
+          Note: This requires that the identifier of each analysis is kept the
+          same.
+        </p>
+
+        <h3>An example</h3>
+
+        <p class="lead">
+          Below is an example of how to use several features of the tidystats
+          add-in.
+        </p>
+
+        <video
+          style="
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          "
+          controls
+        >
+          <source src="video/example.mp4" type="video/mp4" />
+        </video>
+
+        <div class="mt-3">
+          <h3>Support</h3>
+
+          <p class="lead">
+            Do you have a question or comment, such as a feature request, about
+            tidystats? Check out the <a href="support.html">support</a> page for
+            ways to contact me.
+          </p>
+        </div>
       </div>
     </div>
 

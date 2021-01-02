@@ -10,16 +10,18 @@
     <meta name="description" content="tidystats website" />
     <meta name="author" content="Willem Sleegers" />
 
+    <title>tidystats</title>
+
     <!-- Flatly bootstrap theme -->
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
 
     <!-- My CSS styles -->
     <link rel="stylesheet" href="styles/styles.css" />
 
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
-    <title>tidystats</title>
   </head>
-  <body class="d-flex flex-column">
+  <body>
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
         <img
@@ -45,29 +47,26 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#r-package">R package</a>
+              <a class="nav-link" href="r-package.html">R package</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#word-add-in">Word add-in</a>
+              <a class="nav-link" href="word-add-in.html">Word add-in</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="support.html">Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#citation">Citation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#links">Links</a>
+              <a class="nav-link" href="citation.html">Citation</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div class="text-center bg-light py-5">
+    <div class="bg-light py-5 text-center">
       <img
         src="images/tidystats-logo.svg"
         class="img-fluid"
@@ -79,31 +78,31 @@
       <p class="lead">Reproducibly report statistics</p>
     </div>
 
-    <div id="about" class="col-md-10 mx-auto my-5 py-4 px-4">
+    <div class="col-md-9 mx-auto my-5 py-4 px-4">
       <h2>What is tidystats?</h2>
       <p class="lead">
         tidystats is a software solution designed to help researchers report the
         output of statistical analyses. It consists of an R package whose main
-        function is to gather the statistics from statistical analyses and a
-        Microsoft Word add-in to reproducibly report statistics.
+        function is to gather the statistics from statistical analyses and an
+        Office add-in to reproducibly report statistics in Microsoft Word.
       </p>
+      <a class="btn btn-primary btn-lg" href="about.html" role="button"
+        >Learn more</a
+      >
     </div>
 
-    <div id="r-package" class="bg-light">
-      <div class="row col-md-10 mx-auto py-5 px-4">
+    <div class="bg-light">
+      <div class="row col-md-9 mx-auto py-5 px-4">
         <div class="col-md-8 px-0">
           <h2>R package</h2>
           <p class="lead">
-            The tidystats R package is available on CRAN. Install the package
-            using R by running <code>install.packages("tidystats")</code> in R.
-            For more information about the package, including documentation for
-            the functions and tutorials on how to use tidystats, click the
-            button below.
+            The tidystats R package is available on CRAN. Install the package by
+            running <code>install.packages("tidystats")</code> in R. For more
+            information about the package, including documentation for the
+            functions and tutorials on how to use tidystats, click the button
+            below.
           </p>
-          <a
-            class="btn btn-primary btn-lg"
-            href="https://willemsleegers.github.io/tidystats/"
-            role="button"
+          <a class="btn btn-primary btn-lg" href="r-package.html" role="button"
             >Learn more</a
           >
         </div>
@@ -119,7 +118,7 @@
       </div>
     </div>
 
-    <div class="container py-5">
+    <div class="container col-md-9 py-5">
       <div class="text-center pb-5">
         <h2>Supported R functions</h2>
       </div>
@@ -171,8 +170,8 @@
       </div>
     </div>
 
-    <div id="word-add-in" class="bg-light py-5">
-      <div class="row col-md-10 mx-auto py-5">
+    <div class="bg-light py-5">
+      <div class="row col-md-9 mx-auto py-5">
         <div class="col-md pb-5 text-center">
           <img
             class="img-fluid"
@@ -185,14 +184,14 @@
         <div class="col-md-9 pl-3 px-0">
           <h2>Microsoft Word add-in</h2>
           <p class="lead">
-            The tidystats Word-addin is currently in development. It will soon
-            be available in the Office Add-in Store. Once released, you will be
-            able to able add statistics to your document using the file created
-            with the tidystats R package.
+            The tidystats Word add-in is available in the Office Add-in store.
+            You can find this store in the Insert tab of your Word document.
+            Once installed, you will be able to add statistics to your document
+            using the file created with the tidystats R package.
           </p>
           <a
             class="btn btn-primary btn-lg"
-            href="https://github.com/WillemSleegers/tidystats-Word-add-in"
+            href="word-add-in.html"
             role="button"
             >Learn more</a
           >
@@ -200,7 +199,7 @@
       </div>
     </div>
 
-    <div id="support" class="container py-5">
+    <div class="container py-5">
       <h2 class="text-center">Support</h2>
       <div class="row col-md-9 pb-3 mx-auto">
         <div class="col-md text-center">
@@ -255,7 +254,7 @@
     </div>
 
     <div class="bg-light py-5 px-3">
-      <div class="col-md-10 mx-auto">
+      <div class="col-md-9 mx-auto">
         <h2>Citation</h2>
         <p class="lead">
           Please consider citing tidystats if you found it useful.
@@ -265,16 +264,25 @@
 
         <p class="lead">
           Sleegers, W.W.A. (2020) tidystats: Save output of statistical tests
-          (Version 0.5) [R package]. https://doi.org/10.5281/zenodo.4041859
+          (Version 0.5) [Computer software].
+          https://doi.org/10.5281/zenodo.4041859
         </p>
-        <a
-          id="citationButton"
-          class="btn btn-primary btn-lg"
-          role="button"
-          onclick="copyCitation()"
-          style="display: block; width: 145px"
-          >Copy citation</a
-        >
+        <div class="row px-3">
+          <a
+            id="citationButton"
+            class="btn btn-success btn-lg"
+            role="button"
+            onclick="copyCitation()"
+            style="display: block; width: 145px"
+            >Copy citation</a
+          >
+          <a
+            class="btn btn-primary btn-lg ml-3"
+            href="citation.html"
+            role="button"
+            >Learn more</a
+          >
+        </div>
       </div>
     </div>
 
@@ -284,7 +292,7 @@
     >
       <div class="row col-md-10">
         <div class="col-6 col-md">
-          <h5>R package</h5>
+          <h5><a href="r-package.html">R package</a></h5>
           <ul class="list-unstyled text-small">
             <li>
               <a
@@ -317,8 +325,16 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Word add-in</h5>
+          <h5><a href="word-add-in.html">Word add-in</a></h5>
           <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="text-muted"
+                href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+                >AppSource</a
+              >
+            </li>
+
             <li>
               <a
                 class="text-muted"
@@ -336,7 +352,7 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Support</h5>
+          <h5><a href="support.html">Support</a></h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
             <li>
@@ -352,9 +368,10 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>About</h5>
+          <h5><a href="about.html">About</a></h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="me.html">Me</a></li>
+            <li><a class="text-muted" href="citation.html">Citation</a></li>
             <li><a class="text-muted" href="privacy.html">Privacy</a></li>
           </ul>
         </div>

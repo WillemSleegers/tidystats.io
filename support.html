@@ -10,15 +10,18 @@
     <meta name="description" content="tidystats website" />
     <meta name="author" content="Willem Sleegers" />
 
+    <title>tidystats</title>
+
     <!-- Flatly bootstrap theme -->
     <link rel="stylesheet" href="styles/bootstrap.min.css" />
 
     <!-- My CSS styles -->
     <link rel="stylesheet" href="styles/styles.css" />
 
+    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
-    <title>tidystats</title>
   </head>
+  <!-- Add d-flex and flex-column to have the link section float at the bottom -->
   <body class="d-flex flex-column">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
@@ -45,89 +48,88 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#r-package">R package</a>
+              <a class="nav-link" href="r-package.html">R package</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#word-add-in">Word add-in</a>
+              <a class="nav-link" href="word-add-in.html">Word add-in</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="support.html">Support</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#citation">Citation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#links">Links</a>
+              <a class="nav-link" href="citation.html">Citation</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <div id="support" class="container py-5">
-      <h2 class="text-center">Support</h2>
-      
-      <div class="pt-5 col-md-11 mx-auto flex-fill">
+    <!-- Set id to support to for the image scaling style -->
+    <!-- Set flex-grow-1 to have the section fill up the space so the link section is placed at the bottom -->
+    <div id="support" class="container flex-grow-1">
+      <div class="col-md-10 mx-auto">
+        <h2 class="text-center my-5">Support</h2>
         <p class="lead">
-          Do you have a question about tidystats or is something not working? Please check the frequently asked questions (FAQ) or contact me via Twitter or e-mail.
+          Do you have a question about tidystats or is something not working?
+          Please check the Frequently Asked Questions (FAQ) or contact me via
+          Twitter or e-mail.
         </p>
-      </div>
-      
-      <div class="row col-md-9 pb-3 mx-auto">
-        <div class="col-md text-center">
-          <a href="/FAQ.html">
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 16 16"
-              class="bi bi-question-circle-fill mt-5 mb-2"
-              fill="#18bc9c"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"
+
+        <div class="col-8 row mx-auto">
+          <div class="col-md text-center">
+            <a href="/FAQ.html">
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 16 16"
+                class="bi bi-question-circle-fill mt-5 mb-2"
+                fill="#18bc9c"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"
+                />
+              </svg>
+            </a>
+            <h4 class="my-3">FAQ</h4>
+          </div>
+          <div class="col-md text-center">
+            <a href="https://twitter.com/tidystats">
+              <img
+                class="mt-5 mb-2"
+                src="images/twitter.svg"
+                alt="Generic placeholder image"
+                width="100"
+                height="100"
               />
-            </svg>
-          </a>
-          <h4 class="my-3">FAQ</h4>
-        </div>
-        <div class="col-md text-center">
-          <a href="https://twitter.com/tidystats">
-            <img
-              class="mt-5 mb-2"
-              src="images/twitter.svg"
-              alt="Generic placeholder image"
-              width="100"
-              height="100"
-            />
-          </a>
-          <h4 class="my-3">Twitter</h4>
-        </div>
-        <div class="col-md text-center">
-          <a href="mailto:tidystats@gmail.com">
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 16 16"
-              class="bi bi-envelope-fill mt-5 mb-2"
-              fill="#f39c12"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
-              />
-            </svg>
-          </a>
-          <h4 class="my-3">E-mail</h4>
+            </a>
+            <h4 class="my-3">Twitter</h4>
+          </div>
+          <div class="col-md text-center">
+            <a href="mailto:tidystats@gmail.com">
+              <svg
+                width="100"
+                height="100"
+                viewBox="0 0 16 16"
+                class="bi bi-envelope-fill mt-5 mb-2"
+                fill="#f39c12"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                />
+              </svg>
+            </a>
+            <h4 class="my-3">E-mail</h4>
+          </div>
         </div>
       </div>
     </div>
-      
 
     <div
       id="links"
@@ -135,7 +137,7 @@
     >
       <div class="row col-md-10">
         <div class="col-6 col-md">
-          <h5>R package</h5>
+          <h5><a href="r-package.html">R package</a></h5>
           <ul class="list-unstyled text-small">
             <li>
               <a
@@ -168,8 +170,16 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Word add-in</h5>
+          <h5><a href="word-add-in.html">Word add-in</a></h5>
           <ul class="list-unstyled text-small">
+            <li>
+              <a
+                class="text-muted"
+                href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+                >AppSource</a
+              >
+            </li>
+
             <li>
               <a
                 class="text-muted"
@@ -187,7 +197,7 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Support</h5>
+          <h5><a href="support.html">Support</a></h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
             <li>
@@ -203,9 +213,10 @@
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>About</h5>
+          <h5><a href="about.html">About</a></h5>
           <ul class="list-unstyled text-small">
             <li><a class="text-muted" href="me.html">Me</a></li>
+            <li><a class="text-muted" href="citation.html">Citation</a></li>
             <li><a class="text-muted" href="privacy.html">Privacy</a></li>
           </ul>
         </div>
@@ -236,4 +247,3 @@
     ></script>
   </body>
 </html>
-	

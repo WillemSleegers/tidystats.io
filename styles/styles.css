@@ -32,3 +32,27 @@ body {
   transform: scale(1.05);
 }
 
+/* Code */
+
+pre {
+  padding: 16px;
+  background-color: rgb(246, 248, 250);
+}
+
+/* Links */
+
+#links h5 a {
+  color: black;
+}
+
+/* Footer */
+
+footer {
+  font-size: 1.2em;
+}
+
+/* Reference */
+
+#reference {
+  overflow-wrap: break-word;
+}
