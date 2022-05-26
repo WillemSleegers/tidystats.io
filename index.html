@@ -12,13 +12,18 @@
 
     <title>tidystats</title>
 
-    <!-- Flatly bootstrap theme -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- My CSS styles -->
-    <link rel="stylesheet" href="styles/styles.css" />
-
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" />
   </head>
   <body>
@@ -26,7 +31,7 @@
       <div class="container">
         <img
           src="images/tidystats-logo.svg"
-          class="d-inline-block align-top mr-2"
+          class="me-3"
           width="50"
           height="40"
           alt="tidystats logo"
@@ -45,7 +50,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
@@ -66,19 +71,21 @@
       </div>
     </nav>
 
-    <div class="bg-light py-5 text-center">
-      <img
-        src="images/tidystats-logo.svg"
-        class="img-fluid"
-        width="160"
-        height="160"
-        alt="tidystats logo"
-      />
-      <h1>tidystats</h1>
-      <p class="lead">Reproducibly report statistics</p>
+    <div class="container-fluid text-center bg-light py-5">
+      <div class="text-center">
+        <img
+          src="images/tidystats-logo.svg"
+          class="img-fluid"
+          width="160"
+          height="160"
+          alt="tidystats logo"
+        />
+        <h1>tidystats</h1>
+        <p class="lead">Reproducibly report statistics</p>
+      </div>
     </div>
 
-    <div class="col-md-9 mx-auto my-5 py-4 px-4">
+    <div class="container my-5">
       <h2>What is tidystats?</h2>
       <p class="lead">
         tidystats is a software solution designed to help researchers report the
@@ -91,9 +98,9 @@
       >
     </div>
 
-    <div class="bg-light">
-      <div class="row col-md-9 mx-auto py-5 px-4">
-        <div class="col-md-8 px-0">
+    <div class="container-fluid bg-light">
+      <div class="container d-md-flex align-items-center">
+        <div class="flex-grow-1 py-5">
           <h2>R package</h2>
           <p class="lead">
             The tidystats R package is available on CRAN. Install the package by
@@ -106,9 +113,9 @@
             >Learn more</a
           >
         </div>
-        <div class="col-md py-5 text-center">
+        <div class="flex-shrink-0 text-center">
           <img
-            class="img-fluid"
+            class="ms-5 pb-5"
             src="images/R-logo.svg"
             width="200"
             height="200"
@@ -118,12 +125,12 @@
       </div>
     </div>
 
-    <div class="container col-md-9 py-5">
+    <div class="container py-5">
       <div class="text-center pb-5">
         <h2>Supported R functions</h2>
       </div>
-      <div class="row justify-content-md-center">
-        <div class="col px-5">
+      <div class="d-md-flex justify-content-center">
+        <div class="px-5">
           <h5><strong>stats</strong></h5>
           <ul>
             <li><code>t.test()</code></li>
@@ -137,7 +144,7 @@
             <li><code>anova()</code></li>
           </ul>
         </div>
-        <div class="col px-5">
+        <div class="px-5">
           <h5><strong>lme4</strong></h5>
           <ul>
             <li><code>lmer()</code></li>
@@ -154,7 +161,7 @@
             <li><code>count_data()</code></li>
           </ul>
         </div>
-        <div class="col px-5">
+        <div class="px-5">
           <h5><strong>BayesFactor</strong></h5>
           <ul>
             <li><code>generalTestBF()</code></li>
@@ -170,18 +177,18 @@
       </div>
     </div>
 
-    <div class="bg-light py-5">
-      <div class="row col-md-9 mx-auto py-5">
-        <div class="col-md pb-5 text-center">
+    <div class="container-fluid bg-light py-5">
+      <div class="container d-md-flex">
+        <div class="flex-shrink-0 text-center">
           <img
-            class="img-fluid"
+            class="me-5 pb-5"
             src="images/word.svg"
             width="200"
             height="200"
             alt="Microsoft Word logo"
           />
         </div>
-        <div class="col-md-9 pl-3 px-0">
+        <div class="flex-grow-1">
           <h2>Microsoft Word add-in</h2>
           <p class="lead">
             The tidystats Word add-in is available in the Office Add-in store.
@@ -199,10 +206,10 @@
       </div>
     </div>
 
-    <div id="support" class="container py-5">
-      <h2 class="text-center">Support</h2>
-      <div class="row mx-auto mt-5">
-        <div class="col-md text-center">
+    <div class="container py-5">
+      <h2 class="text-center mb-5">Support</h2>
+      <div class="d-md-flex justify-content-center">
+        <div class="text-center mx-5">
           <a href="/FAQ.html">
             <svg
               width="100"
@@ -220,7 +227,7 @@
           </a>
           <h4 class="my-4">FAQ</h4>
         </div>
-        <div class="col-md text-center">
+        <div class="text-center mx-5">
           <a href="/tips.html">
             <svg
               width="100"
@@ -237,7 +244,7 @@
           </a>
           <h4 class="my-4">Tips & Tricks</h4>
         </div>
-        <div class="col-md text-center">
+        <div class="text-center mx-5">
           <a href="https://twitter.com/tidystats">
             <img
               src="images/twitter.svg"
@@ -248,7 +255,7 @@
           </a>
           <h4 class="my-4">Twitter</h4>
         </div>
-        <div class="col-md text-center">
+        <div class="text-center mx-5">
           <a href="mailto:tidystats@gmail.com">
             <svg
               width="100"
@@ -269,153 +276,155 @@
       </div>
     </div>
 
-    <div class="bg-light py-5 px-3">
-      <div class="col-md-9 mx-auto">
+    <div class="container-fluid bg-light py-5">
+      <div class="container">
         <h2>Citation</h2>
         <p class="lead">
           Please consider citing tidystats if you found it useful.
         </p>
-
-        <br />
-
         <p class="lead">
           Sleegers, W. W. A. (2020). tidystats: Save output of statistical tests
           (Version 0.5) [Computer software].
           https://doi.org/10.5281/zenodo.4041859
         </p>
-        <div class="row px-3">
-          <a
-            id="citationButton"
-            class="btn btn-success btn-lg"
-            role="button"
-            onclick="copyCitation()"
-            style="display: block; width: 145px"
-            >Copy citation</a
-          >
-          <a
-            class="btn btn-primary btn-lg ml-3"
+        <div class="d-flex-inline">
+          <button
+            class="btn btn-lg btn-primary mb-3"
             href="citation.html"
             role="button"
-            >Learn more</a
           >
+            Learn more
+          </button>
+          <button
+            id="citationButton"
+            class="btn btn-lg btn-success mb-3"
+            role="button"
+            onclick="copyCitation()"
+          >
+            Copy citation
+          </button>
         </div>
       </div>
     </div>
 
-    <div
-      id="links"
-      class="container mt-5 mb-4 d-flex align-items-center flex-column"
-    >
-      <div class="row col-md-10">
-        <div class="col-6 col-md">
-          <h5><a href="r-package.html">R package</a></h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <a
-                class="text-muted"
-                href="https://cran.r-project.org/web/packages/tidystats/index.html"
-                >CRAN</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-muted"
-                href="https://willemsleegers.github.io/tidystats/"
-                >Documentation</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-muted"
-                href="https://github.com/WillemSleegers/tidystats"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-muted"
-                href="https://github.com/WillemSleegers/tidystats/issues"
-                >Bug report</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5><a href="word-add-in.html">Word add-in</a></h5>
-          <ul class="list-unstyled text-small">
-            <li>
-              <a
-                class="text-muted"
-                href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
-                >AppSource</a
-              >
-            </li>
-
-            <li>
-              <a
-                class="text-muted"
-                href="https://github.com/WillemSleegers/tidystats-Word-add-in"
-                >Github</a
-              >
-            </li>
-            <li>
-              <a
-                class="text-muted"
-                href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
-                >Bug report</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5><a href="support.html">Support</a></h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="FAQ.html">FAQ</a></li>
-            <li><a class="text-muted" href="tips.html">Tips & Tricks</a></li>
-            <li>
-              <a class="text-muted" href="https://twitter.com/tidystats"
-                >Twitter</a
-              >
-            </li>
-            <li>
-              <a class="text-muted" href="mailto:tidystats@gmail.com"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-md">
-          <h5><a href="about.html">About</a></h5>
-          <ul class="list-unstyled text-small">
-            <li><a class="text-muted" href="me.html">Me</a></li>
-            <li><a class="text-muted" href="citation.html">Citation</a></li>
-            <li><a class="text-muted" href="privacy.html">Privacy</a></li>
-          </ul>
-        </div>
+    <div class="container d-md-flex justify-content-center mt-5">
+      <div class="mx-5">
+        <h5>
+          <a class="text-decoration-none" href="r-package.html">R package</a>
+        </h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://cran.r-project.org/web/packages/tidystats/index.html"
+              >CRAN</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://willemsleegers.github.io/tidystats/"
+              >Documentation</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://github.com/WillemSleegers/tidystats"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://github.com/WillemSleegers/tidystats/issues"
+              >Bug report</a
+            >
+          </li>
+        </ul>
       </div>
+      <div class="mx-5">
+        <h5>
+          <a class="text-decoration-none" href="word-add-in.html"
+            >Word add-in</a
+          >
+        </h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+              >AppSource</a
+            >
+          </li>
 
-      <footer class="mt-3 mb-0">
-        <div class="text-center">
-          <small class="d-block text-muted">Willem Sleegers &copy; 2020</small>
-        </div>
-      </footer>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://github.com/WillemSleegers/tidystats-Word-add-in"
+              >Github</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
+              >Bug report</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mx-5">
+        <h5><a class="text-decoration-none" href="support.html">Support</a></h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted text-decoration-none" href="FAQ.html">FAQ</a>
+          </li>
+          <li>
+            <a class="text-muted text-decoration-none" href="tips.html"
+              >Tips & Tricks</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="https://twitter.com/tidystats"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-muted text-decoration-none"
+              href="mailto:tidystats@gmail.com"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="mx-5">
+        <h5><a class="text-decoration-none" href="about.html">About</a></h5>
+        <ul class="list-unstyled text-small">
+          <li>
+            <a class="text-muted text-decoration-none" href="me.html">Me</a>
+          </li>
+          <li>
+            <a class="text-muted text-decoration-none" href="citation.html"
+              >Citation</a
+            >
+          </li>
+          <li>
+            <a class="text-muted text-decoration-none" href="privacy.html"
+              >Privacy</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
-
+    <footer class="my-3">
+      <div class="text-center">
+        <small class="d-block text-muted">Willem Sleegers &copy; 2020</small>
+      </div>
+    </footer>
     <script src="scripts/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
