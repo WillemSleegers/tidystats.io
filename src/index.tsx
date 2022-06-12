@@ -7,13 +7,13 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 import "./index.css"
 
-import App from "./components/App"
+import Site from "./components/Site"
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Site />
     </BrowserRouter>
   </React.StrictMode>
 )
