@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom"
 import Section from "../components/Section"
-import Footer from "../components/Footer"
 
 import logo from "../images/tidystats-logo.svg"
 
@@ -11,7 +11,7 @@ export default function About() {
           <img src={logo} width="160" height="160" alt="tidystats logo" />
         </div>
       </Section>
-      <div className="container mt-md-4">
+      <div className="container my-md-4 fs-5">
         <h1 className="text-center py-3">About</h1>
         <p>
           I developed <code>tidystats</code> to solve two different problems in
@@ -71,28 +71,33 @@ export default function About() {
         </ol>
 
         <p>
-          The tidystats R package is used to create a machine-readable .JSON
-          file that contains all the statistics contained within your analyses.
-          This file can be read by other software, such as the tidystats Word
-          add-in. This addresses the problem of incomplete statistics reporting
-          because the file contains all the statistics.
+          The <code>tidystats R package</code> is used to create a
+          machine-readable .JSON file that contains all the statistics contained
+          within your analyses. This file can be read by other software, such as
+          the <code>tidystats Word add-in</code>. This addresses the problem of
+          incomplete statistics reporting because the file contains all the
+          statistics.
         </p>
 
         <p>
-          The tidystats Word add-in can read the file created by the R package
-          so that you can insert the statistics in your document using a
-          human-friendly interface. Simply click on the statistic(s) you want to
-          insert and the statistic(s) will be inserted into your document. This
-          addresses the problem of incorrect statistics because it does not
-          require manually typing in the statistics.
+          The <code>tidystats Word add-in</code> can read the file created by
+          the R package so that you can insert the statistics in your document
+          using a human-friendly interface. Simply click on the statistic(s) you
+          want to insert and the statistic(s) will be inserted into your
+          document. This addresses the problem of incorrect statistics because
+          it does not require manually typing in the statistics.
         </p>
 
         <p>
-          If you want to know more, such as how to use the R package and the
-          Word add-in, see their respective pages here and here.
+          If you want to know more, such as how to use the{" "}
+          <Link to="/r">R package</Link> and the{" "}
+          <Link to="/word">Word add-in</Link>, see their respective pages here
+          and here.
         </p>
 
-        <p>tidystats is developed by me.</p>
+        <p>
+          <code>tidystats</code> is developed by <Link to="/me">me</Link>.
+        </p>
       </div>
     </>
   )

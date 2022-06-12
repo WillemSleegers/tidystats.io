@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import Home from "../pages/Home"
 import About from "../pages/About"
+import Me from "../pages/Me"
 import R from "../pages/R"
 import Word from "../pages/Word"
 import Support from "../pages/Support"
@@ -22,11 +23,12 @@ const links = {
 
 const Site = () => {
   return (
-    <>
+    <div className="d-flex flex-column min-vh-100">
       <Navbar logo={logo} logoName="tidystats" links={links} />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/me" element={<Me />} />
         <Route path="/r" element={<R />} />
         <Route path="/word" element={<Word />} />
         <Route path="/support" element={<Support />} />
@@ -34,7 +36,7 @@ const Site = () => {
         <Route path="/citation" element={<Citation />} />
       </Routes>
       <Footer />
-    </>
+    </div>
   )
 }
 

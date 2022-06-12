@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <footer className="container d-md-flex justify-content-center mt-4">
+    <footer className="container d-md-flex justify-content-center mt-5 mt-auto">
       <div>
         <div className="d-flex flex-wrap gap-5">
           <div>
@@ -150,7 +150,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center text-muted my-4">
-          Willem Sleegers &copy; 2020
+          Willem Sleegers &copy; 2022
         </div>
       </div>
     </footer>

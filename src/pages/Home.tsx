@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
 import Section from "../components/Section"
+import SupportedFunctions from "../components/SupportedFunctions"
 import Footer from "../components/Footer"
 import LearnMoreButton from "../components/LearnMoreButton"
 import CitationButton from "../components/CitationButton"
@@ -59,109 +60,10 @@ const Home = () => {
       </Section>
       <Section>
         <div className="container d-md-flex justify-content-center py-4">
-          <div>
-            <div className="text-center pb-5">
-              <h2>Supported R functions</h2>
-            </div>
-            <div className="d-flex flex-wrap gap-5 px-5">
-              <div>
-                <h5>
-                  <strong>stats</strong>
-                </h5>
-                <ul>
-                  <li>
-                    <code>t.test()</code>
-                  </li>
-                  <li>
-                    <code>cor.test()</code>
-                  </li>
-                  <li>
-                    <code>chisq.test()</code>
-                  </li>
-                  <li>
-                    <code>wilcox.test()</code>
-                  </li>
-                  <li>
-                    <code>fisher.test()</code>
-                  </li>
-                  <li>
-                    <code>oneway.test()</code>
-                  </li>
-                  <li>
-                    <code>aov()</code>
-                  </li>
-                  <li>
-                    <code>lm()</code>
-                  </li>
-                  <li>
-                    <code>anova()</code>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h5>
-                  <strong>lme4</strong>
-                </h5>
-                <ul>
-                  <li>
-                    <code>lmer()</code>
-                  </li>
-                </ul>
-
-                <h5>
-                  <strong>lmerTest</strong>
-                </h5>
-                <ul>
-                  <li>
-                    <code>lmer()</code>
-                  </li>
-                </ul>
-
-                <h5>
-                  <strong>tidystats</strong>
-                </h5>
-                <ul>
-                  <li>
-                    <code>describe_data()</code>
-                  </li>
-                  <li>
-                    <code>count_data()</code>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h5>
-                  <strong>BayesFactor</strong>
-                </h5>
-                <ul>
-                  <li>
-                    <code>generalTestBF()</code>
-                  </li>
-                  <li>
-                    <code>lmBF()</code>
-                  </li>
-                  <li>
-                    <code>regressionBF()</code>
-                  </li>
-                  <li>
-                    <code>ttestBF()</code>
-                  </li>
-                  <li>
-                    <code>anovaBF()</code>
-                  </li>
-                  <li>
-                    <code>correlationBF()</code>
-                  </li>
-                  <li>
-                    <code>contingencyTableBF()</code>
-                  </li>
-                  <li>
-                    <code>meta.ttestBF()</code>
-                  </li>
-                </ul>
-              </div>
-            </div>
+          <div className="text-center pb-5">
+            <h2>Supported R functions</h2>
           </div>
+          <SupportedFunctions />
         </div>
       </Section>
       <Section background="bg-light">
