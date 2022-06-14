@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"
 
 import Section from "../components/Section"
 import SupportedFunctions from "../components/SupportedFunctions"
-import Footer from "../components/Footer"
 import LearnMoreButton from "../components/LearnMoreButton"
 import CitationButton from "../components/CitationButton"
 
@@ -11,20 +10,20 @@ import logoR from "../images/R-logo.svg"
 import logoWord from "../images/word.svg"
 import logoTwitter from "../images/twitter.svg"
 
-const Home = () => {
+export default function Home() {
   return (
-    <>
+    <div>
       <Section background="bg-light">
         <div className="py-2 text-center">
           <img src={logo} width="160" height="160" alt="tidystats logo" />
           <h1>tidystats</h1>
-          <p className="lead">Reproducibly report statistics</p>
+          <p>Reproducibly report statistics</p>
         </div>
       </Section>
       <Section>
-        <div className="container py-4">
+        <div className="py-4">
           <h2>What is tidystats?</h2>
-          <p className="lead">
+          <p>
             tidystats is a software solution designed to help researchers report
             the output of statistical analyses. It consists of an R package
             whose main function is to gather the statistics from statistical
@@ -35,10 +34,10 @@ const Home = () => {
         </div>
       </Section>
       <Section background="bg-light">
-        <div className="container d-md-flex align-items-center gap-5 py-4">
+        <div className="d-md-flex align-items-center gap-5 py-4">
           <div className="flex-grow-1">
             <h2>R package</h2>
-            <p className="lead">
+            <p>
               The tidystats R package is available on CRAN. Install the package
               by running <code>install.packages("tidystats")</code> in R. For
               more information about the package, including documentation for
@@ -59,7 +58,7 @@ const Home = () => {
         </div>
       </Section>
       <Section>
-        <div className="container d-md-flex justify-content-center py-4">
+        <div className="d-md-flex flex-column justify-content-center py-4">
           <div className="text-center pb-5">
             <h2>Supported R functions</h2>
           </div>
@@ -67,7 +66,7 @@ const Home = () => {
         </div>
       </Section>
       <Section background="bg-light">
-        <div className="container d-md-flex py-4">
+        <div className="d-md-flex py-4">
           <div className="d-md-flex align-items-center gap-5">
             <div className="flex-shrink-0 text-center">
               <img
@@ -80,7 +79,7 @@ const Home = () => {
             </div>
             <div className="flex-grow-0">
               <h2>Microsoft Word add-in</h2>
-              <p className="lead">
+              <p>
                 The tidystats Word add-in is available in the Office Add-in
                 store. You can find this store in the Insert tab of your Word
                 document. Once installed, you will be able to add statistics to
@@ -93,14 +92,14 @@ const Home = () => {
         </div>
       </Section>
       <Section>
-        <div className="container d-md-flex flex-column py-4">
+        <div className="d-md-flex flex-column py-4">
           <h2 className="text-center mb-5">Support</h2>
-          <div className="d-flex justify-content-center flex-wrap gap-5">
-            <div className="text-center mx-4">
+          <div className="d-flex justify-content-around flex-wrap gap-5 mt-5 text-center">
+            <div className="mx-4" style={{ width: "100px" }}>
               <Link to="/FAQ">
                 <svg
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                   viewBox="0 0 16 16"
                   className="bi bi-question-circle-fill"
                   fill="#18bc9c"
@@ -114,11 +113,11 @@ const Home = () => {
               </Link>
               <h4 className="mt-4">FAQ</h4>
             </div>
-            <div className="text-center mx-4">
-              <a href="/tips.html">
+            <div className="mx-4" style={{ width: "100px" }}>
+              <Link to="/tips">
                 <svg
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                   viewBox="0 0 16 16"
                   className="bi bi-lightbulb"
                   fill="#f39c12"
@@ -126,25 +125,25 @@ const Home = () => {
                 >
                   <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z" />
                 </svg>
-              </a>
+              </Link>
               <h4 className="mt-4">Tips & Tricks</h4>
             </div>
-            <div className="text-center mx-4">
+            <div className="mx-4" style={{ width: "100px" }}>
               <a href="https://twitter.com/tidystats">
                 <img
                   src={logoTwitter}
                   alt="Twitter logo"
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                 />
               </a>
               <h4 className="mt-4">Twitter</h4>
             </div>
-            <div className="text-center mx-4">
+            <div className="mx-4" style={{ width: "100px" }}>
               <a href="mailto:tidystats@gmail.com">
                 <svg
-                  width="100"
-                  height="100"
+                  width="80"
+                  height="80"
                   viewBox="0 0 16 16"
                   className="bi bi-envelope-fill"
                   fill="#95a5a6"
@@ -162,12 +161,10 @@ const Home = () => {
         </div>
       </Section>
       <Section background="bg-light">
-        <div className="container d-md-flex flex-column py-4">
+        <div className="d-md-flex flex-column py-4">
           <h2>Citation</h2>
-          <p className="lead">
-            Please consider citing tidystats if you found it useful.
-          </p>
-          <p className="lead">
+          <p>Please consider citing tidystats if you found it useful.</p>
+          <p>
             Sleegers, W. W. A. (2020). tidystats: Save output of statistical
             tests (Version 0.5) [Computer software].
             https://doi.org/10.5281/zenodo.4041859
@@ -178,8 +175,6 @@ const Home = () => {
           </div>
         </div>
       </Section>
-    </>
+    </div>
   )
 }
-
-export default Home

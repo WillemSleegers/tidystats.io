@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
-.container {
-  max-width: 900px;
+.container,
+.container-md {
+  max-width: 800px;
 }

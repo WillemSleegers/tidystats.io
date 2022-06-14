@@ -11,7 +11,7 @@ export default function About() {
           <img src={logo} width="160" height="160" alt="tidystats logo" />
         </div>
       </Section>
-      <div className="container my-md-4 fs-5">
+      <div className="container-md my-md-4">
         <h1 className="text-center py-3">About</h1>
         <p>
           I developed <code>tidystats</code> to solve two different problems in

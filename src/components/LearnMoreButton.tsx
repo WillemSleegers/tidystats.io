@@ -4,12 +4,10 @@ type LearnMoreButtonProps = {
   to: string
 }
 
-const LearnMoreButton = ({ to }: LearnMoreButtonProps) => {
+export default function LearnMoreButton({ to }: LearnMoreButtonProps) {
   return (
     <Link className="btn btn-primary btn-lg" to={to} role="button">
       Learn more
     </Link>
   )
 }
-
-export default LearnMoreButton

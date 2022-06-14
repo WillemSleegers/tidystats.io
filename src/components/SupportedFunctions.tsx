@@ -1,7 +1,7 @@
-const SupportedFunctions = () => {
+export default function SupportedFunctions() {
   return (
-    <div className="d-flex flex-wrap gap-5 px-5">
-      <div>
+    <div className="d-flex flex-wrap">
+      <div className="mx-3">
         <h5>
           <strong>stats</strong>
         </h5>
@@ -35,7 +35,7 @@ const SupportedFunctions = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="mx-3">
         <h5>
           <strong>lme4</strong>
         </h5>
@@ -66,7 +66,7 @@ const SupportedFunctions = () => {
           </li>
         </ul>
       </div>
-      <div>
+      <div className="mx-3">
         <h5>
           <strong>BayesFactor</strong>
         </h5>
@@ -100,5 +100,3 @@ const SupportedFunctions = () => {
     </div>
   )
 }
-
-export default SupportedFunctions

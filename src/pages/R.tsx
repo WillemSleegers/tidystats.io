@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 import Section from "../components/Section"
 import Pre from "../components/Pre"
 import SupportedFunctions from "../components/SupportedFunctions"
@@ -12,7 +14,7 @@ export default function R() {
           <img src={logo} width="160" height="160" alt="tidystats logo" />
         </div>
       </Section>
-      <div className="container py-5 fs-5">
+      <div className="container-md py-5">
         <h2 className="text-center mb-4">R package</h2>
 
         <p>
@@ -195,7 +197,7 @@ export default function R() {
         </Pre>
 
         <p>
-          With all the analyses now stored in a single list, I use the
+          With all the analyses now stored in a single list, I use the{" "}
           <code>write_stats()</code> function to save the list to a file.
         </p>
 
@@ -219,9 +221,9 @@ export default function R() {
 
         <h3>Support</h3>
 
-        <p className="lead">
+        <p>
           Do you have a question or comment, such as a feature request, about
-          tidystats? Check out the <a href="support.html">support</a> page for
+          tidystats? Check out the <Link to="/support">support</Link> page for
           ways to contact me.
         </p>
       </div>

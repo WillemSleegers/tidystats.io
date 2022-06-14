@@ -2,7 +2,7 @@ import avatar from "../images/avatar.png"
 
 export default function Me() {
   return (
-    <div className="container d-flex flex-column align-items-center my-5 fs-5 text-center">
+    <div className="container-md d-flex flex-column align-items-center my-5 text-center">
       <img
         src={avatar}
         className="rounded-circle my-5"

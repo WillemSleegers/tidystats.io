@@ -3,7 +3,7 @@ type SectionProps = {
   children: JSX.Element
 }
 
-const Section = ({ background, children }: SectionProps) => {
+export default function Section({ background, children }: SectionProps) {
   return (
     <>
       <div
@@ -11,10 +11,8 @@ const Section = ({ background, children }: SectionProps) => {
           background ? "section py-md-4 " + background : "section py-md-4"
         }
       >
-        <div className="container">{children}</div>
+        <div className="container-md">{children}</div>
       </div>
     </>
   )
 }
-
-export default Section
