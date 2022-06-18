@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/tidystats.io/static/css/main.032cfb60.css",
-    "main.js": "/tidystats.io/static/js/main.d86c0306.js",
-    "static/media/example.mp4": "/tidystats.io/static/media/example.bee0364944426c702ed4.mp4",
-    "static/media/screenshot.png": "/tidystats.io/static/media/screenshot.3164346c83a69a321d5f.png",
-    "static/media/avatar.png": "/tidystats.io/static/media/avatar.6c3323d73dcaef44be49.png",
-    "index.html": "/tidystats.io/index.html",
-    "main.032cfb60.css.map": "/tidystats.io/static/css/main.032cfb60.css.map",
-    "main.d86c0306.js.map": "/tidystats.io/static/js/main.d86c0306.js.map"
+    "main.css": "/static/css/main.032cfb60.css",
+    "main.js": "/static/js/main.dea7e971.js",
+    "static/media/example.mp4": "/static/media/example.bee0364944426c702ed4.mp4",
+    "static/media/screenshot.png": "/static/media/screenshot.3164346c83a69a321d5f.png",
+    "static/media/avatar.png": "/static/media/avatar.6c3323d73dcaef44be49.png",
+    "index.html": "/index.html",
+    "main.032cfb60.css.map": "/static/css/main.032cfb60.css.map",
+    "main.dea7e971.js.map": "/static/js/main.dea7e971.js.map"
   },
   "entrypoints": [
     "static/css/main.032cfb60.css",
-    "static/js/main.d86c0306.js"
+    "static/js/main.dea7e971.js"
   ]
 }
