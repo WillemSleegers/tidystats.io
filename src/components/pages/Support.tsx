@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-import logoTwitter from "../images/twitter.svg"
+import LogoTwitter from "../LogoTwitter"
 
 export default function Support() {
   return (
@@ -11,8 +11,8 @@ export default function Support() {
         Please check the Frequently Asked Questions (FAQ), tips & tricks, or
         contact me via Twitter or e-mail.
       </p>
-      <div className="d-flex justify-content-around flex-wrap gap-5 mt-5 text-center">
-        <div className="mx-4" style={{ width: "100px" }}>
+      <div className="d-flex justify-content-center flex-wrap gap-5 mt-5 text-center">
+        <div className="mx-4" style={{ width: "140px" }}>
           <Link to="/FAQ">
             <svg
               width="80"
@@ -30,7 +30,7 @@ export default function Support() {
           </Link>
           <h4 className="mt-4">FAQ</h4>
         </div>
-        <div className="mx-4" style={{ width: "100px" }}>
+        <div className="mx-4" style={{ width: "140px" }}>
           <Link to="/tips">
             <svg
               width="80"
@@ -45,13 +45,13 @@ export default function Support() {
           </Link>
           <h4 className="mt-4">Tips & Tricks</h4>
         </div>
-        <div className="mx-4" style={{ width: "100px" }}>
+        <div className="mx-4" style={{ width: "140px" }}>
           <a href="https://twitter.com/tidystats">
-            <img src={logoTwitter} alt="Twitter logo" width="80" height="80" />
+            <LogoTwitter width="80" height="80" />
           </a>
           <h4 className="mt-4">Twitter</h4>
         </div>
-        <div className="mx-4" style={{ width: "100px" }}>
+        <div className="mx-4" style={{ width: "140px" }}>
           <a href="mailto:tidystats@gmail.com">
             <svg
               width="80"

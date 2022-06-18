@@ -1,10 +1,10 @@
-import Pre from "../components/Pre"
+import Pre from "../Pre"
 
 export default function Tips() {
   return (
     <div>
       <div className="container-md my-md-4">
-        <h2 className="text-center py-3">Tips and Tricks</h2>
+        <h1 className="text-center py-3">Tips and Tricks</h1>
 
         <h4>
           <strong>
@@ -13,11 +13,11 @@ export default function Tips() {
           </strong>
         </h4>
         <p>
-          <code>tidystats</code> is designed with the{" "}
+          tidystats is designed with the{" "}
           <a href="https://www.tidyverse.org">tidyverse</a> in mind. One of the
-          things I like about the <code>tidyverse</code> is that functions often
-          accept a data frame as the first argument, allowing you to pipe data
-          frames between functions.
+          things I like about the tidyverse is that functions often accept a
+          data frame as the first argument, allowing you to pipe data frames
+          between functions.
         </p>
 
         <p>

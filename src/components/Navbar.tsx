@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom"
 
+import LogoTidystats from "../components/LogoTidystats"
+
 type NavProps = {
-  logo: string
   logoName: string
   links: { [page: string]: string }
 }
 
-export default function Navbar({ logo, logoName, links }: NavProps) {
+export default function Navbar({ logoName, links }: NavProps) {
   return (
     <nav className="navbar navbar-expand-md navbar-light">
       <div className="container">
-        <img src={logo} width="50" height="40" alt="tidystats logo" />
+        <LogoTidystats width="50" height="40" />
         <Link to="/" className="navbar-brand nav-link">
           {logoName}{" "}
         </Link>

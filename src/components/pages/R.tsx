@@ -1,27 +1,27 @@
 import { Link } from "react-router-dom"
 
-import Section from "../components/Section"
-import Pre from "../components/Pre"
-import SupportedFunctions from "../components/SupportedFunctions"
+import Section from "../Section"
+import Pre from "../Pre"
+import SupportedFunctions from "../SupportedFunctions"
 
-import logo from "../images/R-logo.svg"
+import LogoR from "../LogoR"
 
 export default function R() {
   return (
     <>
       <Section background="bg-light">
         <div className="py-2 text-center">
-          <img src={logo} width="160" height="160" alt="tidystats logo" />
+          <LogoR width="160" height="160" />
         </div>
       </Section>
       <div className="container-md py-5">
-        <h2 className="text-center mb-4">R package</h2>
+        <h1 className="text-center mb-4">R package</h1>
 
         <p>
-          <code>tidystats</code> is an R package designed to enable researchers
-          to combine the output of their analyses into a single file that can be
-          shared with others or used to report statistics. This means that to
-          use tidystats, you need to know R. There are many different places to
+          tidystats is an R package designed to enable researchers to combine
+          the output of their analyses into a single file that can be shared
+          with others or used to report statistics. This means that to use
+          tidystats, you need to know R. There are many different places to
           learn R, such as this{" "}
           <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">
             introduction
@@ -31,15 +31,15 @@ export default function R() {
         </p>
 
         <p>
-          Below I explain how the <code>tidystats R package</code> works and
-          provide some example code to help you get started.
+          Below I explain how the tidystats R package works and provide some
+          example code to help you get started.
         </p>
 
         <h3>Installation</h3>
 
         <p>
-          <code>tidystats</code> is available on CRAN. This means the package
-          can be installed using the following code:
+          tidystats is available on CRAN. This means the package can be
+          installed using the following code:
         </p>
 
         <Pre>
@@ -49,10 +49,10 @@ export default function R() {
         <h3>Usage</h3>
 
         <p>
-          <code>tidystats</code> is designed to have a minimal impact on the way
-          you would normally conduct analyses in R. The idea is that you run the
-          analyses and store the output of each analysis in a variable. You then
-          add these variables to a list and save the list to a file on your
+          tidystats is designed to have a minimal impact on the way you would
+          normally conduct analyses in R. The idea is that you run the analyses
+          and store the output of each analysis in a variable. You then add
+          these variables to a list and save the list to a file on your
           computer.
         </p>
 
@@ -122,11 +122,9 @@ export default function R() {
         <p>Below I show an example of how to use tidystats.</p>
 
         <p>
-          The first step is to load the necessary packages. I load the{" "}
-          <code>tidystats</code>
-          package to get access to its functions and I load the{" "}
-          <code>dplyr</code>
-          package for access to the <code>{"%>%"}</code> operator.
+          The first step is to load the necessary packages. I load the tidystats
+          package to get access to its functions and I load the dplyr package
+          for access to the <code>{"%>%"}</code> operator.
         </p>
 
         <Pre>
@@ -169,12 +167,11 @@ export default function R() {
         </Pre>
 
         <p>
-          Next, I use <code>tidystats</code> to collect the statistics of each
-          analysis. I start by creating an empty list called{" "}
-          <code>results</code> and then use the <code>add_stats()</code>{" "}
-          function to add each analysis to this list. I also add some additional
-          meta-information such as whether the analysis was a primary analysis
-          or preregistered.
+          Next, I use tidystats to collect the statistics of each analysis. I
+          start by creating an empty list called <code>results</code> and then
+          use the <code>add_stats()</code> function to add each analysis to this
+          list. I also add some additional meta-information such as whether the
+          analysis was a primary analysis or preregistered.
         </p>
 
         <Pre>
@@ -215,9 +212,7 @@ export default function R() {
 
         <p>tidystats supports the following R functions:</p>
 
-        <div className="container d-md-flex justify-content-center py-4">
-          <SupportedFunctions />
-        </div>
+        <SupportedFunctions />
 
         <h3>Support</h3>
 

@@ -1,16 +1,18 @@
-import avatar from "../images/avatar.png"
+import avatar from "../../assets/images/avatar.png"
 
 export default function Me() {
   return (
-    <div className="container-md d-flex flex-column align-items-center my-5 text-center">
-      <img
-        src={avatar}
-        className="rounded-circle my-5"
-        width="250"
-        height="250"
-        alt="avatar"
-      />
-      <h2>Hi, I'm Willem</h2>
+    <div className="container-md my-5">
+      <div className="d-flex flex-column align-items-center">
+        <img
+          src={avatar}
+          className="rounded-circle my-5"
+          width="250"
+          height="250"
+          alt="avatar"
+        />
+        <h1>Hi, I'm Willem</h1>
+      </div>
       <p className="mt-3">
         I'm a Senior Behavioral Scientist at{" "}
         <a href="http://rethinkpriorities.org">Rethink Priorities</a>. Rethink
@@ -30,7 +32,7 @@ export default function Me() {
 
       <p>
         I love all aspects of doing research, including figuring out ways how to
-        do better research. That is why I developed <code>tidystats</code>.
+        do better research. That is why I developed tidystats.
       </p>
 
       <p>

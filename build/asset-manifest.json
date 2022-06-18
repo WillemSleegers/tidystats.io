@@ -1,20 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3e29945.css",
-    "main.js": "/static/js/main.27ee7f45.js",
+    "main.css": "/static/css/main.032cfb60.css",
+    "main.js": "/static/js/main.0faa0e6e.js",
     "static/media/example.mp4": "/static/media/example.bee0364944426c702ed4.mp4",
     "static/media/screenshot.png": "/static/media/screenshot.3164346c83a69a321d5f.png",
     "static/media/avatar.png": "/static/media/avatar.6c3323d73dcaef44be49.png",
-    "static/media/tidystats-logo.svg": "/static/media/tidystats-logo.b1c7583b5abcb16843b7cfcf1e0267d6.svg",
-    "static/media/word.svg": "/static/media/word.c52e5a11ffe79a68b94ae83448431d1a.svg",
-    "static/media/R-logo.svg": "/static/media/R-logo.abd561bc8567238fa521956a5d846b82.svg",
-    "static/media/twitter.svg": "/static/media/twitter.032a32df7aa33a05bc926cf67d495fed.svg",
     "index.html": "/index.html",
-    "main.a3e29945.css.map": "/static/css/main.a3e29945.css.map",
-    "main.27ee7f45.js.map": "/static/js/main.27ee7f45.js.map"
+    "main.032cfb60.css.map": "/static/css/main.032cfb60.css.map",
+    "main.0faa0e6e.js.map": "/static/js/main.0faa0e6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3e29945.css",
-    "static/js/main.27ee7f45.js"
+    "static/css/main.032cfb60.css",
+    "static/js/main.0faa0e6e.js"
   ]
 }

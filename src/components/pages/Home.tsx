@@ -1,21 +1,20 @@
 import { Link } from "react-router-dom"
 
-import Section from "../components/Section"
-import SupportedFunctions from "../components/SupportedFunctions"
-import LearnMoreButton from "../components/LearnMoreButton"
-import CitationButton from "../components/CitationButton"
+import Section from "../Section"
+import SupportedFunctions from "../SupportedFunctions"
+import LearnMoreButton from "../LearnMoreButton"
 
-import logo from "../images/tidystats-logo.svg"
-import logoR from "../images/R-logo.svg"
-import logoWord from "../images/word.svg"
-import logoTwitter from "../images/twitter.svg"
+import LogoTidystats from "../LogoTidystats"
+import LogoR from "../LogoR"
+import LogoWord from "../LogoWord"
+import LogoTwitter from "../LogoTwitter"
 
 export default function Home() {
   return (
     <div>
       <Section background="bg-light">
         <div className="py-2 text-center">
-          <img src={logo} width="160" height="160" alt="tidystats logo" />
+          <LogoTidystats width="160" height="160" />
           <h1>tidystats</h1>
           <p>Reproducibly report statistics</p>
         </div>
@@ -47,19 +46,13 @@ export default function Home() {
             <LearnMoreButton to="r" />
           </div>
           <div className="flex-shrink-0 text-center">
-            <img
-              className="py-3"
-              src={logoR}
-              width="200"
-              height="200"
-              alt="R logo"
-            />
+            <LogoR className="py-5" width="160" height="160" />
           </div>
         </div>
       </Section>
       <Section>
         <div className="d-md-flex flex-column justify-content-center py-4">
-          <div className="text-center pb-5">
+          <div className="text-center pb-3">
             <h2>Supported R functions</h2>
           </div>
           <SupportedFunctions />
@@ -69,13 +62,7 @@ export default function Home() {
         <div className="d-md-flex py-4">
           <div className="d-md-flex align-items-center gap-5">
             <div className="flex-shrink-0 text-center">
-              <img
-                className="pb-5"
-                src={logoWord}
-                width="200"
-                height="200"
-                alt="Microsoft Word logo"
-              />
+              <LogoWord className="py-5" width="160" height="160" />
             </div>
             <div className="flex-grow-0">
               <h2>Microsoft Word add-in</h2>
@@ -93,9 +80,9 @@ export default function Home() {
       </Section>
       <Section>
         <div className="d-md-flex flex-column py-4">
-          <h2 className="text-center mb-5">Support</h2>
+          <h2 className="text-center mb-3">Support</h2>
           <div className="d-flex justify-content-around flex-wrap gap-5 mt-5 text-center">
-            <div className="mx-4" style={{ width: "100px" }}>
+            <div className="mx-4" style={{ width: "140px" }}>
               <Link to="/FAQ">
                 <svg
                   width="80"
@@ -113,7 +100,7 @@ export default function Home() {
               </Link>
               <h4 className="mt-4">FAQ</h4>
             </div>
-            <div className="mx-4" style={{ width: "100px" }}>
+            <div className="mx-4" style={{ width: "140px" }}>
               <Link to="/tips">
                 <svg
                   width="80"
@@ -128,18 +115,13 @@ export default function Home() {
               </Link>
               <h4 className="mt-4">Tips & Tricks</h4>
             </div>
-            <div className="mx-4" style={{ width: "100px" }}>
+            <div className="mx-4" style={{ width: "140px" }}>
               <a href="https://twitter.com/tidystats">
-                <img
-                  src={logoTwitter}
-                  alt="Twitter logo"
-                  width="80"
-                  height="80"
-                />
+                <LogoTwitter width="80" height="80" />
               </a>
               <h4 className="mt-4">Twitter</h4>
             </div>
-            <div className="mx-4" style={{ width: "100px" }}>
+            <div className="mx-4" style={{ width: "140px" }}>
               <a href="mailto:tidystats@gmail.com">
                 <svg
                   width="80"
@@ -171,7 +153,7 @@ export default function Home() {
           </p>
           <div className="d-flex gap-3">
             <LearnMoreButton to="citation" />
-            <CitationButton />
+            <button className="btn btn-lg btn-secondary">Copy citation</button>
           </div>
         </div>
       </Section>

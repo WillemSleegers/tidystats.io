@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function FAQ() {
   return (
     <div className="container-md my-md-4">
-      <h2 className="text-center py-3">Frequently Asked Questions</h2>
+      <h1 className="text-center py-3">Frequently Asked Questions</h1>
 
       <h4 className="mt-4">
         <strong>

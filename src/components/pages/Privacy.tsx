@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Privacy() {
   return (
     <div className="container-md my-5">
-      <h2 className="text-center py-3">Privacy Statement</h2>
+      <h1 className="text-center py-3">Privacy Statement</h1>
 
       <p>
         tidystats software, both the R package and the Word add-in, does not

@@ -29,16 +29,16 @@ export default function Citation() {
       <h1 className="text-center my-3">Citation</h1>
 
       <p>
-        <code>tidystats</code> is free to use, but please consider citing the
-        tidystats software if you found it useful. This is the best way to
-        support me developing this software.
+        tidystats is free to use, but please consider citing the tidystats
+        software if you found it useful. This is the best way to support me
+        developing this software.
       </p>
 
       <p>For now, I recommend citing only the R package.</p>
 
       <div className="alert alert-light">
-        Sleegers, W. W. A. (2020). tidystats: Save output of statistical tests
-        (Version 0.5) [Computer software].
+        Sleegers, W. W. A. (2022). tidystats: Save output of statistical tests
+        (Version 0.5.1) [Computer software].
         https://doi.org/10.5281/zenodo.4041859
       </div>
 
@@ -63,7 +63,7 @@ export default function Citation() {
           {citationButtonLabel}
         </button>
         <button
-          className="btn btn-success btn-lg"
+          className="btn btn-primary btn-lg"
           style={{ width: "150px" }}
           onClick={() => {
             copyTextToClipboard(bibtex)

@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom"
-import Section from "../components/Section"
+import Section from "../Section"
 
-import logo from "../images/word.svg"
-import screenshot from "../images/screenshot.png"
-import video from "../videos/example.mp4"
+import LogoWord from "../LogoWord"
+import screenshot from "../../assets/images/screenshot.png"
+import video from "../../assets/videos/example.mp4"
 
 export default function Word() {
   return (
     <>
       <Section background="bg-light">
         <div className="py-2 text-center">
-          <img src={logo} width="160" height="160" alt="Microsoft Word logo" />
+          <LogoWord width="160" height="160" />
         </div>
       </Section>
 
       <div className="container-md my-md-4">
-        <h2 className="text-center py-3">Word Add-in</h2>
+        <h1 className="text-center py-3">Word Add-in</h1>
 
         <p>
           The tidystats Word add-in can be used to report statistics in a
@@ -64,7 +64,7 @@ export default function Word() {
         </p>
 
         <img
-          className="container"
+          className="container mb-3"
           src={screenshot}
           alt="tidystats add-in screenshot"
         />

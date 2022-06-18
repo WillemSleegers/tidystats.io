@@ -1,6 +1,6 @@
 export default function SupportedFunctions() {
   return (
-    <div className="d-flex flex-wrap">
+    <div className="d-flex flex-wrap justify-content-center py-4">
       <div className="mx-3">
         <h5>
           <strong>stats</strong>
