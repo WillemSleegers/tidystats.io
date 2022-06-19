@@ -12,19 +12,9 @@
 
     <title>tidystats</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
 
     <link rel="icon" href="images/favicon.ico" />
   </head>
@@ -32,7 +22,7 @@
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-md">
         <img
-          src="images/tidystats-logo.svg"
+          src="assets/images/tidystats-logo.svg"
           width="50"
           height="40"
           alt="tidystats logo"
@@ -55,24 +45,23 @@
               navbar-nav
               d-flex
               flex-row flex-wrap
-              gap-2
               py-2
               justify-content-center
             "
           >
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="r-package.html">R package</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="word-add-in.html">Word add-in</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="support.html">Support</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="citation.html">Citation</a>
             </li>
           </ul>
@@ -81,11 +70,11 @@
     </nav>
 
     <!-- Logo and title -->
-    <div class="container-fluid py-3 bg-light">
+    <div class="container-md-fluid py-3 bg-light">
       <div class="container-md">
         <div class="text-center">
           <img
-            src="images/tidystats-logo.svg"
+            src="assets/images/tidystats-logo.svg"
             width="160"
             height="160"
             alt="tidystats logo"
@@ -97,7 +86,7 @@
     </div>
 
     <!-- About -->
-    <div class="container-fluid py-3">
+    <div class="container-md-fluid py-3">
       <div class="container-md py-md-4">
         <h2>What is tidystats?</h2>
         <p>
@@ -114,7 +103,7 @@
     </div>
 
     <!-- R package -->
-    <div class="container-fluid py-3 bg-light">
+    <div class="container-md-fluid py-3 bg-light">
       <div class="container-md py-md-4 d-md-flex align-items-center gap-5">
         <div class="flex-grow-1">
           <h2>R package</h2>
@@ -130,13 +119,18 @@
           >
         </div>
         <div class="flex-shrink-0 text-center">
-          <img src="images/R-logo.svg" width="160" height="160" alt="R logo" />
+          <img
+            src="assets/images/R-logo.svg"
+            width="160"
+            height="160"
+            alt="R logo"
+          />
         </div>
       </div>
     </div>
 
     <!-- Supported functions -->
-    <div class="container-fluid py-3">
+    <div class="container-md-fluid py-3">
       <div class="container-md py-md-4">
         <div class="text-center">
           <h2>Supported R functions</h2>
@@ -191,10 +185,15 @@
     </div>
 
     <!-- Microsoft Word add-in -->
-    <div class="container-fluid py-3 bg-light">
+    <div class="container-md-fluid py-3 bg-light">
       <div class="container-md py-md-4 d-md-flex align-items-center gap-5">
         <div class="flex-shrink-0 text-center my-2">
-          <img src="images/word.svg" width="160" height="160" alt="R logo" />
+          <img
+            src="assets/images/word.svg"
+            width="160"
+            height="160"
+            alt="R logo"
+          />
         </div>
         <div class="flex-grow-1">
           <h2>Microsoft Word add-in</h2>
@@ -215,58 +214,58 @@
     </div>
 
     <!-- Support -->
-    <div class="container py-3">
+    <div class="container-md-fluid py-3">
       <h2 class="text-center pt-md-4 pb-4">Support</h2>
       <div class="d-flex justify-content-center flex-wrap">
         <div class="text-center mx-5">
-          <a href="/FAQ.html">
+          <a href="FAQ.html">
             <img
-              src="images/question.svg"
+              src="assets/images/question.svg"
               alt="FAQ icon"
-              width="100"
-              height="100"
+              width="80"
+              height="80"
             />
           </a>
-          <h4 class="my-4">FAQ</h4>
+          <h5 class="my-4">FAQ</h5>
         </div>
         <div class="text-center mx-5">
-          <a href="/tips.html">
+          <a href="tips.html">
             <img
-              src="images/lightbulb.svg"
+              src="assets/images/lightbulb.svg"
               alt="tips icon"
-              width="100"
-              height="100"
+              width="80"
+              height="80"
             />
           </a>
-          <h4 class="my-4">Tips</h4>
+          <h5 class="my-4">Tips</h5>
         </div>
         <div class="text-center mx-5">
           <a href="https://twitter.com/tidystats">
             <img
-              src="images/twitter.svg"
+              src="assets/images/twitter.svg"
               alt="Twitter logo"
-              width="100"
-              height="100"
+              width="80"
+              height="80"
             />
           </a>
-          <h4 class="my-4">Twitter</h4>
+          <h5 class="my-4">Twitter</h5>
         </div>
         <div class="text-center mx-5">
           <a href="mailto:tidystats@gmail.com">
             <img
-              src="images/email.svg"
+              src="assets/images/email.svg"
               alt="email icon"
-              width="100"
-              height="100"
+              width="80"
+              height="80"
             />
           </a>
-          <h4 class="my-4">E-mail</h4>
+          <h5 class="my-4">E-mail</h5>
         </div>
       </div>
     </div>
 
     <!-- Citation -->
-    <div class="container-fluid bg-light py-3">
+    <div class="container-md-fluid bg-light py-3">
       <div class="container-md py-md-4">
         <h2>Citation</h2>
         <p>Please consider citing tidystats if you found it useful.</p>
@@ -276,13 +275,9 @@
           https://doi.org/10.5281/zenodo.4041859
         </p>
         <div class="d-flex gap-3">
-          <button
-            class="btn btn-lg btn-primary"
-            href="citation.html"
-            role="button"
-          >
+          <a class="btn btn-lg btn-primary" href="citation.html" role="button">
             Learn more
-          </button>
+          </a>
           <button
             id="citationButton"
             class="btn btn-lg btn-secondary"
@@ -295,7 +290,7 @@
       </div>
     </div>
 
-    <footer class="container-md text-center mt-auto pt-5">
+    <footer class="container-md text-center mt-auto pt-4">
       <small>
         <div class="d-inline-block">
           <div class="d-flex flex-wrap gap-5 text-start">
@@ -375,19 +370,19 @@
             </div>
             <div>
               <h5>
-                <a href="/support" class="text-decoration-none text-dark">
+                <a href="support.html" class="text-decoration-none text-dark">
                   Support
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/FAQ" class="text-muted text-decoration-none">
+                  <a href="FAQ.html" class="text-muted text-decoration-none">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="/tips" class="text-muted text-decoration-none">
-                    Tips & Tricks
+                  <a href="tips.html" class="text-muted text-decoration-none">
+                    Tips
                   </a>
                 </li>
                 <li>
@@ -410,21 +405,29 @@
             </div>
             <div>
               <h5>
-                <a href="/about" class="text-decoration-none text-dark">
+                <a href="about.html" class="text-decoration-none text-dark">
                   About
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/me" class="text-muted text-decoration-none"> Me </a>
+                  <a href="me.html" class="text-muted text-decoration-none">
+                    Me
+                  </a>
                 </li>
                 <li>
-                  <a href="/citation" class="text-muted text-decoration-none">
+                  <a
+                    href="citation.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Citation
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy" class="text-muted text-decoration-none">
+                  <a
+                    href="privacy.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Privacy
                   </a>
                 </li>
@@ -437,6 +440,6 @@
         </div>
       </small>
     </footer>
-    <script src="scripts/script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

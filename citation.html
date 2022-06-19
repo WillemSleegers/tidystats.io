@@ -12,27 +12,18 @@
 
     <title>tidystats</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-
-    <link href="styles.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" defer></script>
 
     <link rel="icon" href="images/favicon.ico" />
   </head>
-  <body class="d-flex flex-column">
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-md">
         <img
-          src="images/tidystats-logo.svg"
+          src="assets/images/tidystats-logo.svg"
           width="50"
           height="40"
           alt="tidystats logo"
@@ -55,24 +46,23 @@
               navbar-nav
               d-flex
               flex-row flex-wrap
-              gap-2
               py-2
               justify-content-center
             "
           >
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="r-package.html">R package</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="word-add-in.html">Word add-in</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="support.html">Support</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-2">
               <a class="nav-link" href="citation.html">Citation</a>
             </li>
           </ul>
@@ -80,65 +70,64 @@
       </div>
     </nav>
 
-    <!-- Set flex-grow-1 to have the section fill up the space so the link section is placed at the bottom -->
-    <div class="container flex-grow-1">
-      <div class="col-md-10 mx-auto">
-        <h2 class="text-center my-5">Citation</h2>
+    <div class="container-md my-md-4">
+      <h1 class="text-center py-3">Citation</h1>
 
-        <p class="lead">
-          tidystats is free to use, but please consider citing the tidystats
-          software if you found it useful. This is the best way to support me
-          developing this software.
-        </p>
+      <p>
+        tidystats is free to use, but please consider citing the tidystats
+        software if you found it useful. This is the best way to support me
+        developing this software.
+      </p>
 
-        <p class="lead">For now, I recommend citing only the R package.</p>
+      <p>For now, I recommend citing only the R package.</p>
 
-        <div id="reference" class="alert alert-light lead">
-          Sleegers, W. W. A. (2020). tidystats: Save output of statistical tests
-          (Version 0.5) [Computer software].
-          https://doi.org/10.5281/zenodo.4041859
-        </div>
-
-        <p class="lead">
-          Below are several ways to cite this citation. You can copy the
-          reference to paste it in the References list or copy the BibTex to
-          import it into a reference manager such as
-          <a href="http://zotero.org">Zotero</a>.
-        </p>
-
-        <div>
-          <button
-            id="citationButton"
-            class="btn btn-success btn-lg ml-3"
-            role="button"
-            onclick="copyCitation()"
-          >
-            Copy citation
-          </button>
-          <button
-            id="bibTexButton"
-            class="btn btn-success btn-lg ml-3"
-            role="button"
-            onclick="copyBibTex()"
-          >
-            Copy BibTex
-          </button>
-        </div>
-
-        <p class="lead mt-3">
-          Additionally, please consider reviewing the Word add-in. You can leave
-          a review by going to My Add-ins. Click on the three dots button and
-          select Rate and review. Alternatively, visit the
-          <a
-            href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
-            >AppSource</a
-          >
-          page of tidystats and leave a review there.
-        </p>
+      <div class="alert alert-light">
+        Sleegers, W. W. A. (2022). tidystats: Save output of statistical tests
+        (Version 0.5.1) [Computer software].
+        https://doi.org/10.5281/zenodo.4041859
       </div>
+
+      <p>
+        Below are several ways to cite this citation. You can copy the reference
+        to paste it in the References list or copy the BibTex to import it into
+        a reference manager such as
+        <a href="http://zotero.org">Zotero</a>.
+      </p>
+
+      <div class="mb-3">
+        <button
+          id="citationButton"
+          style="width: 150px"
+          class="btn btn-primary btn-lg"
+          role="button"
+          onclick="copyCitation()"
+        >
+          Copy citation
+        </button>
+        <button
+          id="bibTexButton"
+          style="width: 150px"
+          class="btn btn-primary btn-lg"
+          role="button"
+          onclick="copyBibTex()"
+        >
+          Copy BibTex
+        </button>
+      </div>
+
+      <p>
+        Additionally, please consider reviewing the Word add-in. You can leave a
+        review by going to My Add-ins. Click on the three dots button and select
+        Rate and review. Alternatively, visit the
+        <a
+          href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+          >AppSource</a
+        >
+        page of tidystats and leave a review there.
+      </p>
     </div>
 
-    <footer class="container-md text-center mt-auto pt-5">
+    <footer class="container-md text-center mt-auto pt-4">
       <small>
         <div class="d-inline-block">
           <div class="d-flex flex-wrap gap-5 text-start">
@@ -280,6 +269,5 @@
         </div>
       </small>
     </footer>
-    <script src="scripts/script.js"></script>
   </body>
 </html>
