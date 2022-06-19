@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="tidystats website" />
+    <meta name="author" content="Willem Sleegers" />
+
+    <title>tidystats</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-md">
+        <img
+          src="images/tidystats-logo.svg"
+          width="50"
+          height="40"
+          alt="tidystats logo"
+        />
+        <a href="/" class="navbar-brand nav-link ms-1"> tidystats </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul
+            class="
+              navbar-nav
+              d-flex
+              flex-row flex-wrap
+              gap-2
+              py-2
+              justify-content-center
+            "
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="r-package.html">R package</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="word-add-in.html">Word add-in</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="citation.html">Citation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Logo and title -->
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md">
+        <div class="text-center">
+          <img
+            src="images/tidystats-logo.svg"
+            width="160"
+            height="160"
+            alt="tidystats logo"
+          />
+          <h1>tidystats</h1>
+          <p>Reproducibly report statistics</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="container-fluid py-3">
+      <div class="container-md py-md-4">
+        <h2>What is tidystats?</h2>
+        <p>
+          tidystats is a software solution designed to help researchers report
+          the output of statistical analyses. It consists of an R package whose
+          main function is to gather the statistics from statistical analyses
+          and an Office add-in to reproducibly report statistics in Microsoft
+          Word.
+        </p>
+        <a class="btn btn-primary btn-lg" href="about.html" role="button"
+          >Learn more</a
+        >
+      </div>
+    </div>
+
+    <!-- R package -->
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md py-md-4 d-md-flex align-items-center gap-5">
+        <div class="flex-grow-1">
+          <h2>R package</h2>
+          <p>
+            The tidystats R package is available on CRAN. Install the package by
+            running <code>install.packages("tidystats")</code> in R. For more
+            information about the package, including documentation for the
+            functions and tutorials on how to use tidystats, click the button
+            below.
+          </p>
+          <a class="btn btn-primary btn-lg" href="r-package.html" role="button"
+            >Learn more</a
+          >
+        </div>
+        <div class="flex-shrink-0 text-center">
+          <img src="images/R-logo.svg" width="160" height="160" alt="R logo" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Supported functions -->
+    <div class="container-fluid py-3">
+      <div class="container-md py-md-4">
+        <div class="text-center">
+          <h2>Supported R functions</h2>
+        </div>
+        <div class="py-3 d-flex flex-wrap flex-row gap-4">
+          <div class="mx-4">
+            <h5><strong>stats</strong></h5>
+            <ul>
+              <li><code>t.test()</code></li>
+              <li><code>cor.test()</code></li>
+              <li><code>chisq.test()</code></li>
+              <li><code>wilcox.test()</code></li>
+              <li><code>fisher.test()</code></li>
+              <li><code>oneway.test()</code></li>
+              <li><code>aov()</code></li>
+              <li><code>lm()</code></li>
+              <li><code>anova()</code></li>
+            </ul>
+          </div>
+          <div class="mx-4">
+            <h5><strong>lme4</strong></h5>
+            <ul>
+              <li><code>lmer()</code></li>
+            </ul>
+
+            <h5><strong>lmerTest</strong></h5>
+            <ul>
+              <li><code>lmer()</code></li>
+            </ul>
+
+            <h5><strong>tidystats</strong></h5>
+            <ul>
+              <li><code>describe_data()</code></li>
+              <li><code>count_data()</code></li>
+            </ul>
+          </div>
+          <div class="mx-4">
+            <h5><strong>BayesFactor</strong></h5>
+            <ul>
+              <li><code>generalTestBF()</code></li>
+              <li><code>lmBF()</code></li>
+              <li><code>regressionBF()</code></li>
+              <li><code>ttestBF()</code></li>
+              <li><code>anovaBF()</code></li>
+              <li><code>correlationBF()</code></li>
+              <li><code>contingencyTableBF()</code></li>
+              <li><code>meta.ttestBF()</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Microsoft Word add-in -->
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md py-md-4 d-md-flex align-items-center gap-5">
+        <div class="flex-shrink-0 text-center my-2">
+          <img src="images/word.svg" width="160" height="160" alt="R logo" />
+        </div>
+        <div class="flex-grow-1">
+          <h2>Microsoft Word add-in</h2>
+          <p>
+            The tidystats Word add-in is available in the Office Add-in store.
+            You can find this store in the Insert tab of your Word document.
+            Once installed, you will be able to add statistics to your document
+            using the file created with the tidystats R package.
+          </p>
+          <a
+            class="btn btn-primary btn-lg"
+            href="word-add-in.html"
+            role="button"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- Support -->
+    <div class="container py-3">
+      <h2 class="text-center pt-md-4 pb-4">Support</h2>
+      <div class="d-flex justify-content-center flex-wrap">
+        <div class="text-center mx-5">
+          <a href="/FAQ.html">
+            <img
+              src="images/question.svg"
+              alt="FAQ icon"
+              width="100"
+              height="100"
+            />
+          </a>
+          <h4 class="my-4">FAQ</h4>
+        </div>
+        <div class="text-center mx-5">
+          <a href="/tips.html">
+            <img
+              src="images/lightbulb.svg"
+              alt="tips icon"
+              width="100"
+              height="100"
+            />
+          </a>
+          <h4 class="my-4">Tips</h4>
+        </div>
+        <div class="text-center mx-5">
+          <a href="https://twitter.com/tidystats">
+            <img
+              src="images/twitter.svg"
+              alt="Twitter logo"
+              width="100"
+              height="100"
+            />
+          </a>
+          <h4 class="my-4">Twitter</h4>
+        </div>
+        <div class="text-center mx-5">
+          <a href="mailto:tidystats@gmail.com">
+            <img
+              src="images/email.svg"
+              alt="email icon"
+              width="100"
+              height="100"
+            />
+          </a>
+          <h4 class="my-4">E-mail</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Citation -->
+    <div class="container-fluid bg-light py-3">
+      <div class="container-md py-md-4">
+        <h2>Citation</h2>
+        <p>Please consider citing tidystats if you found it useful.</p>
+        <p>
+          Sleegers, W. W. A. (2020). tidystats: Save output of statistical tests
+          (Version 0.5) [Computer software].
+          https://doi.org/10.5281/zenodo.4041859
+        </p>
+        <div class="d-flex gap-3">
+          <button
+            class="btn btn-lg btn-primary"
+            href="citation.html"
+            role="button"
+          >
+            Learn more
+          </button>
+          <button
+            id="citationButton"
+            class="btn btn-lg btn-secondary"
+            role="button"
+            onclick="copyCitation()"
+          >
+            Copy citation
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-md text-center mt-auto pt-5">
+      <small>
+        <div class="d-inline-block">
+          <div class="d-flex flex-wrap gap-5 text-start">
+            <div>
+              <h5>
+                <a href="/r" class="text-decoration-none text-dark">
+                  R package
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://cran.r-project.org/web/packages/tidystats/index.html"
+                  >
+                    CRAN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://willemsleegers.github.io/tidystats/"
+                  >
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats/issues"
+                  >
+                    Bug report
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="/word" class="text-decoration-none text-dark">
+                  Word add-in
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+                  >
+                    AppSource
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats-Word-add-in"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
+                  >
+                    Bug report
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="/support" class="text-decoration-none text-dark">
+                  Support
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/FAQ" class="text-muted text-decoration-none">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/tips" class="text-muted text-decoration-none">
+                    Tips & Tricks
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://twitter.com/tidystats"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="mailto:tidystats@gmail.com"
+                  >
+                    E-mail
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="/about" class="text-decoration-none text-dark">
+                  About
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/me" class="text-muted text-decoration-none"> Me </a>
+                </li>
+                <li>
+                  <a href="/citation" class="text-muted text-decoration-none">
+                    Citation
+                  </a>
+                </li>
+                <li>
+                  <a href="/privacy" class="text-muted text-decoration-none">
+                    Privacy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-muted my-4">
+          Willem Sleegers &copy; 2022
+        </div>
+      </small>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
