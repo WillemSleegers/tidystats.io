@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <meta name="description" content="tidystats website" />
+    <meta name="author" content="Willem Sleegers" />
+
+    <title>tidystats</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-md">
+        <img
+          src="assets/images/tidystats-logo.svg"
+          width="50"
+          height="40"
+          alt="tidystats logo"
+        />
+        <a href="/" class="navbar-brand nav-link ms-1"> tidystats </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul
+            class="
+              navbar-nav
+              d-flex
+              flex-row flex-wrap
+              py-2
+              justify-content-center
+            "
+          >
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="r-package.html">R package</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="word-add-in.html">Word add-in</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="citation.html">Citation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md">
+        <div class="text-center">
+          <img
+            class="p-4"
+            src="assets/images/lightbulb.svg"
+            width="160"
+            height="160"
+            alt="tidystats logo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-md my-md-4">
+      <h1 class="text-center py-3">Tips</h1>
+
+      <h4 class="mt-4">
+        <strong
+          >Use the <code>%>%</code> operator to add multiple statistical tests
+          to a list</strong
+        >
+      </h4>
+      <p>
+        tidystats is designed with the
+        <a href="https://www.tidyverse.org">tidyverse</a> in mind. One of the
+        things I like about the tidyverse is that functions often accept a data
+        frame as the first argument, allowing you to pipe data frames between
+        functions.
+      </p>
+
+      <p>
+        I designed the <code>add_stats()</code> function such that you can use
+        the <code>%>%</code> operator to add multiple tests to a list, like so:
+      </p>
+
+      <pre class="bg-light p-3"><code>results <- results %>%
+  add_stats(sleep_test, type = "primary") %>%
+  add_stats(lm_D9, preregistered = FALSE) %>%
+  add_stats(npk_aov, notes = "An ANOVA example")</code></pre>
+
+      <p>Alternatively, you can also do it without the operator:</p>
+      <pre
+        class="bg-light p-3"
+      ><code>results <- add_stats(results, sleep_test, type = "primary")
+results <- add_stats(results, lm_D9, preregistered = FALSE)
+results <- add_stats(results, npk_aov, notes = "An ANOVA example")</code></pre>
+
+      <p>
+        In the latter case, you have to repeat the assignment and the first
+        argument each time you call <code>add_stats()</code>. You do not need to
+        do this when you use the <code>%>%</code> operator, saving you some time
+        and making your code easier to read.
+      </p>
+
+      <h4 class="mt-4">
+        <strong>Use Google Chrome for Word Online</strong>
+      </h4>
+      <p>
+        Both Safari and Firefox add unnecessary scrollbars to the content of
+        taskpane-based add-ins, such as tidystats. These scrollbars
+        unnecessarily cover content, making it a bit more annoying to use these
+        types of add-ins in these browsers.
+      </p>
+    </div>
+
+    <footer class="container-md text-center mt-auto pt-5">
+      <small>
+        <div class="d-inline-block">
+          <div class="d-flex flex-wrap gap-5 text-start">
+            <div>
+              <h5>
+                <a href="/r" class="text-decoration-none text-dark">
+                  R package
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://cran.r-project.org/web/packages/tidystats/index.html"
+                  >
+                    CRAN
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://willemsleegers.github.io/tidystats/"
+                  >
+                    Documentation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats/issues"
+                  >
+                    Bug report
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="/word" class="text-decoration-none text-dark">
+                  Word add-in
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+                  >
+                    AppSource
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats-Word-add-in"
+                  >
+                    Github
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
+                  >
+                    Bug report
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="support.html" class="text-decoration-none text-dark">
+                  Support
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="FAQ.html" class="text-muted text-decoration-none">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="tips.html" class="text-muted text-decoration-none">
+                    Tips
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="https://twitter.com/tidystats"
+                  >
+                    Twitter
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="text-muted text-decoration-none"
+                    href="mailto:tidystats@gmail.com"
+                  >
+                    E-mail
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h5>
+                <a href="about.html" class="text-decoration-none text-dark">
+                  About
+                </a>
+              </h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="me.html" class="text-muted text-decoration-none">
+                    Me
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="citation.html"
+                    class="text-muted text-decoration-none"
+                  >
+                    Citation
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="privacy.html"
+                    class="text-muted text-decoration-none"
+                  >
+                    Privacy
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center text-muted my-4">
+          Willem Sleegers &copy; 2022
+        </div>
+      </small>
+    </footer>
+  </body>
+</html>
