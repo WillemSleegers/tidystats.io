@@ -18,7 +18,7 @@
 
     <link rel="icon" href="images/favicon.ico" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-md">
         <img
@@ -69,81 +69,73 @@
       </div>
     </nav>
 
-    <div class="text-center bg-light py-5">
-      <svg
-        width="120"
-        height="120"
-        viewBox="0 0 16 16"
-        class="bi bi-lightbulb"
-        fill="#f39c12"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"
-        />
-      </svg>
-    </div>
-
-    <div class="container py-5">
-      <div class="col-md-10 mx-auto">
-        <h2 class="text-center mb-5">Tips & Tricks</h2>
-
-        <div class="container mb-4">
-          <h4>
-            <strong
-              >Use the <code>%>%</code> operator to add multiple statistical
-              tests to a list</strong
-            >
-          </h4>
-          <p class="lead">
-            tidystats is designed with the
-            <a href="https://www.tidyverse.org">tidyverse</a> in mind. One of
-            the things I like about the tidyverse is that functions often accept
-            a data frame as the first argument, allowing you to pipe data frames
-            between functions.
-          </p>
-
-          <p class="lead">
-            I designed the <code>add_stats()</code> function such that you can
-            use the <code>%>%</code> operator to add multiple tests to a list,
-            like so:
-          </p>
-
-          <pre><code>results &lt;- results %>%
-  add_stats(sleep_test, type = "primary") %>%
-  add_stats(lm_D9, preregistered = FALSE) %>%
-  add_stats(npk_aov, notes = "An ANOVA example")</code></pre>
-
-          <p class="lead">
-            Alternatively, you can also do it without the operator:
-          </p>
-          <pre><code>results &lt;- add_stats(results, sleep_test, type = "primary")
-results &lt;- add_stats(results, lm_D9, preregistered = FALSE)
-results &lt;- add_stats(results, npk_aov, notes = "An ANOVA example")</code></pre>
-
-          <p class="lead">
-            In the latter case, you have to repeat the assignment and the first
-            argument each time you call <code>add_stats()</code>. You do not
-            need to do this when you use the <code>%>%</code> operator, saving
-            you some time and making your code easier to read.
-          </p>
-        </div>
-
-        <div class="container mt-5 mb-4">
-          <h4>
-            <strong>Use Google Chrome for Word Online</strong>
-          </h4>
-          <p class="lead">
-            Both Safari and Firefox add unnecessary scrollbars to the content of
-            taskpane-based add-ins, such as tidystats. These scrollbars
-            unnecessarily cover content, making it a bit more annoying to use
-            these types of add-ins in these browsers.
-          </p>
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md">
+        <div class="text-center">
+          <img
+            class="p-4"
+            src="assets/images/lightbulb.svg"
+            width="160"
+            height="160"
+            alt="tidystats logo"
+          />
         </div>
       </div>
     </div>
 
-    <footer class="container-md text-center mt-auto pt-4">
+    <div class="container-md my-md-4">
+      <h1 class="text-center py-3">Tips</h1>
+
+      <h4 class="mt-4">
+        <strong
+          >Use the <code>%>%</code> operator to add multiple statistical tests
+          to a list</strong
+        >
+      </h4>
+      <p>
+        tidystats is designed with the
+        <a href="https://www.tidyverse.org">tidyverse</a> in mind. One of the
+        things I like about the tidyverse is that functions often accept a data
+        frame as the first argument, allowing you to pipe data frames between
+        functions.
+      </p>
+
+      <p>
+        I designed the <code>add_stats()</code> function such that you can use
+        the <code>%>%</code> operator to add multiple tests to a list, like so:
+      </p>
+
+      <pre class="bg-light p-3"><code>results <- results %>%
+  add_stats(sleep_test, type = "primary") %>%
+  add_stats(lm_D9, preregistered = FALSE) %>%
+  add_stats(npk_aov, notes = "An ANOVA example")</code></pre>
+
+      <p>Alternatively, you can also do it without the operator:</p>
+      <pre
+        class="bg-light p-3"
+      ><code>results <- add_stats(results, sleep_test, type = "primary")
+results <- add_stats(results, lm_D9, preregistered = FALSE)
+results <- add_stats(results, npk_aov, notes = "An ANOVA example")</code></pre>
+
+      <p>
+        In the latter case, you have to repeat the assignment and the first
+        argument each time you call <code>add_stats()</code>. You do not need to
+        do this when you use the <code>%>%</code> operator, saving you some time
+        and making your code easier to read.
+      </p>
+
+      <h4 class="mt-4">
+        <strong>Use Google Chrome for Word Online</strong>
+      </h4>
+      <p>
+        Both Safari and Firefox add unnecessary scrollbars to the content of
+        taskpane-based add-ins, such as tidystats. These scrollbars
+        unnecessarily cover content, making it a bit more annoying to use these
+        types of add-ins in these browsers.
+      </p>
+    </div>
+
+    <footer class="container-md text-center mt-auto pt-5">
       <small>
         <div class="d-inline-block">
           <div class="d-flex flex-wrap gap-5 text-start">
@@ -223,19 +215,19 @@ results &lt;- add_stats(results, npk_aov, notes = "An ANOVA example")</code></pr
             </div>
             <div>
               <h5>
-                <a href="/support" class="text-decoration-none text-dark">
+                <a href="support.html" class="text-decoration-none text-dark">
                   Support
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/FAQ" class="text-muted text-decoration-none">
+                  <a href="FAQ.html" class="text-muted text-decoration-none">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="/tips" class="text-muted text-decoration-none">
-                    Tips & Tricks
+                  <a href="tips.html" class="text-muted text-decoration-none">
+                    Tips
                   </a>
                 </li>
                 <li>
@@ -258,21 +250,29 @@ results &lt;- add_stats(results, npk_aov, notes = "An ANOVA example")</code></pr
             </div>
             <div>
               <h5>
-                <a href="/about" class="text-decoration-none text-dark">
+                <a href="about.html" class="text-decoration-none text-dark">
                   About
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/me" class="text-muted text-decoration-none"> Me </a>
+                  <a href="me.html" class="text-muted text-decoration-none">
+                    Me
+                  </a>
                 </li>
                 <li>
-                  <a href="/citation" class="text-muted text-decoration-none">
+                  <a
+                    href="citation.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Citation
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy" class="text-muted text-decoration-none">
+                  <a
+                    href="privacy.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Privacy
                   </a>
                 </li>

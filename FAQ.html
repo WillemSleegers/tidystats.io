@@ -18,7 +18,7 @@
 
     <link rel="icon" href="images/favicon.ico" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-md">
         <img
@@ -69,84 +69,71 @@
       </div>
     </nav>
 
-    <div class="text-center bg-light py-5">
-      <svg
-        width="120"
-        height="120"
-        viewBox="0 0 16 16"
-        class="bi bi-question-circle-fill"
-        fill="#18bc9c"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"
-        />
-      </svg>
-    </div>
-
-    <div class="container py-5">
-      <div class="col-md-10 mx-auto">
-        <h2 class="text-center mb-5">Frequently Asked Questions</h2>
-
-        <div class="container mb-4">
-          <h4>
-            <strong
-              >Which versions of Word support the tidystats Word add-in?</strong
-            >
-          </h4>
-          <p class="lead">The tidystats Word add-in is supported by:</p>
-          <ul class="lead">
-            <li>Word 2016+</li>
-            <li>Word 2016 for Mac</li>
-            <li>Word Online</li>
-          </ul>
-        </div>
-
-        <div class="container mt-5 mb-4">
-          <h4><strong>How much does tidystats cost?</strong></h4>
-          <p class="lead">
-            Both the tidystats R package and the Word add-in are completely free
-            to use. However, please consider
-            <a href="citation.html">citing</a> it if tidystats proved useful to
-            you.
-          </p>
-        </div>
-
-        <div class="container mt-5 mb-4">
-          <h4>
-            <strong>Does tidystats require an internet connection?</strong>
-          </h4>
-          <p class="lead">
-            The R package only requires an internet connection when you install
-            the package, just like any R package. The Microsoft Word add-in does
-            require an internet connection because the add-in is technically a
-            web-app that runs inside your document.
-          </p>
-        </div>
-
-        <div class="container mt-5 mb-4">
-          <h4>
-            <strong
-              >Does this mean that the tidystats Word add-in saves my data
-              somewhere on a server?</strong
-            >
-          </h4>
-          <p class="lead">
-            No. The Word add-in only retrieves information from the server when
-            the add-in is opened. Once open, the add-in will perform all
-            computations on your computer.
-          </p>
-
-          <p class="lead">
-            For more privacy information, see the
-            <a href="privacy.html">Privacy Statement</a>.
-          </p>
+    <div class="container-fluid py-3 bg-light">
+      <div class="container-md">
+        <div class="text-center">
+          <img
+            class="p-4"
+            src="assets/images/question.svg"
+            width="160"
+            height="160"
+            alt="tidystats logo"
+          />
         </div>
       </div>
     </div>
 
-    <footer class="container-md text-center mt-auto pt-4">
+    <div class="container-md my-md-4">
+      <h1 class="text-center py-3">Frequenty Asked Questions</h1>
+
+      <h4 class="mt-4">
+        <strong
+          >Which versions of Word support the tidystats Word add-in?</strong
+        >
+      </h4>
+      <p>The tidystats Word add-in is supported by:</p>
+      <ul>
+        <li>Word 2016+</li>
+        <li>Word 2016 for Mac</li>
+        <li>Word Online</li>
+      </ul>
+
+      <h4 class="mt-4"><strong>How much does tidystats cost?</strong></h4>
+      <p>
+        Both the tidystats R package and the Word add-in are completely free to
+        use. However, please consider
+        <a href="citation.html">citing</a> it if tidystats proved useful to you.
+      </p>
+
+      <h4 class="mt-4">
+        <strong>Does tidystats require an internet connection?</strong>
+      </h4>
+      <p>
+        The R package only requires an internet connection when you install the
+        package, just like any R package. The Microsoft Word add-in does require
+        an internet connection because the add-in is technically a web-app that
+        runs inside your document.
+      </p>
+
+      <h4 class="mt-4">
+        <strong
+          >Does this mean that the tidystats Word add-in saves my data somewhere
+          on a server?</strong
+        >
+      </h4>
+      <p>
+        No. The Word add-in only retrieves information from the server when the
+        add-in is opened. Once open, the add-in will perform all computations on
+        your computer.
+      </p>
+
+      <p>
+        For more privacy information, see the
+        <a href="privacy.html">Privacy Statement</a>.
+      </p>
+    </div>
+
+    <footer class="container-md text-center mt-auto pt-5">
       <small>
         <div class="d-inline-block">
           <div class="d-flex flex-wrap gap-5 text-start">
@@ -226,19 +213,19 @@
             </div>
             <div>
               <h5>
-                <a href="/support" class="text-decoration-none text-dark">
+                <a href="support.html" class="text-decoration-none text-dark">
                   Support
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/FAQ" class="text-muted text-decoration-none">
+                  <a href="FAQ.html" class="text-muted text-decoration-none">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a href="/tips" class="text-muted text-decoration-none">
-                    Tips & Tricks
+                  <a href="tips.html" class="text-muted text-decoration-none">
+                    Tips
                   </a>
                 </li>
                 <li>
@@ -261,21 +248,29 @@
             </div>
             <div>
               <h5>
-                <a href="/about" class="text-decoration-none text-dark">
+                <a href="about.html" class="text-decoration-none text-dark">
                   About
                 </a>
               </h5>
               <ul class="list-unstyled">
                 <li>
-                  <a href="/me" class="text-muted text-decoration-none"> Me </a>
+                  <a href="me.html" class="text-muted text-decoration-none">
+                    Me
+                  </a>
                 </li>
                 <li>
-                  <a href="/citation" class="text-muted text-decoration-none">
+                  <a
+                    href="citation.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Citation
                   </a>
                 </li>
                 <li>
-                  <a href="/privacy" class="text-muted text-decoration-none">
+                  <a
+                    href="privacy.html"
+                    class="text-muted text-decoration-none"
+                  >
                     Privacy
                   </a>
                 </li>
