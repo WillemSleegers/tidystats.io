@@ -1,29 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>tidystats</title>
+
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
     <meta name="description" content="tidystats website" />
-    <meta name="author" content="Willem Sleegers" />
 
-    <title>tidystats</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
 
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js" defer></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js" defer></script>
 
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="/assets/images/favicon.ico" />
   </head>
   <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container-md">
         <img
-          src="assets/images/tidystats-logo.svg"
+          src="/assets/assets/images/tidystats-logo.svg"
           width="50"
           height="40"
           alt="tidystats logo"
@@ -51,19 +50,19 @@
             "
           >
             <li class="nav-item mx-2">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="r-package.html">R package</a>
+              <a class="nav-link" href="/r-package.html">R package</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="word-add-in.html">Word add-in</a>
+              <a class="nav-link" href="/word-add-in.html">Word add-in</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="support.html">Support</a>
+              <a class="nav-link" href="/support.html">Support</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="citation.html">Citation</a>
+              <a class="nav-link" href="/citation.html">Citation</a>
             </li>
           </ul>
         </div>
@@ -75,7 +74,7 @@
       <div class="container-md">
         <div class="text-center">
           <img
-            src="assets/images/tidystats-logo.svg"
+            src="/assets/images/tidystats-logo.svg"
             width="160"
             height="160"
             alt="tidystats logo"
@@ -97,7 +96,7 @@
           and an Office add-in to reproducibly report statistics in Microsoft
           Word.
         </p>
-        <a class="btn btn-primary btn-lg" href="about.html" role="button"
+        <a class="btn btn-primary btn-lg" href="/about.html" role="button"
           >Learn more</a
         >
       </div>
@@ -115,13 +114,13 @@
             functions and tutorials on how to use tidystats, click the button
             below.
           </p>
-          <a class="btn btn-primary btn-lg" href="r-package.html" role="button"
+          <a class="btn btn-primary btn-lg" href="/r-package.html" role="button"
             >Learn more</a
           >
         </div>
         <div class="flex-shrink-0 text-center">
           <img
-            src="assets/images/R-logo.svg"
+            src="/assets/images/R-logo.svg"
             width="160"
             height="160"
             alt="R logo"
@@ -190,7 +189,7 @@
       <div class="container-md py-md-4 d-md-flex align-items-center gap-5">
         <div class="flex-shrink-0 text-center my-2">
           <img
-            src="assets/images/word.svg"
+            src="/assets/images/word.svg"
             width="160"
             height="160"
             alt="R logo"
@@ -206,7 +205,7 @@
           </p>
           <a
             class="btn btn-primary btn-lg"
-            href="word-add-in.html"
+            href="/word-add-in.html"
             role="button"
             >Learn more</a
           >
@@ -219,9 +218,9 @@
       <h2 class="text-center pt-md-4 pb-4">Support</h2>
       <div class="d-flex justify-content-center flex-wrap">
         <div class="text-center mx-5">
-          <a href="FAQ.html">
+          <a href="/FAQ.html">
             <img
-              src="assets/images/question.svg"
+              src="/assets/images/question.svg"
               alt="FAQ icon"
               width="80"
               height="80"
@@ -230,9 +229,9 @@
           <h5 class="my-4">FAQ</h5>
         </div>
         <div class="text-center mx-5">
-          <a href="tips.html">
+          <a href="/tips.html">
             <img
-              src="assets/images/lightbulb.svg"
+              src="/assets/images/lightbulb.svg"
               alt="tips icon"
               width="80"
               height="80"
@@ -243,7 +242,7 @@
         <div class="text-center mx-5">
           <a href="https://twitter.com/tidystats">
             <img
-              src="assets/images/twitter.svg"
+              src="/assets/images/twitter.svg"
               alt="Twitter logo"
               width="80"
               height="80"
@@ -254,7 +253,7 @@
         <div class="text-center mx-5">
           <a href="mailto:tidystats@gmail.com">
             <img
-              src="assets/images/email.svg"
+              src="/assets/images/email.svg"
               alt="email icon"
               width="80"
               height="80"
@@ -276,11 +275,12 @@
           https://doi.org/10.5281/zenodo.4041859
         </p>
         <div class="d-flex gap-3">
-          <a class="btn btn-lg btn-primary" href="citation.html" role="button">
+          <a class="btn btn-lg btn-primary" href="/citation.html" role="button">
             Learn more
           </a>
           <button
             id="citationButton"
+            style="width: 150px"
             class="btn btn-lg btn-secondary"
             role="button"
             onclick="copyCitation()"
@@ -297,7 +297,10 @@
           <div class="d-flex flex-wrap gap-5 text-start">
             <div>
               <h5>
-                <a href="/r" class="text-decoration-none text-dark">
+                <a
+                  href="/r-package.html"
+                  class="text-decoration-none text-dark"
+                >
                   R package
                 </a>
               </h5>
