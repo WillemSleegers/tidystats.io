@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "text": "About", "url": "/about/" },
+    { "text": "R package", "url": "/r-package/" },
+    { "text": "Word", "url": "/word-add-in/" },
+    { "text": "Google Docs", "url": "/google-docs/" },
+    { "text": "Support", "url": "/support/" },
+    { "text": "Citation", "url": "/citation/" }
+  ]
+}

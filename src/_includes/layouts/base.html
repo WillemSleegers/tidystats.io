@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>tidystats</title>
+
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="tidystats website" />
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js" defer></script>
+
+    <link rel="icon" href="/assets/images/favicon.ico" />
+  </head>
+  <body>
+    {% include "partials/navbar.html" %}
+    <main tabindex="-1" id="main-content">
+      {% block content %} {{ content | safe }} {% endblock %}
+    </main>
+    {% include "partials/footer.html" %}
+  </body>
+</html>
