@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>tidystats</title>
+    <title>{{ meta.title }}</title>
+    <meta name="description" content="{{ meta.description }}" />
 
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="description" content="tidystats website" />
 
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/styles.css" rel="stylesheet" />
@@ -18,7 +18,7 @@
 
     <link rel="icon" href="/assets/images/favicon.ico" />
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     {% include "partials/navbar.html" %}
     <main tabindex="-1" id="main-content">
       {% block content %} {{ content | safe }} {% endblock %}

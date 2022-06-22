@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "text": "R package",
+      "url": "/r-package/",
+      "items": [
+        {
+          "text": "CRAN",
+          "url": "https://cran.r-project.org/web/packages/tidystats/"
+        },
+        {
+          "text": "Documentation",
+          "url": "https://willemsleegers.github.io/tidystats/"
+        },
+        {
+          "text": "GitHub",
+          "url": "https://github.com/WillemSleegers/tidystats/"
+        },
+        {
+          "text": "Bug report",
+          "url": "https://github.com/WillemSleegers/tidystats/issues/"
+        }
+      ]
+    },
+    { "text": "Microsoft Word", "url": "/word-add-in/" },
+    { "text": "Google Docs", "url": "/google-docs-add-in/" },
+    { "text": "Support", "url": "/support/" },
+    { "text": "About", "url": "/about/" }
+  ]
+}
