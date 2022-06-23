@@ -42,21 +42,17 @@
     },
     {
       "text": "Google Docs",
-      "url": "/google-docs-add-in/"
-      // "items": [
-      //   {
-      //     "text": "Play Store",
-      //     "url": ""
-      //   },
-      //   {
-      //     "text": "GitHub",
-      //     "url": ""
-      //   },
-      //   {
-      //     "text": "Bug report",
-      //     "url": ""
-      //   }
-      // ]
+      "url": "/google-docs-add-in/",
+      "items": [
+        {
+          "text": "GitHub",
+          "url": "https://github.com/gasparl/tidystats-Google-Docs-add-in"
+        },
+        {
+          "text": "Bug report",
+          "url": "https://github.com/gasparl/tidystats-Google-Docs-add-in/issues"
+        }
+      ]
     },
     {
       "text": "Support",
