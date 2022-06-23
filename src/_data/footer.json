@@ -45,6 +45,10 @@
       "url": "/google-docs-add-in/",
       "items": [
         {
+          "text": "Google Docs Statistic",
+          "url": "/google-docs-statistic/"
+        },
+        {
           "text": "GitHub",
           "url": "https://github.com/gasparl/tidystats-Google-Docs-add-in"
         },
