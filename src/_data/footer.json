@@ -22,9 +22,81 @@
         }
       ]
     },
-    { "text": "Microsoft Word", "url": "/word-add-in/" },
-    { "text": "Google Docs", "url": "/google-docs-add-in/" },
-    { "text": "Support", "url": "/support/" },
-    { "text": "About", "url": "/about/" }
+    {
+      "text": "Microsoft Word",
+      "url": "/word-add-in/",
+      "items": [
+        {
+          "text": "AppSource",
+          "url": "https://appsource.microsoft.com/en-us/product/office/WA200002476?tab=Overview"
+        },
+        {
+          "text": "GitHub",
+          "url": "https://github.com/WillemSleegers/tidystats-Word-add-in"
+        },
+        {
+          "text": "Bug report",
+          "url": "https://github.com/WillemSleegers/tidystats-Word-add-in/issues"
+        }
+      ]
+    },
+    {
+      "text": "Google Docs",
+      "url": "/google-docs-add-in/"
+      // "items": [
+      //   {
+      //     "text": "Play Store",
+      //     "url": ""
+      //   },
+      //   {
+      //     "text": "GitHub",
+      //     "url": ""
+      //   },
+      //   {
+      //     "text": "Bug report",
+      //     "url": ""
+      //   }
+      // ]
+    },
+    {
+      "text": "Support",
+      "url": "/support/",
+      "items": [
+        {
+          "text": "FAQ",
+          "url": "/FAQ/"
+        },
+        {
+          "text": "Tips",
+          "url": "/tips/"
+        },
+        {
+          "text": "Twitter",
+          "url": "https://twitter.com/tidystats"
+        },
+        {
+          "text": "E-mail",
+          "url": "mailto:tidystats@gmail.com"
+        }
+      ]
+    },
+    {
+      "text": "About",
+      "url": "/about/",
+      "items": [
+        {
+          "text": "Me",
+          "url": "/me/"
+        },
+        {
+          "text": "Citation",
+          "url": "/citation/"
+        },
+        {
+          "text": "Privacy",
+          "url": "/privacy/"
+        }
+      ]
+    }
   ]
 }
