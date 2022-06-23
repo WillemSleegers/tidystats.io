@@ -8,7 +8,7 @@ async function copyTextToClipboard(text) {
 
 function copyCitation() {
   const citation =
-    "Sleegers, W. W. A. (2020). tidystats: Save output of statistical tests (Version 0.5) [Computer software]. https://doi.org/10.5281/zenodo.4041859;"
+    "Sleegers, W. W. A. (2022). tidystats: Save output of statistical tests (Version 0.5.1) [Computer software]. https://doi.org/10.5281/zenodo.4041859;"
 
   copyTextToClipboard(citation)
 
@@ -19,12 +19,12 @@ function copyCitation() {
 }
 
 function copyBibTex() {
-  const bibtex = `@software{sleegers2020,
+  const bibtex = `@software{sleegers2022,
     title = {tidystats: Save output of statistical tests},
     author = {Sleegers, Willem W. A.},
-    date = {2020},
+    date = {2022},
     url = {https://doi.org/10.5281/zenodo.4041859},
-    version = {0.5}
+    version = {0.5.1}
   }`
 
   copyTextToClipboard(bibtex)
