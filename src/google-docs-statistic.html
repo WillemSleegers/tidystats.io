@@ -21,20 +21,31 @@ layout: "layouts/base.html"
   <h1 class="text-center py-3">Google Docs Statistic</h1>
 
   <p>
-    All statistics inserted via tidystats in Google Docs are tagged with a
-    hyperlink. This hyperlink contains the identifier of the given statistic. It
-    is thanks to this identifier that a Google Docs statistic remains updatable:
-    when you upload a new file with changed statistical values for the same
-    test, all tagged values will be updated with the corresponding new values
-    (if any).
+    Each statistic inserted with the tidystats Google Docs add-in becomes a
+    link. By turning each statistic into a link, we can identify all the
+    statistics on a page and automatically update them when you upload a new
+    file and click on the 'Update statistics' button.
+  </p>
+
+  <p>
+    It might look a bit weird that each Google Docs statistic is a link, but
+    this is unfortunately the only way for the add-in to have the important
+    automatic updating functionality.
   </p>
 
   <p class="alert alert-danger">
     If you want a Google Docs statistic to remain updatable, make sure to keep
     the links in tact.
   </p>
+
   <p>
     If you no longer wish for a Google Docs statistic to be updatable, you can
-    freely remove the links.
+    freely remove the links. There are few instances where you would want to
+    remove this feature, but unfortunately you might want to remove the links
+    when you convert the document to a PDF or other document, or share the
+    Google Docs with others. In this case, we recommend that you make a copy of
+    the document and use the 'Remove tidystats links' menu option to remove all
+    the tidystats-related links in the document (this feature will soon be
+    added).
   </p>
 </div>
