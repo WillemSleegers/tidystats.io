@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Image from "next/image"
 
 const Navbar = () => {
   const [hidden, setHidden] = useState(true)
@@ -12,10 +13,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://tidystats.io" className="flex items-center">
-          <img
+        <a href="/" className="flex items-center">
+          <Image
             src="/assets/images/tidystats-logo.svg"
-            className="h-8 mr-3"
+            width={32}
+            height={32}
+            className="mr-3"
             alt="tidystats Logo"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

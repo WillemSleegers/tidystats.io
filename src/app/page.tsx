@@ -1,24 +1,27 @@
+import Image from "next/image"
+import ButtonLink from "@/components/ButtonLink"
+import { supportedFunctions } from "@/app/assets/data/supportedFunctions"
+
 export default function Home() {
   return (
     <main>
-      <div className="py-3 ">
-        <div className="m-auto max-w-800">
-          <img
-            className="m-auto"
-            src="/assets/images/tidystats-logo.svg"
-            width="160"
-            height="160"
-            alt="tidystats logo"
-          />
-          <div className="text-center">
-            <h1 className="text-5xl font-bold">tidystats</h1>
-            <p className="text-lg">Reproducibly report statistics</p>
-          </div>
+      <div className="py-6 bg-gray-100">
+        <Image
+          className="mx-auto"
+          src="/assets/images/tidystats-logo.svg"
+          width={160}
+          height={160}
+          alt="tidystats logo"
+        />
+        <div className="text-center">
+          <h1 className="text-5xl font-bold">tidystats</h1>
+          <p className="text-lg">Reproducibly report statistics</p>
         </div>
       </div>
-      <div className="py-3">
-        <div className="max-w-800 m-auto py3-md-4">
-          <h2>What is tidystats?</h2>
+
+      <div className="py-6">
+        <div className="max-w-800 m-auto p-3">
+          <h2 className="text-3xl font-medium">What is tidystats?</h2>
           <p>
             tidystats is a software solution designed to help researchers report
             the output of statistical analyses. It consists of an R package
@@ -26,9 +29,144 @@ export default function Home() {
             analyses and an Office add-in to reproducibly report statistics in
             Microsoft Word.
           </p>
-          <a className="btn btn-primary btn-lg" href="/about/" role="button">
-            Learn more
-          </a>
+          <ButtonLink href="/about/" text="Learn more" />
+        </div>
+      </div>
+
+      <div className="py-6 bg-gray-100">
+        <div className="max-w-800 m-auto p-3 flex gap-3 flex-col md:flex-row items-center">
+          <div className="flex-grow-1">
+            <h2 className="text-3xl font-medium">R package</h2>
+            <p>
+              The tidystats R package is available on CRAN. Install the package
+              by running <code>install.packages("tidystats")</code> in R. For
+              more information about the package, including documentation for
+              the functions and tutorials on how to use tidystats, click the
+              button below.
+            </p>
+            <ButtonLink href="/r-package/" text="Learn more" />
+          </div>
+
+          <Image
+            src="/assets/images/R-logo.svg"
+            width={160}
+            height={160}
+            alt="R logo"
+          />
+        </div>
+      </div>
+
+      <div className="py-6">
+        <div className="max-w-800 m-auto p-3">
+          <div className="text-center">
+            <h2 className="text-3xl font-medium">Supported R packages</h2>
+          </div>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {supportedFunctions.map((e) => {
+              return (
+                <div key={e.package} className="px-3 p-2 bg-blue-400 rounded">
+                  <strong>{e.package}</strong>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+
+      <div className="py-6 bg-gray-100">
+        <div className="max-w-800 m-auto p-3 flex gap-3 flex-col md:flex-row items-center">
+          <Image
+            src="/assets/images/word.svg"
+            width={160}
+            height={160}
+            alt="R logo"
+          />
+          <div className="flex-grow-1">
+            <h2 className="text-3xl font-medium">Microsoft Word add-in</h2>
+            <p>
+              The tidystats Word add-in is available in the Office Add-in store.
+              You can find this store in the Insert tab of your Word document.
+              Once installed, you will be able to add statistics to your
+              document using the file created with the tidystats R package.
+            </p>
+            <ButtonLink href="/word-addin/" text="Learn more" />
+          </div>
+        </div>
+      </div>
+
+      <div className="py-6 ">
+        <div className="max-w-800 m-auto p-3 ">
+          <h2 className="text-3xl font-medium">Support</h2>
+          <div className="flex justify-content-center flex-wrap">
+            <div className="text-center mx-5">
+              <a href="/FAQ/">
+                <Image
+                  src="/assets/images/question.svg"
+                  alt="FAQ icon"
+                  width={80}
+                  height={80}
+                />
+              </a>
+              <h5 className="my-4">FAQ</h5>
+            </div>
+            <div className="text-center mx-5">
+              <a href="/tips/">
+                <Image
+                  src="/assets/images/lightbulb.svg"
+                  alt="tips icon"
+                  width={80}
+                  height={80}
+                />
+              </a>
+              <h5 className="my-4">Tips</h5>
+            </div>
+            <div className="text-center mx-5">
+              <a href="https://twitter.com/tidystats">
+                <Image
+                  src="/assets/images/twitter.svg"
+                  alt="Twitter logo"
+                  width={80}
+                  height={80}
+                />
+              </a>
+              <h5 className="my-4">Twitter</h5>
+            </div>
+            <div className="text-center mx-5">
+              <a href="mailto:tidystats@gmail.com">
+                <Image
+                  src="/assets/images/email.svg"
+                  alt="email icon"
+                  width={80}
+                  height={80}
+                />
+              </a>
+              <h5 className="my-4">E-mail</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="py-6 bg-gray-100">
+        <div className="max-w-800 m-auto p-3">
+          <div className="text-center">
+            <h2 className="text-3xl font-medium">Citation</h2>
+          </div>
+          <p>Please consider citing tidystats if you found it useful.</p>
+          <p>
+            Sleegers, W. W. A. (2022). tidystats: Save output of statistical
+            tests (Version 0.5.1) [Computer software].
+            https://doi.org/10.5281/zenodo.4041859
+          </p>
+          <div className="flex gap-3">
+            <ButtonLink href="/citation/" text="Learn more" />
+            <button
+              id="citationButton"
+              className="w-36 bg-red-300 rounded"
+              role="button"
+            >
+              Copy citation
+            </button>
+          </div>
         </div>
       </div>
     </main>

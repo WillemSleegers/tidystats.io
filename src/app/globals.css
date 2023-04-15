@@ -8,6 +8,15 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
+p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+code {
+  color: rgb(162, 28, 175);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
