@@ -12,10 +12,15 @@ function copyCitation() {
 
   copyTextToClipboard(citation)
 
-  document.getElementById("citationButton").innerHTML = "Copied!"
-  setTimeout(function () {
-    document.getElementById("citationButton").innerHTML = "Copy citation"
-  }, 2000)
+  if (document) {
+    const button = document.getElementById("citationButton")
+    if (button) {
+      button.innerHTML = "Copied!"
+      setTimeout(function () {
+        button.innerHTML = "Copy citation"
+      }, 2000)
+    }
+  }
 }
 
 function copyBibTex() {
@@ -29,8 +34,13 @@ function copyBibTex() {
 
   copyTextToClipboard(bibtex)
 
-  document.getElementById("bibTexButton").innerHTML = "Copied!"
-  setTimeout(function () {
-    document.getElementById("bibTexButton").innerHTML = "Copy BibTex"
-  }, 2000)
+  if (document) {
+    const button = document.getElementById("bibTexButton")
+    if (button) {
+      button.innerHTML = "Copied!"
+      setTimeout(function () {
+        button.innerHTML = "Copy BibTex"
+      }, 2000)
+    }
+  }
 }
