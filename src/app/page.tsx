@@ -1,18 +1,21 @@
 import Image from "next/image"
+import Button from "@/components/Button"
 import ButtonLink from "@/components/ButtonLink"
 import { supportedFunctions } from "@/app/assets/data/supportedFunctions"
+
+import tidystatsLogo from "../app/assets/images/tidystats.svg"
+import rLogo from "../app/assets/images/R.svg"
+import wordLogo from "../app/assets/images/word.svg"
+import twitterLogo from "../app/assets/images/twitter.svg"
+import faqLogo from "../app/assets/images/question.svg"
+import tipsLogo from "../app/assets/images/lightbulb.svg"
+import emailLogo from "../app/assets/images/email.svg"
 
 export default function Home() {
   return (
     <main>
       <div className="py-6 bg-gray-100">
-        <Image
-          className="mx-auto"
-          src="/assets/images/tidystats-logo.svg"
-          width={160}
-          height={160}
-          alt="tidystats logo"
-        />
+        <Image className="mx-auto" src={tidystatsLogo} alt="tidystats logo" />
         <div className="text-center">
           <h1 className="text-5xl font-bold">tidystats</h1>
           <p className="text-lg">Reproducibly report statistics</p>
@@ -47,12 +50,7 @@ export default function Home() {
             <ButtonLink href="/r-package/" text="Learn more" />
           </div>
 
-          <Image
-            src="/assets/images/R-logo.svg"
-            width={160}
-            height={160}
-            alt="R logo"
-          />
+          <Image src={rLogo} width={160} alt="R logo" />
         </div>
       </div>
 
@@ -75,12 +73,7 @@ export default function Home() {
 
       <div className="py-6 bg-gray-100">
         <div className="max-w-800 m-auto p-3 flex gap-3 flex-col md:flex-row items-center">
-          <Image
-            src="/assets/images/word.svg"
-            width={160}
-            height={160}
-            alt="R logo"
-          />
+          <Image src={wordLogo} width={160} alt="R logo" />
           <div className="flex-grow-1">
             <h2 className="text-3xl font-medium">Microsoft Word add-in</h2>
             <p>
@@ -97,44 +90,29 @@ export default function Home() {
       <div className="py-6">
         <div className="max-w-800 m-auto p-3">
           <h2 className="text-3xl font-medium text-center">Support</h2>
-          <div className="flex flex-wrap items-center align-middle">
-            <div className="text-center mx-5 bg-red-500">
+          <div className="flex flex-wrap justify-center">
+            <div className="text-center mx-5">
               <a href="/FAQ/">
-                <Image
-                  src="/assets/images/question.svg"
-                  alt="FAQ icon"
-                  width={80}
-                  height={80}
-                />
+                <Image src={faqLogo} alt="FAQ icon" width={80} height={80} />
               </a>
               <h3 className="my-4 font-medium">FAQ</h3>
             </div>
-            <div className="text-center mx-5 bg-green-500">
+            <div className="text-center mx-5">
               <a href="/tips/">
-                <Image
-                  src="/assets/images/lightbulb.svg"
-                  alt="tips icon"
-                  width={80}
-                  height={80}
-                />
+                <Image src={tipsLogo} alt="tips icon" width={80} height={80} />
               </a>
               <h5 className="my-4">Tips</h5>
             </div>
-            <div className="block text-center mx-5 bg-yellow-500">
+            <div className="text-center mx-5">
               <a href="https://twitter.com/tidystats">
-                <Image
-                  src="/assets/images/twitter.svg"
-                  alt="Twitter logo"
-                  width={80}
-                  height={100}
-                />
+                <Image src={twitterLogo} alt="Twitter logo" height={80} />
               </a>
               <h5 className="my-4">Twitter</h5>
             </div>
-            <div className="text-center mx-5 bg-blue-500">
+            <div className="text-center mx-5">
               <a href="mailto:tidystats@gmail.com">
                 <Image
-                  src="/assets/images/email.svg"
+                  src={emailLogo}
                   alt="email icon"
                   width={80}
                   height={80}
@@ -159,13 +137,7 @@ export default function Home() {
           </p>
           <div className="flex gap-3">
             <ButtonLink href="/citation/" text="Learn more" />
-            <button
-              id="citationButton"
-              className="w-36 bg-red-300 rounded"
-              role="button"
-            >
-              Copy citation
-            </button>
+            <Button text="Copy citation" />
           </div>
         </div>
       </div>
