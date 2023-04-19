@@ -1,6 +1,6 @@
-const data = [
+const sections = [
   {
-    id: "test",
+    id: "r-package",
     text: "R package",
     url: "/r-package/",
     items: [
@@ -123,32 +123,26 @@ const data = [
 
 const Footer = () => {
   return (
-    <footer className="text-center mt-auto pt-4">
+    <footer className="pt-4 text-center">
       <small>
         <div className="inline-block">
-          <div className="flex flex-wrap gap-4 gap-md-5 text-start">
-            {data.map((item) => {
-              console.log(item.id)
+          <div className="flex flex-wrap gap-6 md:gap-4 text-start">
+            {sections.map((section) => {
               return (
-                <div key={item.id}>
+                <div key={section.id}>
                   <h5>
                     <a
                       href="{{ item.url }}"
-                      className="text-decoration-none text-dark"
+                      className="font-semibold text-base"
                     >
-                      {item.text}
+                      {section.text}
                     </a>
                   </h5>
-                  <ul className="list-unstyled">
-                    {item.items.map((subitem) => {
+                  <ul>
+                    {section.items.map((item) => {
                       return (
                         <li key={item.id}>
-                          <a
-                            className="text-muted text-decoration-none"
-                            href={subitem.url}
-                          >
-                            {subitem.text}
-                          </a>
+                          <a href={item.url}>{item.text}</a>
                         </li>
                       )
                     })}
@@ -158,9 +152,7 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="text-center text-muted my-4">
-          Willem Sleegers &copy; 2023
-        </div>
+        <div className="text-center my-4">Willem Sleegers &copy; 2023</div>
       </small>
     </footer>
   )

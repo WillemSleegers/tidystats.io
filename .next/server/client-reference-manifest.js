@@ -1,1 +1,437 @@
-self.__RSC_MANIFEST={"__ssr_module_mapping__":{"611":{"*":{"id":"5958","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"":{"id":"5958","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"default":{"id":"5958","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false}},"5943":{"*":{"id":"4642","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"*","async":false},"":{"id":"4642","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"","async":false},"default":{"id":"4642","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"default","async":false}},"7059":{"*":{"id":"9533","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"*","async":false},"":{"id":"9533","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"","async":false},"default":{"id":"9533","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"default","async":false}},"8331":{"*":{"id":"1551","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"":{"id":"1551","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"default":{"id":"1551","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false}},"8880":{"*":{"id":"2513","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"":{"id":"2513","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"default":{"id":"2513","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false}},"8892":{"*":{"id":"8950","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"":{"id":"8950","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"default":{"id":"8950","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false}}},"__edge_ssr_module_mapping__":{},"__entry_css_files__":{"/Users/willem/GitHub/tidystats.io/src/app/layout":["static/css/84523151b777170e.css"]},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js#":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js#":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js#default":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js#default":{"id":"611","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js#":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js#":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js#default":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js#default":{"id":"8331","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js#":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js#":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js#default":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js#default":{"id":"8892","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js#":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js#":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js#default":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js#default":{"id":"8880","chunks":["272:webpack-26881489068a765b","455:455-e1284d5dbd4590a8"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js#":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js#":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js#default":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js#default":{"id":"7059","chunks":["59:59-ce29d84c0d9cdeb0","931:app/page-638737e3137ce92d"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx":{"id":"5943","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"*","async":false},"/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx#":{"id":"5943","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"","async":false},"/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx#default":{"id":"5943","chunks":["59:59-ce29d84c0d9cdeb0","185:app/layout-49d80b48465681a7"],"name":"default","async":false},"/Users/willem/GitHub/tidystats.io/src/app/globals.css#":{"id":"null","name":"","chunks":["static/css/84523151b777170e.css"]}}
+self.__RSC_MANIFEST={
+  "__ssr_module_mapping__": {
+    "(app-client)/./node_modules/next/dist/client/components/app-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/error-boundary.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/error-boundary.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/error-boundary.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/error-boundary.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/layout-router.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/layout-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/layout-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/layout-router.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+        "chunks": [
+          "app-client-internals:app-client-internals"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/image.js": {
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/image.js",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "default",
+        "async": false
+      }
+    },
+    "(app-client)/./src/components/Navbar.tsx": {
+      "*": {
+        "id": "(sc_client)/./src/components/Navbar.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "*",
+        "async": false
+      },
+      "": {
+        "id": "(sc_client)/./src/components/Navbar.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "",
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./src/components/Navbar.tsx",
+        "chunks": [
+          "app/layout:app/layout"
+        ],
+        "name": "default",
+        "async": false
+      }
+    }
+  },
+  "__edge_ssr_module_mapping__": {},
+  "__entry_css_files__": {
+    "/Users/willem/GitHub/tidystats.io/src/app/layout": [
+      "static/css/_app-client_src_app_globals_css.css"
+    ]
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/app-router.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/app-router.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/app-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/error-boundary.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/error-boundary.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/error-boundary.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/layout-router.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/layout-router.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/layout-router.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/components/render-from-template-context.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/components/render-from-template-context.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/components/render-from-template-context.js",
+    "chunks": [
+      "app-client-internals:app-client-internals"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js#": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/client/image.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/node_modules/next/dist/esm/client/image.js#default": {
+    "id": "(app-client)/./node_modules/next/dist/client/image.js",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx": {
+    "id": "(app-client)/./src/components/Navbar.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "*",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx#": {
+    "id": "(app-client)/./src/components/Navbar.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/src/components/Navbar.tsx#default": {
+    "id": "(app-client)/./src/components/Navbar.tsx",
+    "chunks": [
+      "app/layout:app/layout"
+    ],
+    "name": "default",
+    "async": false
+  },
+  "/Users/willem/GitHub/tidystats.io/src/app/globals.css#": {
+    "id": "null",
+    "name": "",
+    "chunks": [
+      "static/css/_app-client_src_app_globals_css.css"
+    ]
+  }
+}

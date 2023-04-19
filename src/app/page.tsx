@@ -94,11 +94,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="py-6 ">
-        <div className="max-w-800 m-auto p-3 ">
-          <h2 className="text-3xl font-medium">Support</h2>
-          <div className="flex justify-content-center flex-wrap">
-            <div className="text-center mx-5">
+      <div className="py-6">
+        <div className="max-w-800 m-auto p-3">
+          <h2 className="text-3xl font-medium text-center">Support</h2>
+          <div className="flex flex-wrap items-center align-middle">
+            <div className="text-center mx-5 bg-red-500">
               <a href="/FAQ/">
                 <Image
                   src="/assets/images/question.svg"
@@ -107,9 +107,9 @@ export default function Home() {
                   height={80}
                 />
               </a>
-              <h5 className="my-4">FAQ</h5>
+              <h3 className="my-4 font-medium">FAQ</h3>
             </div>
-            <div className="text-center mx-5">
+            <div className="text-center mx-5 bg-green-500">
               <a href="/tips/">
                 <Image
                   src="/assets/images/lightbulb.svg"
@@ -120,18 +120,18 @@ export default function Home() {
               </a>
               <h5 className="my-4">Tips</h5>
             </div>
-            <div className="text-center mx-5">
+            <div className="block text-center mx-5 bg-yellow-500">
               <a href="https://twitter.com/tidystats">
                 <Image
                   src="/assets/images/twitter.svg"
                   alt="Twitter logo"
                   width={80}
-                  height={80}
+                  height={100}
                 />
               </a>
               <h5 className="my-4">Twitter</h5>
             </div>
-            <div className="text-center mx-5">
+            <div className="text-center mx-5 bg-blue-500">
               <a href="mailto:tidystats@gmail.com">
                 <Image
                   src="/assets/images/email.svg"
