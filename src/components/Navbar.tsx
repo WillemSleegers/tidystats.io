@@ -13,7 +13,27 @@ const items = [
   {
     id: "r-package",
     title: "R Package",
-    href: "/r-package/",
+    href: "/r/",
+  },
+  {
+    id: "word",
+    title: "Microsoft Word",
+    href: "/word/",
+  },
+  {
+    id: "google-docs",
+    title: "Google Docs",
+    href: "/google-docs/",
+  },
+  {
+    id: "support",
+    title: "Support",
+    href: "/support/",
+  },
+  {
+    id: "citation",
+    title: "Citation",
+    href: "/citation/",
   },
 ]
 
@@ -26,8 +46,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
+        <a href="/" className="rounded py-1 px-3 flex items-center">
           <Image
             src={tidystatsLogo}
             width={32}
@@ -66,13 +86,13 @@ const Navbar = () => {
           className={`w-full md:block md:w-auto ${hidden ? "hidden" : ""}`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <ul className="font-medium p-4 md:p-0 mt-4 flex flex-col border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {items.map((item) => {
               return (
-                <li>
+                <li key={item.id}>
                   <a
-                    href="/"
-                    className="block py-2 pl-3 pr-4 font-normal rounded md:bg-transparent  md:p-0 dark:text-white md:dark:text-blue-500"
+                    href={item.href}
+                    className="block py-1 px-2 font-normal rounded md:bg-transparent  text-gray-500 hover:text-gray-700"
                     aria-current="page"
                   >
                     {item.title}

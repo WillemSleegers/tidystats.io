@@ -7,6 +7,12 @@ self.__RSC_CSS_MANIFEST={
   "cssModules": {
     "/Users/willem/GitHub/tidystats.io/src/app/page": [
       "/Users/willem/GitHub/tidystats.io/src/app/globals.css"
+    ],
+    "/Users/willem/GitHub/tidystats.io/src/app/about/page": [
+      "/Users/willem/GitHub/tidystats.io/src/app/globals.css"
+    ],
+    "/Users/willem/GitHub/tidystats.io/src/app/r/page": [
+      "/Users/willem/GitHub/tidystats.io/src/app/globals.css"
     ]
   }
 }

@@ -123,37 +123,34 @@ const sections = [
 
 const Footer = () => {
   return (
-    <footer className="pt-4 text-center">
-      <small>
-        <div className="inline-block">
-          <div className="flex flex-wrap gap-6 md:gap-4 text-start">
-            {sections.map((section) => {
-              return (
-                <div key={section.id}>
-                  <h5>
-                    <a
-                      href="{{ item.url }}"
-                      className="font-semibold text-base"
-                    >
-                      {section.text}
-                    </a>
-                  </h5>
-                  <ul>
-                    {section.items.map((item) => {
-                      return (
-                        <li key={item.id}>
-                          <a href={item.url}>{item.text}</a>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                </div>
-              )
-            })}
-          </div>
+    <footer className="px-8 my-8 text-center">
+      <div className="inline-block">
+        <div className="flex flex-wrap gap-6 text-start">
+          {sections.map((section) => {
+            return (
+              <div className="mx-3" key={section.id}>
+                <h5>
+                  <a href="{{ item.url }}" className="font-semibold text-base">
+                    {section.text}
+                  </a>
+                </h5>
+                <ul>
+                  {section.items.map((item) => {
+                    return (
+                      <li key={item.id}>
+                        <a href={item.url}>{item.text}</a>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            )
+          })}
         </div>
-        <div className="text-center my-4">Willem Sleegers &copy; 2023</div>
-      </small>
+      </div>
+      <div className="text-sm text-center my-4">
+        Willem Sleegers &copy; 2023
+      </div>
     </footer>
   )
 }

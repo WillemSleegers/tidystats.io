@@ -6,15 +6,61 @@
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --light-blue: rgb(106, 153, 183);
+  --light-blue-hover: rgb(71, 113, 138);
+  --dark-blue: rgb(51, 87, 120);
+  --dark-blue-hover: rgb(36, 64, 88);
+  --yellow: rgb(217, 150, 57);
+}
+
+.bg-light-blue {
+  background: var(--light-blue);
+}
+
+.bg-light-blue-hover {
+  background: var(--light-blue-hover);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.bg-yellow {
+  background: var(--yellow);
+}
+
+.bg-dark-blue {
+  background: var(--dark-blue);
+}
+
+.bg-dark-blue:hover {
+  background: var(--dark-blue-hover);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 p {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+pre {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: rgb(243, 244, 246);
+  overflow-x: auto;
 }
 
 code {
-  color: rgb(162, 28, 175);
+  color: var(--dark-blue);
 }
 
 * {
