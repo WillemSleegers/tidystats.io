@@ -78,12 +78,12 @@ const sections = [
       {
         id: "support-faq",
         text: "FAQ",
-        url: "/FAQ/",
+        url: "/support/FAQ/",
       },
       {
         id: "support-tips",
         text: "Tips",
-        url: "/tips/",
+        url: "/support/tips/",
       },
       {
         id: "support-twitter",
@@ -108,11 +108,6 @@ const sections = [
         url: "/me/",
       },
       {
-        id: "about-citation",
-        text: "Citation",
-        url: "/citation/",
-      },
-      {
         id: "about-privacy",
         text: "Privacy",
         url: "/privacy/",
@@ -121,9 +116,9 @@ const sections = [
   },
 ]
 
-const Footer = () => {
+export const Footer = () => {
   return (
-    <footer className="px-8 my-8 text-center">
+    <footer className="px-8 my-8 text-center sticky top-[100vh]">
       <div className="inline-block">
         <div className="flex flex-wrap gap-6 text-start">
           {sections.map((section) => {
@@ -137,7 +132,7 @@ const Footer = () => {
                 <ul>
                   {section.items.map((item) => {
                     return (
-                      <li key={item.id}>
+                      <li key={item.id} className="text-sm list-none">
                         <a href={item.url}>{item.text}</a>
                       </li>
                     )
@@ -154,5 +149,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

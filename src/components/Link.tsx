@@ -5,7 +5,7 @@ type LinkProps = {
   children: ReactNode
 }
 
-const Link = (props: LinkProps) => {
+export const Link = (props: LinkProps) => {
   const { href, children } = props
 
   return (
@@ -14,5 +14,3 @@ const Link = (props: LinkProps) => {
     </a>
   )
 }
-
-export default Link

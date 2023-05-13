@@ -1,4 +1,8 @@
 {
+  "/support/page": "app/support/page.js",
   "/about/page": "app/about/page.js",
-  "/r/page": "app/r/page.js"
+  "/r/page": "app/r/page.js",
+  "/google-docs/page": "app/google-docs/page.js",
+  "/word/page": "app/word/page.js",
+  "/support/FAQ/page": "app/support/FAQ/page.js"
 }

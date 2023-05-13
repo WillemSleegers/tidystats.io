@@ -1,25 +1,16 @@
-import Image from "next/image"
-import Button from "@/components/Button"
-import ButtonLink from "@/components/ButtonLink"
-import Section from "@/components/Section"
-import { supportedFunctions } from "@/app/assets/data/supportedFunctions"
+import { Button, ButtonLink } from "@/components/Buttons"
+import { Section } from "@/components/Section"
+import { Support } from "@/components/Support"
+import { supportedFunctions } from "@/data/supportedFunctions"
 
-import tidystatsLogo from "../app/assets/images/tidystats.svg"
-import rLogo from "../app/assets/images/R.svg"
-import wordLogo from "../app/assets/images/word.svg"
-import twitterLogo from "../app/assets/images/twitter.svg"
-import faqLogo from "../app/assets/images/question.svg"
-import tipsLogo from "../app/assets/images/lightbulb.svg"
-import emailLogo from "../app/assets/images/email.svg"
-
-export default function Home() {
+export default () => {
   return (
     <main>
       <Section gray>
         <div>
-          <Image
+          <img
             className="mx-auto bg-gray"
-            src={tidystatsLogo}
+            src="/assets/images/tidystats.svg"
             alt="tidystats logo"
             width={150}
           />
@@ -56,13 +47,17 @@ export default function Home() {
             </p>
             <ButtonLink href="/r-package/" text="Learn more" />
           </div>
-          <Image src={rLogo} alt="R logo" style={{ width: 160, height: 160 }} />
+          <img
+            src="/assets/images/R.svg"
+            alt="R logo"
+            style={{ width: 160, height: 160 }}
+          />
         </div>
       </Section>
 
       <Section>
         <h2 className="text-center mb-5">Supported R packages</h2>
-        <ul className="h-24 list-disc list-inside flex flex-col flex-wrap">
+        <ul className="h-24 flex flex-col flex-wrap">
           {supportedFunctions.map((e) => {
             return (
               <li key={e.package} className="">
@@ -75,7 +70,11 @@ export default function Home() {
 
       <Section gray>
         <div className="flex gap-5 flex-col md:flex-row items-center">
-          <Image src={wordLogo} width={160} alt="R logo" />
+          <img
+            src="/assets/images/word.svg"
+            alt="R logo"
+            style={{ width: 160, height: 160 }}
+          />
           <div className="flex-grow-1">
             <h2>Microsoft Word add-in</h2>
             <p>
@@ -91,36 +90,7 @@ export default function Home() {
 
       <Section>
         <h2 className="text-center">Support</h2>
-        <div className="mt-8 flex flex-wrap justify-center gap-5">
-          <div className="text-center mx-5">
-            <a href="/FAQ/">
-              <Image src={faqLogo} alt="FAQ icon" width={80} height={80} />
-            </a>
-            <h3 className="my-4 font-medium">FAQ</h3>
-          </div>
-          <div className="text-center mx-5">
-            <a href="/tips/">
-              <Image src={tipsLogo} alt="tips icon" width={80} height={80} />
-            </a>
-            <h5 className="my-4 font-medium">Tips</h5>
-          </div>
-          <div className="text-center mx-5">
-            <a href="https://twitter.com/tidystats">
-              <Image
-                src={twitterLogo}
-                alt="Twitter logo"
-                style={{ width: 80, height: 80 }}
-              />
-            </a>
-            <h5 className="my-4 font-medium">Twitter</h5>
-          </div>
-          <div className="text-center mx-5">
-            <a href="mailto:tidystats@gmail.com">
-              <Image src={emailLogo} alt="email icon" width={80} height={80} />
-            </a>
-            <h5 className="my-4 font-medium">E-mail</h5>
-          </div>
-        </div>
+        <Support />
       </Section>
 
       <Section gray>

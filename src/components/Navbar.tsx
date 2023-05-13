@@ -1,8 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
-import tidystatsLogo from "../app/assets/images/tidystats-white-bg.svg"
 
 const items = [
   {
@@ -30,14 +28,9 @@ const items = [
     title: "Support",
     href: "/support/",
   },
-  {
-    id: "citation",
-    title: "Citation",
-    href: "/citation/",
-  },
 ]
 
-const Navbar = () => {
+export const Navbar = () => {
   const [hidden, setHidden] = useState(true)
 
   const handleClick = () => {
@@ -48,10 +41,9 @@ const Navbar = () => {
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-3">
         <a href="/" className="rounded py-1 px-3 flex items-center">
-          <Image
-            src={tidystatsLogo}
-            width={32}
-            height={32}
+          <img
+            src="/assets/images/tidystats-white-bg.svg"
+            style={{ width: "32px", height: "32px" }}
             className="mr-3"
             alt="tidystats Logo"
           />
@@ -86,10 +78,10 @@ const Navbar = () => {
           className={`w-full md:block md:w-auto ${hidden ? "hidden" : ""}`}
           id="navbar-default"
         >
-          <ul className="font-medium p-4 md:p-0 mt-4 flex flex-col border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <div className="font-medium p-4 md:p-0 mt-4 flex flex-col border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-2 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             {items.map((item) => {
               return (
-                <li key={item.id}>
+                <span key={item.id}>
                   <a
                     href={item.href}
                     className="block py-1 px-2 font-normal rounded md:bg-transparent  text-gray-500 hover:text-gray-700"
@@ -97,14 +89,12 @@ const Navbar = () => {
                   >
                     {item.title}
                   </a>
-                </li>
+                </span>
               )
             })}
-          </ul>
+          </div>
         </div>
       </div>
     </nav>
   )
 }
-
-export default Navbar

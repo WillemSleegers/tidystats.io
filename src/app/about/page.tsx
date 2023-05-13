@@ -1,18 +1,16 @@
-import Image from "next/image"
-import Section from "@/components/Section"
-import Link from "@/components/Link"
-import tidystatsLogo from "../../app/assets/images/tidystats.svg"
+import { Section } from "@/components/Section"
+import { Link } from "@/components/Link"
 
-const About = () => {
+export default () => {
   return (
     <>
       <Section gray>
         <div>
-          <Image
+          <img
             className="mx-auto"
-            src={tidystatsLogo}
+            src="/assets/images/tidystats.svg"
             alt="tidystats logo"
-            width={150}
+            style={{ width: 160, height: 160 }}
           />
         </div>
       </Section>
@@ -20,21 +18,44 @@ const About = () => {
         <h1 className="text-center">About</h1>
         <p>
           I developed test tidystats to solve two different problems in
-          statistics reporting. The first problem is that of incorrect
-          statistics reporting. Many scientific papers contain{" "}
+          statistics reporting:
+        </p>
+        <ol className="-mt-4 mb-4 ml-6">
+          <li>Incorrect statistics</li>
+          <li>Incomplete statistics</li>
+        </ol>
+        <h2>Incorrect statistics</h2>
+        <p>
+          Many scientific papers contain{" "}
           <Link href="https://link.springer.com/article/10.3758/s13428-015-0664-2">
             statistical inconsistencies
           </Link>
-          , likely due to typos and copy-paste mistakes. The second problem is
-          that of incomplete statistics reporting. Researchers often only report
-          the statistics in their papers, which means they need to carefully
-          balance comprehensive reporting with writing a legible text. As a
-          result, statistics are sometimes summarized or omitted in favor of
-          producing a clearer paper. While this may seem like a reasonable
-          compromise, the statistics are still necessary to check conclusions or
-          for use in subsequent work (e.g., meta-analyses).
+          . These inconsistencies are detected via software like{" "}
+          <Link href="https://michelenuijten.shinyapps.io/statcheck-web/">
+            statcheck
+          </Link>
+          . This software detects statistics and re-calculates certain
+          statistics in a paper to see whether the reported statistics match the
+          re-calculated statistics. This technique has revealed often the
+          statistics don't line up, meaning that the reported statistics are
+          incorrect. This shouldn't be surprising because the most common method
+          for inserting statistics is by simply manually typing them into a text
+          editor or by copy-pasting results from the statistics software. In
+          either case, it is easy to make a mistake, causing these statistical
+          inconsistencies.
+        </p>
+        <h2>Incomplete statistics</h2>
+        <p>
+          Not all statistics are reported. Researchers often only report the
+          statistics in their papers, which means they need to carefully balance
+          comprehensive reporting with writing a legible text. As a result,
+          statistics are sometimes summarized or omitted in favor of producing a
+          clearer paper. While this may seem like a reasonable compromise, the
+          statistics are still necessary to check conclusions or for use in
+          subsequent work (e.g., meta-analyses).
         </p>
 
+        <h2>Solutions</h2>
         <p>
           There are several possible solutions to these two problems. To give
           everyone access to the statistics, one can share the data and scripts
@@ -50,18 +71,18 @@ const About = () => {
           there are some downsides to using software like{" "}
           <Link href="https://rmarkdown.rstudio.com">R Markdown</Link> or{" "}
           <Link href="http://quarto.org">Quarto</Link>. It is more difficult to
-          collaborate with others and I often prefer to use software dedicated
-          to writing papers, such as Microsoft Word or Google Docs.
+          collaborate with others and the software is not as feature rich as
+          more well-known text editors such as Microsoft Word or Google Docs.
         </p>
 
+        <h2>tidystats</h2>
         <p>
           tidystats is my attempt at producing a user-friendly solution to the
           problems of incorrect and incomplete statistics reporting.
         </p>
 
         <p>tidystats works in two steps:</p>
-
-        <ol className="list-decimal list-inside">
+        <ol className="-mt-4 ml-6">
           <li>
             Save the output of statistical tests performed in{" "}
             <Link href="https://www.r-project.org">R</Link>
@@ -109,5 +130,3 @@ const About = () => {
     </>
   )
 }
-
-export default About
