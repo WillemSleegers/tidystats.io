@@ -24,7 +24,7 @@ export default () => {
 
           <h2>Main features</h2>
 
-          <ul>
+          <ul className="ms-6">
             <li>
               A user-friendly point-and-click interface to insert statistics in
               APA-style
@@ -65,6 +65,7 @@ export default () => {
           <img
             src="/assets/images/screenshot.png"
             alt="tidystats add-in screenshot"
+            className="shadow rounded-md"
           />
 
           <p>
@@ -97,7 +98,7 @@ export default () => {
             add-in.
           </p>
 
-          <video controls>
+          <video controls className="rounded-md shadow">
             <source src="/assets/video/example.mp4" type="video/mp4" />
           </video>
 

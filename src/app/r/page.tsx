@@ -185,23 +185,18 @@ export default () => {
 
         <h2>Supported R packages</h2>
 
-        <ul className="h-24 ml-6 my-4 flex flex-col flex-wrap">
+        <div className="flex flex-wrap">
           {supportedFunctions.map((e) => {
             return (
-              <li key={e.package} className="">
-                <code className="yellow">{e.package}</code>
-              </li>
+              <code
+                key={e.package}
+                className="text-white bg-yellow m-2 gray rounded px-4 py-2"
+              >
+                {e.package}
+              </code>
             )
           })}
-        </ul>
-
-        <h2>Support</h2>
-
-        <p>
-          Do you have a question or comment, such as a feature request, about
-          tidystats? Check out the <a href="/support/">support</a> page for ways
-          to contact me.
-        </p>
+        </div>
       </Section>
     </>
   )

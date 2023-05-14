@@ -118,7 +118,7 @@ const sections = [
 
 export const Footer = () => {
   return (
-    <footer className="px-8 my-8 text-center sticky top-[100vh]">
+    <footer className="p-8 text-center sticky top-[100vh] bg-gray-100">
       <div className="inline-block">
         <div className="flex flex-wrap gap-6 text-start">
           {sections.map((section) => {
@@ -143,7 +143,7 @@ export const Footer = () => {
           })}
         </div>
       </div>
-      <div className="text-sm text-center my-4">
+      <div className="text-sm text-center mt-8">
         Willem Sleegers &copy; 2023
       </div>
     </footer>

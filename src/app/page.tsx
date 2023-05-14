@@ -57,22 +57,25 @@ export default () => {
 
       <Section>
         <h2 className="text-center mb-5">Supported R packages</h2>
-        <ul className="h-24 flex flex-col flex-wrap">
+        <div className="flex flex-wrap">
           {supportedFunctions.map((e) => {
             return (
-              <li key={e.package} className="">
-                <code className="yellow">{e.package}</code>
-              </li>
+              <code
+                key={e.package}
+                className="text-white bg-yellow m-2 gray rounded px-4 py-2"
+              >
+                {e.package}
+              </code>
             )
           })}
-        </ul>
+        </div>
       </Section>
 
       <Section gray>
         <div className="flex gap-5 flex-col md:flex-row items-center">
           <img
             src="/assets/images/word.svg"
-            alt="R logo"
+            alt="Microsoft Word logo"
             style={{ width: 160, height: 160 }}
           />
           <div className="flex-grow-1">
@@ -83,17 +86,39 @@ export default () => {
               Once installed, you will be able to add statistics to your
               document using the file created with the tidystats R package.
             </p>
-            <ButtonLink href="/word-addin/" text="Learn more" />
+            <ButtonLink href="/word/" text="Learn more" />
           </div>
         </div>
       </Section>
 
       <Section>
+        <div className="flex gap-5 flex-col md:flex-row items-center">
+          <div className="flex-grow-1">
+            <h2>Google Docs add-in</h2>
+            <p>
+              The tidystats Google Docs add-in is currently in development.
+              Currently, you can find this add-in on the GitHub page and install
+              it to test out the add-in. Soon it will be made available in the
+              Google Workspace Marketplace. Once installed, you will be able to
+              add statistics to your document using the file created with the
+              tidystats R package.
+            </p>
+            <ButtonLink href="/google-docs/" text="Learn more" />
+          </div>
+          <img
+            src="/assets/images/google-docs.svg"
+            alt="Google Docs logo"
+            style={{ width: 160, height: 160 }}
+          />
+        </div>
+      </Section>
+
+      <Section gray>
         <h2 className="text-center">Support</h2>
         <Support />
       </Section>
 
-      <Section gray>
+      <Section>
         <h2>Citation</h2>
         <p>Please consider citing tidystats if you found it useful.</p>
         <p>
@@ -102,7 +127,7 @@ export default () => {
           https://doi.org/10.5281/zenodo.4041859
         </p>
         <div className="flex gap-3">
-          <ButtonLink href="/citation/" text="Learn more" />
+          <ButtonLink href="/support/" text="Learn more" />
           <Button text="Copy citation" />
         </div>
       </Section>
