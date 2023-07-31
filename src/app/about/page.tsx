@@ -14,9 +14,14 @@ export default () => {
           />
         </div>
       </Section>
-      <Section>
-        <h1 className="text-center">About</h1>
-        <p>
+      <div
+        id="mainContent"
+        className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert font-light text-gray-500"
+      >
+        <h1 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
+          About
+        </h1>
+        <p className="mb-4 text-base font-normal text-gray-600">
           I developed test tidystats to solve two different problems in
           statistics reporting:
         </p>
@@ -25,7 +30,7 @@ export default () => {
           <li>Incomplete statistics</li>
         </ol>
         <h2>Incorrect statistics</h2>
-        <p>
+        <p className="mb-4 text-base font-normal text-gray-600">
           Many scientific papers contain{" "}
           <Link href="https://link.springer.com/article/10.3758/s13428-015-0664-2">
             statistical inconsistencies
@@ -126,7 +131,7 @@ export default () => {
         <p>
           Finally, tidystats is developed by <Link href="/me/">me</Link>.
         </p>
-      </Section>
+      </div>
     </>
   )
 }

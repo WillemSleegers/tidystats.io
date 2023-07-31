@@ -1,10 +1,5 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -16,6 +11,16 @@
       "static/chunks/main-app.js",
       "static/chunks/app/about/page.js"
     ],
+    "/r/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/r/page.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
+    ],
     "/word/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -26,10 +31,10 @@
       "static/chunks/main-app.js",
       "static/chunks/app/support/page.js"
     ],
-    "/r/page": [
+    "/support/FAQ/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/r/page.js"
+      "static/chunks/app/support/FAQ/page.js"
     ]
   }
 }

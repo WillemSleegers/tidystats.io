@@ -1,43 +1,49 @@
-import { Button, ButtonLink } from "@/components/Buttons"
-import { Section } from "@/components/Section"
-import { Support } from "@/components/Support"
-import { supportedFunctions } from "@/data/supportedFunctions"
+import { LearnMore } from "@/components/LearnMore";
+import { Section } from "@/components/Section";
+import { Support } from "@/components/Support";
+import { supportedFunctions } from "@/data/supportedFunctions";
 
 export default () => {
   return (
     <main>
-      <Section gray>
-        <div>
-          <img
-            className="mx-auto bg-gray"
-            src="/assets/images/tidystats.svg"
-            alt="tidystats logo"
-            width={150}
-          />
-          <div className="text-center">
-            <h1>tidystats</h1>
-            <p className="text-lg">Reproducibly report statistics</p>
+      <Section>
+        <div className="flex flex-col-reverse items-center justify-between md:flex-row">
+          <div className="flex-grow-0">
+            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl">
+              Reproducibly report statistics
+            </h1>
+            <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl">
+              Conduct analyses in R and use tidystats to report statistics in
+              popular text editors.
+            </p>
+          </div>
+          <div className="flex-grow-1 w-56">
+            <img src="/assets/images/tidystats.svg" alt="tidystats logo" />
           </div>
         </div>
       </Section>
 
-      <Section>
-        <h2>What is tidystats?</h2>
-        <p>
+      <Section gray>
+        <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+          What is tidystats?
+        </h2>
+        <p className="font-light text-gray-500 sm:text-xl">
           tidystats is a software solution designed to help researchers report
           the output of statistical analyses. It consists of an R package whose
           main function is to gather the statistics from statistical analyses
           and an Office add-in to reproducibly report statistics in Microsoft
           Word.
         </p>
-        <ButtonLink href="/about/" text="Learn more" />
+        <LearnMore href="/about/" text="Learn more" />
       </Section>
 
-      <Section gray>
-        <div className="flex flex-col md:flex-row items-center gap-5">
+      <Section>
+        <div className="flex flex-col items-center gap-5 md:flex-row">
           <div className="flex-grow-1">
-            <h2>R package</h2>
-            <p>
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+              R package
+            </h2>
+            <p className="font-light text-gray-500 sm:text-xl">
               The tidystats R package is available on CRAN. Install the package
               by running{" "}
               <code className="yellow">install.packages("tidystats")</code> in
@@ -45,7 +51,7 @@ export default () => {
               for the functions and tutorials on how to use tidystats, click the
               button below.
             </p>
-            <ButtonLink href="/r-package/" text="Learn more" />
+            <LearnMore href="/r-package/" text="Learn more" />
           </div>
           <img
             src="/assets/images/R.svg"
@@ -55,55 +61,70 @@ export default () => {
         </div>
       </Section>
 
-      <Section>
-        <h2 className="text-center mb-5">Supported R packages</h2>
+      <Section gray>
+        <h2 className="mb-4 text-center text-4xl font-extrabold text-gray-900">
+          Supported R packages
+        </h2>
         <div className="flex flex-wrap">
           {supportedFunctions.map((e) => {
             return (
               <code
                 key={e.package}
-                className="text-white bg-yellow m-2 gray rounded px-4 py-2"
+                className="gray m-2 rounded bg-blue-100 px-4 py-2 text-blue-600"
               >
                 {e.package}
               </code>
-            )
+            );
           })}
         </div>
       </Section>
 
-      <Section gray>
-        <div className="flex gap-5 flex-col md:flex-row items-center">
+      <Section>
+        <div className="flex flex-col items-center gap-5 md:flex-row">
           <img
             src="/assets/images/word.svg"
             alt="Microsoft Word logo"
             style={{ width: 160, height: 160 }}
           />
           <div className="flex-grow-1">
-            <h2>Microsoft Word add-in</h2>
-            <p>
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+              Microsoft Word add-in
+            </h2>
+
+            <p className="font-light text-gray-500 sm:text-xl">
               The tidystats Word add-in is available in the Office Add-in store.
               You can find this store in the Insert tab of your Word document.
               Once installed, you will be able to add statistics to your
               document using the file created with the tidystats R package.
             </p>
-            <ButtonLink href="/word/" text="Learn more" />
+
+            <h3 className="mt-4 text-xl font-extrabold text-gray-700">
+              Features
+            </h3>
+            <ul className="list-inside list-disc font-light text-gray-500">
+              <li>APA-style reporting</li>
+              <li>Insert tables</li>
+              <li>Automatic updating</li>
+            </ul>
+
+            <LearnMore href="/word/" text="Learn more" />
           </div>
         </div>
       </Section>
 
-      <Section>
-        <div className="flex gap-5 flex-col md:flex-row items-center">
+      <Section gray>
+        <div className="flex flex-col items-center gap-5 md:flex-row">
           <div className="flex-grow-1">
-            <h2>Google Docs add-in</h2>
-            <p>
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+              Google Docs add-in
+            </h2>
+            <p className="font-light text-gray-500 sm:text-xl">
               The tidystats Google Docs add-in is currently in development.
               Currently, you can find this add-in on the GitHub page and install
               it to test out the add-in. Soon it will be made available in the
-              Google Workspace Marketplace. Once installed, you will be able to
-              add statistics to your document using the file created with the
-              tidystats R package.
+              Google Workspace Marketplace.
             </p>
-            <ButtonLink href="/google-docs/" text="Learn more" />
+            <LearnMore href="/google-docs/" text="Learn more" />
           </div>
           <img
             src="/assets/images/google-docs.svg"
@@ -113,24 +134,12 @@ export default () => {
         </div>
       </Section>
 
-      <Section gray>
-        <h2 className="text-center">Support</h2>
+      <Section>
+        <h2 className="mb-4 text-center text-4xl font-extrabold text-gray-900">
+          Support
+        </h2>
         <Support />
       </Section>
-
-      <Section>
-        <h2>Citation</h2>
-        <p>Please consider citing tidystats if you found it useful.</p>
-        <p>
-          Sleegers, W. W. A. (2022). tidystats: Save output of statistical tests
-          (Version 0.5.2) [Computer software].
-          https://doi.org/10.5281/zenodo.4041859
-        </p>
-        <div className="flex gap-3">
-          <ButtonLink href="/support/" text="Learn more" />
-          <Button text="Copy citation" />
-        </div>
-      </Section>
     </main>
-  )
-}
+  );
+};
