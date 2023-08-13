@@ -2,64 +2,102 @@
 @tailwind components;
 @tailwind utilities;
 
-code {
-  @apply text-blue-600;
+/* Defaults */
+
+p {
+  @apply text-base lg:text-lg xl:text-xl;
 }
 
-#mainContent > h2 {
-  @apply mb-4 mt-8 text-2xl font-semibold;
+ul,
+ol {
+  @apply mb-4;
 }
 
-#mainContent > h3,
-#mainContent > h4 {
+/* Landing page */
+
+#landing h1 {
+  @apply mb-4;
+}
+
+#landing h2 {
+  @apply mb-4 text-4xl font-extrabold leading-none md:text-3xl xl:text-4xl;
+}
+
+#landing p {
+  @apply mb-4 font-light text-gray-500;
+}
+
+/* Non-landing page content */
+
+#content {
+  @apply mx-auto w-full max-w-2xl p-4 font-light text-gray-500;
+}
+
+#content > h1 {
+  @apply mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl;
+}
+
+#content > h2 {
+  @apply mb-4 mt-8 text-2xl font-semibold text-gray-900;
+}
+
+#content > h3,
+#content > h4 {
   @apply mb-4 mt-8 text-xl font-semibold;
 }
 
-#mainContent > p {
+#content > p {
   @apply mb-4 text-base font-normal text-gray-600;
 }
 
-#mainContent > p > a,
-#mainContent > ul > li > a,
-#mainContent > ol > li > a,
-#mainContent > ul > li > p > a,
-#mainContent > ol > li > p > a {
-  @apply font-medium text-gray-700 underline decoration-blue-600 decoration-1 
-       underline-offset-2;
+#content > p > a,
+#content > ul > li > a,
+#content > ol > li > a,
+#content > ul > li > p > a,
+#content > ol > li > p > a {
+  @apply font-semibold text-test underline decoration-1 underline-offset-2;
 }
 
-#mainContent > p > a:hover,
-#mainContent > ul > li > a:hover,
-#mainContent > ol > li > a:hover,
-#mainContent > ul > li > p > a:hover,
-#mainContent > ol > li > p > a:hover {
+#content > p > a:hover,
+#content > ul > li > a:hover,
+#content > ol > li > a:hover,
+#content > ul > li > p > a:hover,
+#content > ol > li > p > a:hover {
   @apply text-gray-900 decoration-2;
 }
 
-#mainContent > p > code,
-#mainContent > ul > li > code,
-#mainContent > ol > li > code {
-  @apply break-all px-1 font-mono text-sm text-blue-600;
+#content pre {
+  @apply mb-3 overflow-auto bg-gray-100 p-3;
 }
 
-#mainContent > ul {
-  list-style: disc;
+#content pre > code {
+  @apply mb-3 font-normal;
 }
 
-#mainContent > ol {
-  list-style: decimal;
+#content > p > code,
+#content > ul > li > code,
+#content > ol > li > code {
+  @apply break-all rounded bg-gray-100 p-1 px-1 font-mono text-sm;
 }
 
-#mainContent p > strong {
+#content > ul {
+  @apply list-disc;
+}
+
+#content > ol {
+  @apply list-decimal;
+}
+
+#content p > strong {
   @apply text-gray-900;
 }
 
-#mainContent > ul,
-#mainContent > ol {
-  padding-left: 1rem;
+#content > ul,
+#content > ol {
+  @apply mb-4 pl-6;
 }
 
-#mainContent > ul > li,
-#mainContent > ol > li {
-  @apply mb-4 text-base font-normal text-gray-600;
+#content > ul > li,
+#content > ol > li {
+  @apply mb-0 text-base font-normal text-gray-600;
 }

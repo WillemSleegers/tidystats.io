@@ -10,8 +10,8 @@ export const Section = (props: SectionProps) => {
 
   return (
     <section className={`${gray ? "bg-gray-50" : ""}`}>
-      <div className="mx-auto max-w-screen-lg px-4 py-8 lg:px-6 lg:py-16">
-        <div className="sm:text-lg">{children}</div>
+      <div className="mx-auto max-w-screen-lg px-4 py-12 md:py-14 lg:px-6 lg:py-16">
+        {children}
       </div>
     </section>
   );

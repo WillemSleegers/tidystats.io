@@ -5,29 +5,27 @@ import { supportedFunctions } from "@/data/supportedFunctions";
 
 export default () => {
   return (
-    <main>
+    <main id="landing">
       <Section>
-        <div className="flex flex-col-reverse items-center justify-between md:flex-row">
-          <div className="flex-grow-0">
-            <h1 className="mb-4 max-w-2xl text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl">
+        <div className="flex flex-col-reverse items-center justify-between gap-3 md:flex-row">
+          <div className="flex-grow-0 text-lg">
+            <h1 className="text-center text-3xl font-extrabold leading-none sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
               Reproducibly report statistics
             </h1>
-            <p className="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl">
+            <p className="text-center md:text-left">
               Conduct analyses in R and use tidystats to report statistics in
               popular text editors.
             </p>
           </div>
-          <div className="flex-grow-1 w-56">
+          <div className="flex-grow-1 my-6 w-56">
             <img src="/assets/images/tidystats.svg" alt="tidystats logo" />
           </div>
         </div>
       </Section>
 
       <Section gray>
-        <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
-          What is tidystats?
-        </h2>
-        <p className="font-light text-gray-500 sm:text-xl">
+        <h2>What is tidystats?</h2>
+        <p>
           tidystats is a software solution designed to help researchers report
           the output of statistical analyses. It consists of an R package whose
           main function is to gather the statistics from statistical analyses
@@ -40,15 +38,12 @@ export default () => {
       <Section>
         <div className="flex flex-col items-center gap-5 md:flex-row">
           <div className="flex-grow-1">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
-              R package
-            </h2>
-            <p className="font-light text-gray-500 sm:text-xl">
+            <h2>R package</h2>
+            <p>
               The tidystats R package is available on CRAN. Install the package
-              by running{" "}
-              <code className="yellow">install.packages("tidystats")</code> in
-              R. For more information about the package, including documentation
-              for the functions and tutorials on how to use tidystats, click the
+              by running <code>install.packages("tidystats")</code> in R. For
+              more information about the package, including documentation for
+              the functions and tutorials on how to use tidystats, click the
               button below.
             </p>
             <LearnMore href="/r-package/" text="Learn more" />
@@ -62,15 +57,13 @@ export default () => {
       </Section>
 
       <Section gray>
-        <h2 className="mb-4 text-center text-4xl font-extrabold text-gray-900">
-          Supported R packages
-        </h2>
+        <h2 className="text-center">Supported R packages</h2>
         <div className="flex flex-wrap">
           {supportedFunctions.map((e) => {
             return (
               <code
                 key={e.package}
-                className="gray m-2 rounded bg-blue-100 px-4 py-2 text-blue-600"
+                className="gray m-2 rounded bg-test-code px-4 py-2 text-white"
               >
                 {e.package}
               </code>
@@ -87,11 +80,9 @@ export default () => {
             style={{ width: 160, height: 160 }}
           />
           <div className="flex-grow-1">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
-              Microsoft Word add-in
-            </h2>
+            <h2>Microsoft Word add-in</h2>
 
-            <p className="font-light text-gray-500 sm:text-xl">
+            <p>
               The tidystats Word add-in is available in the Office Add-in store.
               You can find this store in the Insert tab of your Word document.
               Once installed, you will be able to add statistics to your
@@ -115,10 +106,8 @@ export default () => {
       <Section gray>
         <div className="flex flex-col items-center gap-5 md:flex-row">
           <div className="flex-grow-1">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
-              Google Docs add-in
-            </h2>
-            <p className="font-light text-gray-500 sm:text-xl">
+            <h2>Google Docs add-in</h2>
+            <p>
               The tidystats Google Docs add-in is currently in development.
               Currently, you can find this add-in on the GitHub page and install
               it to test out the add-in. Soon it will be made available in the
@@ -135,9 +124,7 @@ export default () => {
       </Section>
 
       <Section>
-        <h2 className="mb-4 text-center text-4xl font-extrabold text-gray-900">
-          Support
-        </h2>
+        <h2 className="text-center">Support</h2>
         <Support />
       </Section>
     </main>

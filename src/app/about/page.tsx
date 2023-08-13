@@ -1,5 +1,4 @@
-import { Section } from "@/components/Section"
-import { Link } from "@/components/Link"
+import { Section } from "@/components/Section";
 
 export default () => {
   return (
@@ -14,31 +13,26 @@ export default () => {
           />
         </div>
       </Section>
-      <div
-        id="mainContent"
-        className="w-full max-w-2xl mx-auto format format-sm sm:format-base lg:format-lg format-blue dark:format-invert font-light text-gray-500"
-      >
-        <h1 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl">
-          About
-        </h1>
-        <p className="mb-4 text-base font-normal text-gray-600">
+      <div id="content">
+        <h1>About</h1>
+        <p>
           I developed test tidystats to solve two different problems in
           statistics reporting:
         </p>
-        <ol className="-mt-4 mb-4 ml-6">
+        <ol>
           <li>Incorrect statistics</li>
           <li>Incomplete statistics</li>
         </ol>
         <h2>Incorrect statistics</h2>
-        <p className="mb-4 text-base font-normal text-gray-600">
+        <p>
           Many scientific papers contain{" "}
-          <Link href="https://link.springer.com/article/10.3758/s13428-015-0664-2">
+          <a href="https://link.springer.com/article/10.3758/s13428-015-0664-2">
             statistical inconsistencies
-          </Link>
+          </a>
           . These inconsistencies are detected via software like{" "}
-          <Link href="https://michelenuijten.shinyapps.io/statcheck-web/">
+          <a href="https://michelenuijten.shinyapps.io/statcheck-web/">
             statcheck
-          </Link>
+          </a>
           . This software detects statistics and re-calculates certain
           statistics in a paper to see whether the reported statistics match the
           re-calculated statistics. This technique has revealed often the
@@ -74,8 +68,8 @@ export default () => {
           A solution to reducing statistical reporting errors is to write
           scientific papers using reproducible software solutions. However,
           there are some downsides to using software like{" "}
-          <Link href="https://rmarkdown.rstudio.com">R Markdown</Link> or{" "}
-          <Link href="http://quarto.org">Quarto</Link>. It is more difficult to
+          <a href="https://rmarkdown.rstudio.com">R Markdown</a> or{" "}
+          <a href="http://quarto.org">Quarto</a>. It is more difficult to
           collaborate with others and the software is not as feature rich as
           more well-known text editors such as Microsoft Word or Google Docs.
         </p>
@@ -87,18 +81,17 @@ export default () => {
         </p>
 
         <p>tidystats works in two steps:</p>
-        <ol className="-mt-4 ml-6">
+        <ol>
           <li>
             Save the output of statistical tests performed in{" "}
-            <Link href="https://www.r-project.org">R</Link>
+            <a href="https://www.r-project.org">R</a>
           </li>
           <li>
             Report statistics in{" "}
-            <Link href="https://www.microsoft.com/en-us/microsoft-365/word">
+            <a href="https://www.microsoft.com/en-us/microsoft-365/word">
               Microsoft Word
-            </Link>{" "}
-            or{" "}
-            <Link href="https://www.google.com/docs/about/">Google Docs</Link>
+            </a>{" "}
+            or <a href="https://www.google.com/docs/about/">Google Docs</a>
           </li>
         </ol>
 
@@ -123,15 +116,15 @@ export default () => {
 
         <p>
           If you want to know more, check out the page about the{" "}
-          <Link href="/r-package/">R package</Link>,{" "}
-          <Link href="/word-add-in/">Word add-in</Link>, or the{" "}
-          <Link href="/google-docs/">Google Docs add-in</Link>.
+          <a href="/r-package/">R package</a>,{" "}
+          <a href="/word-add-in/">Word add-in</a>, or the{" "}
+          <a href="/google-docs/">Google Docs add-in</a>.
         </p>
 
         <p>
-          Finally, tidystats is developed by <Link href="/me/">me</Link>.
+          Finally, tidystats is developed by <a href="/me/">me</a>.
         </p>
       </div>
     </>
-  )
-}
+  );
+};

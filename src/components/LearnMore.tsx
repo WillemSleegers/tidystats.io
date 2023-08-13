@@ -8,7 +8,7 @@ export const LearnMore = (props: LearnMoreProps) => {
 
   return (
     <a
-      className="hover:text-primary-800 mt-3 inline-flex items-center font-medium text-blue-600"
+      className="rounded bg-test px-3 py-2 text-sm font-semibold text-white lg:text-base xl:text-lg"
       href={href}
     >
       {text}

@@ -9,7 +9,7 @@ export const Support = () => {
             style={{ width: 80, height: 80 }}
           />
         </a>
-        <h3 className="my-4 font-medium">FAQ</h3>
+        <h3 className="my-4 font-medium text-gray-900">FAQ</h3>
       </div>
       <div className="mx-5 text-center">
         <a href="/support/tips/">
@@ -19,7 +19,7 @@ export const Support = () => {
             style={{ width: 80, height: 80 }}
           />
         </a>
-        <h5 className="my-4 font-medium">Tips</h5>
+        <h5 className="my-4 font-medium text-gray-900">Tips</h5>
       </div>
       <div className="mx-5 text-center">
         <a href="https://twitter.com/tidystats">
@@ -29,7 +29,7 @@ export const Support = () => {
             style={{ width: 80, height: 80 }}
           />
         </a>
-        <h5 className="my-4 font-medium">Twitter</h5>
+        <h5 className="my-4 font-medium text-gray-900">Twitter</h5>
       </div>
       <div className="mx-5 text-center">
         <a href="mailto:tidystats@gmail.com">
@@ -39,7 +39,7 @@ export const Support = () => {
             style={{ width: 80, height: 80 }}
           />
         </a>
-        <h5 className="my-4 font-medium">E-mail</h5>
+        <h5 className="my-4 font-medium text-gray-900">E-mail</h5>
       </div>
     </div>
   );

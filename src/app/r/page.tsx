@@ -1,5 +1,6 @@
-import { Section } from "@/components/Section"
-import { supportedFunctions } from "@/data/supportedFunctions"
+import { Code } from "@/components/Code";
+import { Section } from "@/components/Section";
+import { supportedFunctions } from "@/data/supportedFunctions";
 
 export default () => {
   return (
@@ -13,19 +14,19 @@ export default () => {
         />
       </Section>
 
-      <Section>
-        <h1 className="text-center py-3">R package</h1>
+      <div id="content">
+        <h1>R package</h1>
 
         <p>
           tidystats is an R package designed to enable researchers to combine
           the output of their analyses into a single file that can be shared
           with others or used to report statistics. This means that to use
           tidystats, you need to know R. There are many different places to
-          learn R, such as this
+          learn R, such as this{" "}
           <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">
             introduction
-          </a>
-          or this book on using
+          </a>{" "}
+          or this book on using{" "}
           <a href="https://r4ds.had.co.nz/index.html">R for Data Science</a>.
         </p>
 
@@ -41,9 +42,7 @@ export default () => {
           installed using the following code:
         </p>
 
-        <pre>
-          <code>install.packages("tidystats")</code>
-        </pre>
+        <Code code='install.packages("tidystats")'></Code>
 
         <h2>Usage</h2>
 
@@ -63,7 +62,7 @@ export default () => {
         <p>
           <code>add_stats()</code> has two necessary arguments:
         </p>
-        <ul className="-mt-4 ml-6">
+        <ul>
           <li>
             <code>results</code>: A list you want to add the statistical output
             to. You can create an empty list with the <code>list()</code>
@@ -78,7 +77,7 @@ export default () => {
 
         <p>Optionally, you can also add meta-information about the analysis:</p>
 
-        <ul className="-mt-4 ml-6">
+        <ul>
           <li>
             <code>identifier</code>: A name used to identify the model (e.g.,
             "weight_height_correlation"). If you do not provide one, one is
@@ -190,14 +189,14 @@ export default () => {
             return (
               <code
                 key={e.package}
-                className="text-white bg-yellow m-2 gray rounded px-4 py-2"
+                className="bg-yellow gray m-2 rounded px-4 py-2 text-white"
               >
                 {e.package}
               </code>
-            )
+            );
           })}
         </div>
-      </Section>
+      </div>
     </>
-  )
-}
+  );
+};
