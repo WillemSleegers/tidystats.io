@@ -13,3 +13,6 @@ Thumbs.db
 .next
 node_modules
 src/_includes/css
+
+# VS Code
+.vscode
