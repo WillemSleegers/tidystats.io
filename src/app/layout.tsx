@@ -1,6 +1,11 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import "./globals.css";
+import { cn } from "@/utils/utils";
+
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "tidystats",
@@ -18,7 +23,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex min-h-screen flex-col justify-between">
+      <body
+        className={cn(
+          inter.className,
+          "flex min-h-screen flex-col justify-between antialiased",
+        )}
+      >
         <Navbar />
         {children}
         <Footer />

@@ -1,46 +1,53 @@
+const data = [
+  {
+    id: "FAQ",
+    name: "FAQ",
+    image: "/assets/images/question.svg",
+    image_alt: "FAQ icon",
+    url: "/support/FAQ/",
+  },
+  {
+    id: "tips",
+    name: "Tips",
+    image: "/assets/images/lightbulb.svg",
+    image_alt: "Tips icon",
+    url: "/support/tips/",
+  },
+  {
+    id: "x",
+    name: "X",
+    image: "/assets/images/x-black.png",
+    image_alt: "X icon",
+    url: "https://twitter.com/tidystats",
+  },
+  {
+    id: "email",
+    name: "E-mail",
+    image: "/assets/images/email.svg",
+    image_alt: "E-mail icon",
+    url: "mailto:tidystats@gmail.com",
+  },
+];
+
 export const Support = () => {
   return (
     <div className="mt-8 flex flex-wrap justify-center gap-12">
-      <div className="mx-5 text-center hover:scale-105">
-        <a href="/support/FAQ/">
-          <img
-            src="/assets/images/question.svg"
-            alt="FAQ icon"
-            style={{ width: 80, height: 80 }}
-          />
-        </a>
-        <h3 className="my-4 font-medium text-gray-900">FAQ</h3>
-      </div>
-      <div className="mx-5 text-center hover:scale-105">
-        <a href="/support/tips/">
-          <img
-            src="/assets/images/lightbulb.svg"
-            alt="tips icon"
-            style={{ width: 80, height: 80 }}
-          />
-        </a>
-        <h5 className="my-4 font-medium text-gray-900">Tips</h5>
-      </div>
-      <div className="mx-5 text-center hover:scale-105">
-        <a href="https://twitter.com/tidystats">
-          <img
-            src="/assets/images/twitter.svg"
-            alt="Twitter logo"
-            style={{ width: 80, height: 80 }}
-          />
-        </a>
-        <h5 className="my-4 font-medium text-gray-900">Twitter</h5>
-      </div>
-      <div className="mx-5 text-center hover:scale-105">
-        <a href="mailto:tidystats@gmail.com">
-          <img
-            src="/assets/images/email.svg"
-            alt="email icon"
-            style={{ width: 80, height: 80 }}
-          />
-        </a>
-        <h5 className="my-4 font-medium text-gray-900">E-mail</h5>
-      </div>
+      {data.map((x) => {
+        return (
+          <div>
+            <div className="rounded  p-3 text-center ">
+              <a href={x.url}>
+                <img
+                  src={x.image}
+                  alt={x.image_alt}
+                  style={{ width: 80, height: 80 }}
+                />
+                <h3 className="my-4 text-center font-semibold">{x.name}</h3>
+              </a>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };

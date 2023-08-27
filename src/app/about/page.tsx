@@ -14,16 +14,13 @@ export default () => {
         </div>
       </Section>
       <div id="content">
-        <h1>About</h1>
+        <h1 className="text-center">About</h1>
         <p>
           I developed test tidystats to solve two different problems in
-          statistics reporting:
+          statistics reporting—incorrect statistics and incomplete statistics
+          reporting.
         </p>
-        <ol>
-          <li>Incorrect statistics</li>
-          <li>Incomplete statistics</li>
-        </ol>
-        <h2>Incorrect statistics</h2>
+        <h2>Incorrect statistics reporting</h2>
         <p>
           Many scientific papers contain{" "}
           <a href="https://link.springer.com/article/10.3758/s13428-015-0664-2">
@@ -35,12 +32,12 @@ export default () => {
           </a>
           . This software detects statistics and re-calculates certain
           statistics in a paper to see whether the reported statistics match the
-          re-calculated statistics. This technique has revealed often the
+          re-calculated statistics. This technique has revealed that often the
           statistics don't line up, meaning that the reported statistics are
           incorrect. This shouldn't be surprising because the most common method
           for inserting statistics is by simply manually typing them into a text
           editor or by copy-pasting results from the statistics software. In
-          either case, it is easy to make a mistake, causing these statistical
+          either case it is easy to make a mistake, causing these statistical
           inconsistencies.
         </p>
         <h2>Incomplete statistics</h2>
@@ -66,12 +63,14 @@ export default () => {
 
         <p>
           A solution to reducing statistical reporting errors is to write
-          scientific papers using reproducible software solutions. However,
-          there are some downsides to using software like{" "}
+          scientific papers using reproducible software solutions like{" "}
           <a href="https://rmarkdown.rstudio.com">R Markdown</a> or{" "}
-          <a href="http://quarto.org">Quarto</a>. It is more difficult to
-          collaborate with others and the software is not as feature rich as
-          more well-known text editors such as Microsoft Word or Google Docs.
+          <a href="http://quarto.org">Quarto</a>. However, there are some
+          downsides to using this kind of software. It is often more difficult
+          to collaborate with others because not everyone in the team knows how
+          to work with this kind of software and the software is not as feature
+          rich as more well-known text editors such as Microsoft Word or Google
+          Docs.
         </p>
 
         <h2>tidystats</h2>

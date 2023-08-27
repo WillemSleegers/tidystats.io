@@ -5,12 +5,20 @@
 /* Defaults */
 
 p {
-  @apply text-base lg:text-lg xl:text-xl;
+  @apply text-base md:text-lg lg:text-xl;
+}
+
+p a {
+  @apply font-medium text-gray-900 underline underline-offset-4;
 }
 
 ul,
 ol {
   @apply mb-4;
+}
+
+li {
+  @apply text-base;
 }
 
 /* Landing page */
@@ -24,25 +32,29 @@ ol {
 }
 
 #landing p {
-  @apply mb-4 text-base font-light  text-gray-500 lg:text-lg xl:text-xl;
+  @apply mb-4 text-gray-500 lg:text-lg xl:text-xl;
 }
 
 #landing li {
-  @apply text-base  text-gray-500 lg:text-lg xl:text-xl;
+  @apply text-gray-500 lg:text-lg xl:text-xl;
+}
+
+#landing p code {
+  @apply rounded bg-gray-100 px-[0.3rem] py-[0.2rem] font-mono;
 }
 
 /* Non-landing page content */
 
 #content {
-  @apply mx-auto w-full max-w-2xl p-4 font-light text-gray-500;
+  @apply mx-auto mt-4 w-full max-w-3xl p-4;
 }
 
 #content > h1 {
-  @apply mb-2 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl;
+  @apply text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl;
 }
 
 #content > h2 {
-  @apply mb-4 mt-8 text-2xl font-semibold text-gray-900;
+  @apply mb-2 mt-8 text-2xl font-semibold;
 }
 
 #content > h3,
@@ -51,7 +63,7 @@ ol {
 }
 
 #content > p {
-  @apply mb-4 text-base font-normal text-gray-600;
+  @apply mb-4 text-base font-normal;
 }
 
 #content > p > a,
@@ -59,29 +71,17 @@ ol {
 #content > ol > li > a,
 #content > ul > li > p > a,
 #content > ol > li > p > a {
-  @apply font-semibold text-test underline decoration-1 underline-offset-2;
-}
-
-#content > p > a:hover,
-#content > ul > li > a:hover,
-#content > ol > li > a:hover,
-#content > ul > li > p > a:hover,
-#content > ol > li > p > a:hover {
-  @apply text-gray-900 decoration-2;
+  @apply font-medium underline underline-offset-4;
 }
 
 #content pre {
-  @apply mb-3 overflow-auto bg-gray-100 p-3;
-}
-
-#content pre > code {
-  @apply mb-3 font-light;
+  @apply mb-3 overflow-auto bg-gray-50 p-3;
 }
 
 #content > p > code,
 #content > ul > li > code,
 #content > ol > li > code {
-  @apply break-all rounded bg-gray-100 p-1 px-1 font-mono text-sm;
+  @apply break-all rounded bg-gray-100 px-[0.3rem] py-[0.2rem] font-mono text-sm;
 }
 
 #content > ul {
@@ -92,10 +92,6 @@ ol {
   @apply list-decimal;
 }
 
-#content p > strong {
-  @apply text-gray-900;
-}
-
 #content > ul,
 #content > ol {
   @apply mb-4 pl-6;
@@ -103,5 +99,5 @@ ol {
 
 #content > ul > li,
 #content > ol > li {
-  @apply mb-0 text-base font-normal text-gray-600;
+  @apply mb-0;
 }

@@ -10,9 +10,5 @@ type CodeProps = {
 export const Code = (props: CodeProps) => {
   const { code } = props;
 
-  return (
-    <SyntaxHighlighter language="javascript" style={docco}>
-      {code}
-    </SyntaxHighlighter>
-  );
+  return <SyntaxHighlighter language="r">{code}</SyntaxHighlighter>;
 };

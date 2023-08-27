@@ -58,15 +58,15 @@ export default () => {
 
       <Section gray>
         <h2 className="text-center">Supported R packages</h2>
-        <div className="flex flex-wrap">
+        <div className="mt-10 flex flex-wrap gap-4">
           {supportedFunctions.map((e) => {
             return (
-              <code
+              <span
                 key={e.package}
-                className="gray m-2 rounded bg-test-code px-4 py-2 text-white"
+                className="mx-4 rounded border bg-white px-3 py-1 text-lg shadow"
               >
                 {e.package}
-              </code>
+              </span>
             );
           })}
         </div>
@@ -90,7 +90,7 @@ export default () => {
             </p>
 
             <h3 className="mb-2 mt-4 font-extrabold lg:text-2xl">Features</h3>
-            <ul className="list-inside list-disc text-base font-light xl:text-lg ">
+            <ul className="list-inside list-disc">
               <li>APA-style reporting</li>
               <li>Insert tables</li>
               <li>Automatic updating</li>
@@ -123,7 +123,14 @@ export default () => {
 
       <Section>
         <h2 className="text-center">Support</h2>
-        <Support />
+        <p>
+          Check out the <a href="/support/FAQ/">FAQ</a> and{" "}
+          <a href="/support/tips/">tips</a> sections for frequently asked
+          questions and tips for how to use tidystats. If you need any
+          additional support, feel free to contact me via{" "}
+          <a href="https://twitter.com/tidystats">X</a> or{" "}
+          <a href="mailto:tidystats@gmail.com">e-mail</a>.
+        </p>
       </Section>
     </main>
   );
