@@ -24,7 +24,11 @@ ol {
 }
 
 #landing p {
-  @apply mb-4 font-light text-gray-500;
+  @apply mb-4 text-base font-light  text-gray-500 lg:text-lg xl:text-xl;
+}
+
+#landing li {
+  @apply text-base  text-gray-500 lg:text-lg xl:text-xl;
 }
 
 /* Non-landing page content */
@@ -71,7 +75,7 @@ ol {
 }
 
 #content pre > code {
-  @apply mb-3 font-normal;
+  @apply mb-3 font-light;
 }
 
 #content > p > code,

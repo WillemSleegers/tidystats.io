@@ -1,7 +1,7 @@
 export const Support = () => {
   return (
     <div className="mt-8 flex flex-wrap justify-center gap-12">
-      <div className="mx-5 text-center">
+      <div className="mx-5 text-center hover:scale-105">
         <a href="/support/FAQ/">
           <img
             src="/assets/images/question.svg"
@@ -11,7 +11,7 @@ export const Support = () => {
         </a>
         <h3 className="my-4 font-medium text-gray-900">FAQ</h3>
       </div>
-      <div className="mx-5 text-center">
+      <div className="mx-5 text-center hover:scale-105">
         <a href="/support/tips/">
           <img
             src="/assets/images/lightbulb.svg"
@@ -21,7 +21,7 @@ export const Support = () => {
         </a>
         <h5 className="my-4 font-medium text-gray-900">Tips</h5>
       </div>
-      <div className="mx-5 text-center">
+      <div className="mx-5 text-center hover:scale-105">
         <a href="https://twitter.com/tidystats">
           <img
             src="/assets/images/twitter.svg"
@@ -31,7 +31,7 @@ export const Support = () => {
         </a>
         <h5 className="my-4 font-medium text-gray-900">Twitter</h5>
       </div>
-      <div className="mx-5 text-center">
+      <div className="mx-5 text-center hover:scale-105">
         <a href="mailto:tidystats@gmail.com">
           <img
             src="/assets/images/email.svg"

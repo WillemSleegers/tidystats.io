@@ -89,10 +89,8 @@ export default () => {
               document using the file created with the tidystats R package.
             </p>
 
-            <h3 className="mt-4 text-xl font-extrabold text-gray-700">
-              Features
-            </h3>
-            <ul className="list-inside list-disc font-light text-gray-500">
+            <h3 className="mb-2 mt-4 font-extrabold lg:text-2xl">Features</h3>
+            <ul className="list-inside list-disc text-base font-light xl:text-lg ">
               <li>APA-style reporting</li>
               <li>Insert tables</li>
               <li>Automatic updating</li>

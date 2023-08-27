@@ -119,9 +119,10 @@ export default () => {
           for access to the <code>{"%>%"}</code> operator.
         </p>
 
-        <pre>
-          <code>library(tidystats){"\n"}library(dplyr)</code>
-        </pre>
+        <Code
+          code={`library(tidystats)
+library(dplyr)`}
+        ></Code>
 
         <p>
           In the code below I conduct three different types of analyses: a

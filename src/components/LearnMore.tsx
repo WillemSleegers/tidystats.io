@@ -8,7 +8,7 @@ export const LearnMore = (props: LearnMoreProps) => {
 
   return (
     <a
-      className="rounded bg-test px-3 py-2 text-sm font-semibold text-white lg:text-base xl:text-lg"
+      className="mt-3 inline-block rounded bg-test px-3 py-1 text-sm font-semibold text-white hover:bg-slate-700 lg:text-base xl:text-lg"
       href={href}
     >
       {text}
