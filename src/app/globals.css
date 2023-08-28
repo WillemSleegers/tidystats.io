@@ -5,11 +5,15 @@
 /* Defaults */
 
 p {
-  @apply text-base md:text-lg lg:text-xl;
+  @apply text-base md:text-lg;
 }
 
 p a {
-  @apply font-medium text-gray-900 underline underline-offset-4;
+  @apply font-medium text-gray-900;
+}
+
+p a:hover {
+  @apply underline underline-offset-4;
 }
 
 ul,
@@ -24,7 +28,7 @@ li {
 /* Landing page */
 
 #landing h1 {
-  @apply mb-4;
+  @apply mb-4  text-3xl sm:text-4xl md:text-5xl xl:text-6xl;
 }
 
 #landing h2 {
@@ -32,15 +36,23 @@ li {
 }
 
 #landing p {
-  @apply mb-4 text-gray-500 lg:text-lg xl:text-xl;
+  @apply mb-4 text-gray-500;
+}
+
+#landing p code {
+  @apply rounded bg-gray-50 px-[0.3rem] py-[0.2rem] font-mono;
+}
+
+#landing a {
+  @apply text-base font-semibold md:text-lg;
+}
+
+#landing a:hover {
+  @apply underline underline-offset-4;
 }
 
 #landing li {
   @apply text-gray-500 lg:text-lg xl:text-xl;
-}
-
-#landing p code {
-  @apply rounded bg-gray-100 px-[0.3rem] py-[0.2rem] font-mono;
 }
 
 /* Non-landing page content */
@@ -71,7 +83,15 @@ li {
 #content > ol > li > a,
 #content > ul > li > p > a,
 #content > ol > li > p > a {
-  @apply font-medium underline underline-offset-4;
+  @apply font-semibold;
+}
+
+#content > p > a:hover,
+#content > ul > li > a:hover,
+#content > ol > li > a:hover,
+#content > ul > li > p > a:hover,
+#content > ol > li > p > a:hover {
+  @apply underline underline-offset-4;
 }
 
 #content pre {
@@ -81,7 +101,7 @@ li {
 #content > p > code,
 #content > ul > li > code,
 #content > ol > li > code {
-  @apply break-all rounded bg-gray-100 px-[0.3rem] py-[0.2rem] font-mono text-sm;
+  @apply break-all rounded bg-gray-50 px-[0.3rem] py-[0.2rem] font-mono text-sm;
 }
 
 #content > ul {

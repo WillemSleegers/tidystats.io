@@ -1,7 +1,7 @@
 "use client";
 
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { docco } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { xcode } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 type CodeProps = {
   code: string;
@@ -10,5 +10,15 @@ type CodeProps = {
 export const Code = (props: CodeProps) => {
   const { code } = props;
 
-  return <SyntaxHighlighter language="r">{code}</SyntaxHighlighter>;
+  return (
+    <SyntaxHighlighter
+      language="r"
+      style={xcode}
+      customStyle={{
+        background: "rgb(249, 250, 251)",
+      }}
+    >
+      {code}
+    </SyntaxHighlighter>
+  );
 };

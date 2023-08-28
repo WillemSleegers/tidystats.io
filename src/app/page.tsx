@@ -9,7 +9,7 @@ export default () => {
       <Section>
         <div className="flex flex-col-reverse items-center justify-between gap-3 md:flex-row">
           <div className="flex-grow-0 text-lg">
-            <h1 className="text-center text-3xl font-extrabold leading-none sm:text-4xl md:text-left md:text-5xl lg:text-6xl">
+            <h1 className="text-center font-extrabold leading-none  md:text-left">
               Reproducibly report statistics
             </h1>
             <p className="text-center md:text-left">
@@ -32,7 +32,7 @@ export default () => {
           and an Office add-in to reproducibly report statistics in Microsoft
           Word.
         </p>
-        <LearnMore href="/about/" text="Learn more" />
+        <a href="/about/">Learn more</a>
       </Section>
 
       <Section>
@@ -46,7 +46,7 @@ export default () => {
               the functions and tutorials on how to use tidystats, click the
               button below.
             </p>
-            <LearnMore href="/r-package/" text="Learn more" />
+            <a href="/about/">Learn more</a>
           </div>
           <img
             src="/assets/images/R.svg"
@@ -63,7 +63,7 @@ export default () => {
             return (
               <span
                 key={e.package}
-                className="mx-4 rounded border bg-white px-3 py-1 text-lg shadow"
+                className="mx-4 rounded-lg border bg-white px-3 py-1 text-lg "
               >
                 {e.package}
               </span>
@@ -96,7 +96,7 @@ export default () => {
               <li>Automatic updating</li>
             </ul>
 
-            <LearnMore href="/word/" text="Learn more" />
+            <a href="/about/">Learn more</a>
           </div>
         </div>
       </Section>
@@ -111,7 +111,7 @@ export default () => {
               it to test out the add-in. Soon it will be made available in the
               Google Workspace Marketplace.
             </p>
-            <LearnMore href="/google-docs/" text="Learn more" />
+            <a href="/about/">Learn more</a>
           </div>
           <img
             src="/assets/images/google-docs.svg"

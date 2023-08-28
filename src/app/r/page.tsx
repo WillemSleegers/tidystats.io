@@ -122,7 +122,7 @@ export default () => {
         <Code
           code={`library(tidystats)
 library(dplyr)`}
-        ></Code>
+        />
 
         <p>
           In the code below I conduct three different types of analyses: a
@@ -131,21 +131,20 @@ library(dplyr)`}
           ,<code>lm_D9</code> and <code>npk_aov</code>, respectively.
         </p>
 
-        <pre>
-          <code>
-            # t-test{"\n"}
-            sleep_test {"<-"} t.test(extra ~ group, data = sleep, paired = TRUE)
-            {"\n\n"}# lm{"\n"}
-            ctl {"<-"} c(4.17, 5.58, 5.18, 6.11, 4.50, 4.61, 5.17, 4.53, 5.33,
-            5.14){"\n"}
-            trt {"<-"} c(4.81, 4.17, 4.41, 3.59, 5.87, 3.83, 6.03, 4.89, 4.32,
-            4.69){"\n"}
-            group {"<-"} gl(2, 10, 20, labels = c("Ctl", "Trt")){"\n"}
-            weight {"<-"} c(ctl, trt){"\n"}
-            lm_D9 {"<-"} lm(weight ~ group){"\n\n"}# ANOVA{"\n"}
-            npk_aov {"<-"} aov(yield ~ block + N*P*K, npk)
-          </code>
-        </pre>
+        <Code
+          code={`# t-test
+sleep_test <- t.test(extra ~ group, data = sleep, paired = TRUE)
+
+# lm
+ctl <- c(4.17, 5.58, 5.18, 6.11, 4.50, 4.61, 5.17, 4.53, 5.33, 5.14)
+trt <- c(4.81, 4.17, 4.41, 3.59, 5.87, 3.83, 6.03, 4.89, 4.32, 4.69)
+group <- gl(2, 10, 20, labels = c("Ctl", "Trt"))
+weight <- c(ctl, trt)
+lm_D9 <- lm(weight ~ group)
+
+# ANOVA
+npk_aov <- aov(yield ~ block + N*P*K, npk)`}
+        />
 
         <p>
           Next, I use tidystats to collect the statistics of each analysis. I
@@ -155,26 +154,23 @@ library(dplyr)`}
           analysis was a primary analysis or preregistered.
         </p>
 
-        <pre>
-          <code>
-            # Create an empty list{"\n"}
-            results {"<-"} list(){"\n\n"}# Add the analyses to the empty list
-            {"\n"}
-            results {"<-"} results {"%>%\n  "}
-            add_stats(sleep_test, type = "primary") {"%>%\n  "}
-            add_stats(lm_D9, preregistered = FALSE) {"%>%\n  "}
-            add_stats(npk_aov, notes = "An ANOVA example")
-          </code>
-        </pre>
+        <Code
+          code={`# Create an empty list
+statistics <- list()
+
+# Add the analyses to the empty list
+statistics <- statistics |>
+  add_stats(sleep_test, type = "primary") |>
+  add_stats(lm_D9, preregistered = FALSE) |>
+  add_stats(npk_aov, notes = "An ANOVA example")`}
+        />
 
         <p>
           With all the analyses now stored in a single list, I use the
           <code>write_stats()</code> function to save the list to a file.
         </p>
 
-        <pre>
-          <code>write_stats(results, "results.json")</code>
-        </pre>
+        <Code code={`write_stats(results, "results.json")`} />
 
         <p>
           This produces a JSON file. The JSON file contains all statistics in a
@@ -185,18 +181,41 @@ library(dplyr)`}
 
         <h2>Supported R packages</h2>
 
-        <div className="flex flex-wrap">
-          {supportedFunctions.map((e) => {
-            return (
-              <code
-                key={e.package}
-                className="bg-yellow gray m-2 rounded px-4 py-2 text-white"
-              >
-                {e.package}
-              </code>
-            );
-          })}
-        </div>
+        <p>tidystats has built-in support functions:</p>
+
+        <table className="mb-4">
+          <thead>
+            <tr className="border-b text-left">
+              <th>Package</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            {supportedFunctions.map((e) => {
+              return (
+                <tr className="border-b">
+                  <td className="py-1 pe-3">{e.package}</td>
+                  <td className="py-1">
+                    {e.functions.map((f, i) => {
+                      return f + (i == e.functions.length - 1 ? "" : ", ");
+                    })}
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+
+        <p>
+          If a function is missing from the list you can request it to be added
+          by contacting me or creating an issue on GitHub.
+        </p>
+
+        <p>
+          tidystats does not require built-in support for a function for it to
+          be used. You can use tidystats to store and report any statistic. For
+          more on this, see the Tips section.
+        </p>
       </div>
     </>
   );

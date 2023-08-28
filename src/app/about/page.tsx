@@ -40,7 +40,7 @@ export default () => {
           either case it is easy to make a mistake, causing these statistical
           inconsistencies.
         </p>
-        <h2>Incomplete statistics</h2>
+        <h2>Incomplete statistics reporting</h2>
         <p>
           Not all statistics are reported. Researchers often only report the
           statistics in their papers, which means they need to carefully balance

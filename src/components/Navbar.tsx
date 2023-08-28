@@ -81,12 +81,8 @@ export const Navbar = () => {
           <div className="mt-4 flex flex-col rounded-lg border border-gray-100 bg-gray-50 p-4 font-medium md:mt-0 md:flex-row md:space-x-2 md:border-0 md:bg-white md:p-0">
             {items.map((item) => {
               return (
-                <span key={item.id}>
-                  <a
-                    href={item.href}
-                    className="block rounded px-2 py-1 font-normal text-gray-500  hover:text-gray-700 md:bg-transparent"
-                    aria-current="page"
-                  >
+                <span key={item.id} className="px-2 py-2 font-normal">
+                  <a href={item.href} aria-current="page">
                     {item.title}
                   </a>
                 </span>
