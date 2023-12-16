@@ -58,18 +58,18 @@ export default () => {
 
       <Section gray>
         <h2 className="text-center">Supported R packages</h2>
-        <div className="mt-10 flex flex-wrap gap-4">
+        <ul className="list-none flex flex-wrap content-between gap-10">
           {supportedFunctions.map((e) => {
             return (
-              <span
+              <li
                 key={e.package}
-                className="mx-4 rounded-lg border bg-white px-3 py-1 text-lg "
+                className=""
               >
                 {e.package}
-              </span>
+              </li>
             );
           })}
-        </div>
+        </ul>
       </Section>
 
       <Section>
