@@ -13,3 +13,6 @@ Thumbs.db
 dist
 node_modules
 src/_includes/css
+
+# Next.js
+.next/
