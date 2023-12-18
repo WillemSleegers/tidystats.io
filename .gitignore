@@ -16,3 +16,6 @@ src/_includes/css
 
 # VS Code
 .vscode
+
+# Next.js
+.next/
