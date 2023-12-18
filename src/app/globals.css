@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Defaults */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  font-family: system-ui, sans-serif;
+}
+
+p {
+  @apply text-base md:text-base lg:text-lg;
+}
+
+p a {
+  @apply text-gray-800;
+}
+
+p a:hover {
+  @apply underline underline-offset-2;
+}
+
+ul,
+ol {
+  @apply mb-4;
+}
+
+li {
+  @apply text-base;
+}
+
+/* Landing page */
+
+#landing h1 {
+  @apply mb-4 text-3xl sm:text-4xl md:text-5xl xl:text-6xl;
+}
+
+#landing h2 {
+  @apply mb-4 text-4xl font-extrabold leading-none md:text-3xl xl:text-4xl;
+}
+
+#landing p {
+  @apply mb-4 text-gray-500;
+}
+
+#landing p code {
+  @apply rounded bg-gray-50 px-[0.3rem] py-[0.2rem] font-mono;
+}
+
+#landing a {
+  @apply text-base font-semibold text-gray-800 md:text-lg;
+}
+
+#landing a:hover {
+  @apply underline underline-offset-4;
+}
+
+#landing li {
+  @apply text-gray-500 lg:text-lg xl:text-xl;
+}
+
+/* Non-landing page content */
+
+#content {
+  @apply mx-auto my-6 max-w-3xl p-4;
+}
+
+#content > h1 {
+  @apply mb-3 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl;
+}
+
+#content > h2 {
+  @apply mb-2 mt-8 text-2xl font-semibold;
+}
+
+#content > h3,
+#content > h4 {
+  @apply mb-4 mt-8 text-xl font-semibold;
+}
+
+#content > p {
+  @apply mb-4 text-base font-normal;
+}
+
+#content > p > a,
+#content > ul > li > a,
+#content > ol > li > a,
+#content > ul > li > p > a,
+#content > ol > li > p > a {
+  @apply font-semibold;
+}
+
+#content > p > a:hover,
+#content > ul > li > a:hover,
+#content > ol > li > a:hover,
+#content > ul > li > p > a:hover,
+#content > ol > li > p > a:hover {
+  @apply underline underline-offset-4;
+}
+
+#content pre {
+  @apply mb-3 overflow-auto bg-gray-50 p-3;
+}
+
+#content > p > code,
+#content > ul > li > code,
+#content > ol > li > code {
+  @apply rounded bg-gray-50 px-[0.3rem] py-[0.2rem] font-mono text-sm;
+}
+
+#content > ul {
+  @apply list-disc;
+}
+
+#content > ol {
+  @apply list-decimal;
+}
+
+#content > ul,
+#content > ol {
+  @apply mb-4 pl-6;
+}
+
+#content > ul > li,
+#content > ol > li {
+  @apply mb-0;
+}
