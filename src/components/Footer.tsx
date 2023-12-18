@@ -2,7 +2,7 @@ const sections = [
   {
     id: "r-package",
     text: "R package",
-    url: "/r-package/",
+    url: "/r/",
     items: [
       {
         id: "r-package-cran",
@@ -29,7 +29,7 @@ const sections = [
   {
     id: "word",
     text: "Microsoft Word",
-    url: "/word-add-in/",
+    url: "/microsoft/",
     items: [
       {
         id: "word-appsource",
@@ -51,22 +51,22 @@ const sections = [
   {
     id: "google-docs",
     text: "Google Docs",
-    url: "/google-docs-add-in/",
+    url: "/google/",
     items: [
       {
         id: "google-docs-statistic",
         text: "Google Docs Statistic",
-        url: "/google-docs-statistic/",
+        url: "/google/statistic/",
       },
       {
         id: "google-docs-github",
         text: "GitHub",
-        url: "https://github.com/gasparl/tidystats-Google-Docs-add-in",
+        url: "https://github.com/WillemSleegers/tidystats-Google-Docs-add-in",
       },
       {
         id: "google-docs-issues",
         text: "Bug report",
-        url: "https://github.com/gasparl/tidystats-Google-Docs-add-in/issues",
+        url: "https://github.com/WillemSleegers/tidystats-Google-Docs-add-in/issues",
       },
     ],
   },
@@ -78,17 +78,17 @@ const sections = [
       {
         id: "support-faq",
         text: "FAQ",
-        url: "/support/FAQ/",
+        url: "/FAQ/",
       },
       {
         id: "support-tips",
         text: "Tips",
-        url: "/support/tips/",
+        url: "/tips/",
       },
       {
-        id: "support-twitter",
-        text: "Twitter",
-        url: "https://twitter.com/tidystats",
+        id: "support-x",
+        text: "X",
+        url: "https://x.com/tidystats",
       },
       {
         id: "support-email",
@@ -136,17 +136,16 @@ export const Footer = () => {
           {sections.map((section) => {
             return (
               <div key={section.id} className="w-40">
-                <h2 className="mb-3 font-semibold text-gray-900">
-                  {section.text}
-                </h2>
+                <a className="hover:underline" href={section.url}>
+                  <h2 className="mb-3 font-semibold text-gray-900">
+                    {section.text}
+                  </h2>
+                </a>
                 <ul className="text-gray-600">
                   {section.items.map((item) => {
                     return (
                       <li key={item.id} className="mb-2">
-                        <a
-                          href="https://flowbite.com"
-                          className="hover:underline"
-                        >
+                        <a href={item.url} className="hover:underline">
                           {item.text}
                         </a>
                       </li>

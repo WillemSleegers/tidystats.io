@@ -15,7 +15,7 @@ export default () => {
       </Section>
 
       <div id="content">
-        <h1>R package</h1>
+        <h1 className="text-center">R package</h1>
 
         <p>
           tidystats is an R package designed to enable researchers to combine
@@ -64,13 +64,12 @@ export default () => {
         </p>
         <ul>
           <li>
-            <code>results</code>: A list you want to add the statistical output
-            to. You can create an empty list with the <code>list()</code>
-            function.
+            <code>list</code>: A list you want to add the statistical output to.
+            You can create an empty list with the <code>list()</code> function.
           </li>
           <li>
-            <code>output</code>: The output of a statistical analysis you want
-            to add to the list (e.g., the output of <code>t.test()</code> or
+            <code>output</code>: The output of a statistical test you want to
+            add to the list (e.g., the output of <code>t.test()</code> or
             <code>lm()</code>)
           </li>
         </ul>
@@ -113,16 +112,9 @@ export default () => {
 
         <p>Below I show an example of how to use tidystats.</p>
 
-        <p>
-          The first step is to load the necessary packages. I load the tidystats
-          package to get access to its functions and I load the dplyr package
-          for access to the <code>{"%>%"}</code> operator.
-        </p>
+        <p>The first step is to load the tidystats package.</p>
 
-        <Code
-          code={`library(tidystats)
-library(dplyr)`}
-        />
+        <Code code={`library(tidystats)`} />
 
         <p>
           In the code below I conduct three different types of analyses: a
@@ -133,17 +125,28 @@ library(dplyr)`}
 
         <Code
           code={`# t-test
-sleep_test <- t.test(extra ~ group, data = sleep, paired = TRUE)
+sleep_wide <- reshape(
+  sleep,
+  direction = "wide",
+  idvar = "ID",
+  timevar = "group",
+  sep = "_"
+)
+sleep_t_test <- t.test(
+  sleep_wide$extra_1, 
+  sleep_wide$extra_2, 
+  paired = TRUE
+)
 
 # lm
 ctl <- c(4.17, 5.58, 5.18, 6.11, 4.50, 4.61, 5.17, 4.53, 5.33, 5.14)
 trt <- c(4.81, 4.17, 4.41, 3.59, 5.87, 3.83, 6.03, 4.89, 4.32, 4.69)
 group <- gl(2, 10, 20, labels = c("Ctl", "Trt"))
 weight <- c(ctl, trt)
-lm_D9 <- lm(weight ~ group)
+D9_lm <- lm(weight ~ group)
 
 # ANOVA
-npk_aov <- aov(yield ~ block + N*P*K, npk)`}
+npk_aov <- aov(yield ~ block + N * P * K, npk)`}
         />
 
         <p>
@@ -155,13 +158,13 @@ npk_aov <- aov(yield ~ block + N*P*K, npk)`}
         </p>
 
         <Code
-          code={`# Create an empty list
+          code={`# Create an empty list to store the statistics in
 statistics <- list()
-
-# Add the analyses to the empty list
+          
+# Add statistics to the list
 statistics <- statistics |>
-  add_stats(sleep_test, type = "primary") |>
-  add_stats(lm_D9, preregistered = FALSE) |>
+  add_stats(sleep_t_test, type = "primary", preregistered = TRUE) |>
+  add_stats(D9_lm) |>
   add_stats(npk_aov, notes = "An ANOVA example")`}
         />
 
@@ -170,13 +173,13 @@ statistics <- statistics |>
           <code>write_stats()</code> function to save the list to a file.
         </p>
 
-        <Code code={`write_stats(results, "results.json")`} />
+        <Code code={`write_stats(statistics, "statistics.json")`} />
 
         <p>
           This produces a JSON file. The JSON file contains all statistics in a
           machine-readable format. If you want to check out what the file of
           this example looks like, click{" "}
-          <a href="/assets/data/results.json">here</a>.
+          <a href="/assets/data/statistics.json">here</a>.
         </p>
 
         <h2>Supported R packages</h2>
@@ -193,7 +196,7 @@ statistics <- statistics |>
           <tbody>
             {supportedFunctions.map((e) => {
               return (
-                <tr className="border-b">
+                <tr key={e.package} className="border-b">
                   <td className="py-1 pe-3">{e.package}</td>
                   <td className="py-1">
                     {e.functions.map((f, i) => {
@@ -208,13 +211,16 @@ statistics <- statistics |>
 
         <p>
           If a function is missing from the list you can request it to be added
-          by contacting me or creating an issue on GitHub.
+          by contacting me (see the <a href="/support/">Support</a> page) or
+          creating an{" "}
+          <a href="https://github.com/WillemSleegers/tidystats/issues">issue</a>{" "}
+          on GitHub.
         </p>
 
         <p>
           tidystats does not require built-in support for a function for it to
           be used. You can use tidystats to store and report any statistic. For
-          more on this, see the Tips section.
+          more on this, see the <a href="/tips/">Tips</a> section.
         </p>
       </div>
     </>

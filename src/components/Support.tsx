@@ -4,14 +4,14 @@ const data = [
     name: "FAQ",
     image: "/assets/images/question.svg",
     image_alt: "FAQ icon",
-    url: "/support/FAQ/",
+    url: "/FAQ/",
   },
   {
     id: "tips",
     name: "Tips",
     image: "/assets/images/lightbulb.svg",
     image_alt: "Tips icon",
-    url: "/support/tips/",
+    url: "/tips/",
   },
   {
     id: "x",

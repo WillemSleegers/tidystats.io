@@ -42,7 +42,7 @@ export default () => {
         </p>
         <h2>Incomplete statistics reporting</h2>
         <p>
-          Not all statistics are reported. Researchers often only report the
+          Not all statistics are reported. Researchers often only report
           statistics in their papers, which means they need to carefully balance
           comprehensive reporting with writing a legible text. As a result,
           statistics are sometimes summarized or omitted in favor of producing a
@@ -90,34 +90,36 @@ export default () => {
             <a href="https://www.microsoft.com/en-us/microsoft-365/word">
               Microsoft Word
             </a>{" "}
-            or <a href="https://www.google.com/docs/about/">Google Docs</a>
+            (and soon in{" "}
+            <a href="https://www.google.com/docs/about/">Google Docs</a>)
           </li>
         </ol>
 
         <p>
           The tidystats R package is used to create a machine-readable .JSON
           file that contains all the statistics from your analyses. This file
-          can be read by other software, such as the tidystats Word add-in or
-          Google Docs add-in. This addresses the problem of incomplete
-          statistics reporting because the file contains all the statistics. You
-          can report the statistics easily using this file, or share the file
-          itself so all statistics are shared.
+          can be read by other software, such as the tidystats Word add-in. This
+          addresses the problem of incomplete statistics reporting because the
+          file contains all the statistics. You can report the statistics easily
+          using this file, or share the file itself so all statistics are
+          shared.
         </p>
 
         <p>
-          The tidystats Word add-in and Google Docs add-in can read the file
-          created by the R package so that you can insert the statistics in your
-          document using a human-friendly interface. Simply click on the
-          statistic(s) you want to insert and the statistic(s) will be inserted
-          into your document. This addresses the problem of incorrect statistics
-          because it does not require manually typing in the statistics.
+          The tidystats Word add-in can read the file created by the R package
+          so that you can insert the statistics in your document using a
+          human-friendly interface. Simply click on the statistic(s) you want to
+          insert and the statistic(s) will be inserted into your document. This
+          addresses the problem of incorrect statistics because it does not
+          require manually typing in the statistics.
         </p>
 
         <p>
           If you want to know more, check out the page about the{" "}
           <a href="/r-package/">R package</a>,{" "}
           <a href="/word-add-in/">Word add-in</a>, or the{" "}
-          <a href="/google-docs/">Google Docs add-in</a>.
+          <a href="/google-docs/">Google Docs add-in</a> that's currently in
+          development.
         </p>
 
         <p>

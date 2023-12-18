@@ -1,6 +1,4 @@
-import { LearnMore } from "@/components/LearnMore";
 import { Section } from "@/components/Section";
-import { Support } from "@/components/Support";
 import { supportedFunctions } from "@/data/supportedFunctions";
 
 export default () => {
@@ -9,10 +7,10 @@ export default () => {
       <Section>
         <div className="flex flex-col-reverse items-center justify-between gap-3 md:flex-row">
           <div className="flex-grow-0 text-lg">
-            <h1 className="text-center font-extrabold leading-none  md:text-left">
+            <h1 className="text-center font-extrabold  leading-none md:text-left">
               Reproducibly report statistics
             </h1>
-            <p className="text-center md:text-left">
+            <p className="text-center text-lg md:text-left">
               Conduct analyses in R and use tidystats to report statistics in
               popular text editors.
             </p>
@@ -58,13 +56,10 @@ export default () => {
 
       <Section gray>
         <h2 className="text-center">Supported R packages</h2>
-        <ul className="list-none flex flex-wrap content-between gap-10">
+        <ul className="mt-10 flex list-none flex-wrap content-between gap-5 md:gap-10">
           {supportedFunctions.map((e) => {
             return (
-              <li
-                key={e.package}
-                className=""
-              >
+              <li key={e.package} className="text-lg">
                 {e.package}
               </li>
             );

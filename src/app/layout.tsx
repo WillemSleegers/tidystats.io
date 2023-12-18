@@ -26,11 +26,11 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          "flex min-h-screen flex-col justify-between antialiased",
+          "flex min-h-screen flex-col antialiased",
         )}
       >
         <Navbar />
-        {children}
+        <div className="flex-grow">{children}</div>
         <Footer />
       </body>
     </html>

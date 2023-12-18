@@ -26,10 +26,8 @@ export default () => {
           becomes a link that is used to identify the statistic. This tracking
           used to enable the feature to automatically update all statistics in
           the document. See the{" "}
-          <a href="/google-docs/google-docs-statistic/">
-            Google Docs Statistic
-          </a>{" "}
-          page for more information on how this works.
+          <a href="/google/statistic/">Google Docs Statistic</a> page for more
+          information on how this works.
         </p>
       </div>
     </>
