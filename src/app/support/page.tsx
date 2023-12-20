@@ -18,7 +18,7 @@ const data = [
     name: "X",
     image: "/assets/images/x-black.png",
     image_alt: "X icon",
-    url: "https://twitter.com/tidystats",
+    url: "https://x.com/tidystats",
   },
   {
     id: "email",
@@ -35,8 +35,8 @@ export default () => {
       <h1 className="text-center">Support</h1>
       <p>
         Do you have a question about tidystats or is something not working?
-        Please check the Frequently Asked Questions (FAQ), tips & tricks, or
-        contact me via Twitter or e-mail.
+        Please check the Frequently Asked Questions (FAQ) and tips pages, or
+        contact me via X or e-mail.
       </p>
 
       <div className="mt-8 flex flex-wrap justify-center gap-12">
