@@ -53,7 +53,7 @@ export default () => {
         <h2>Usage</h2>
 
         <p>
-          Using the tidystats add-in is relatively straightforward. You open the
+          Using the tidystats add-in is relatively straightforward. Open the
           tidystats add-in by clicking on the 'Insert Statistics' button found
           in the Insert pane of your Word document. After tidystats opens, click
           on 'Upload statistics' to select the file created with the tidystats R
@@ -67,9 +67,7 @@ export default () => {
         />
 
         <p>
-          You can click on an individual statistic or on a list of statistics
-          (by clicking on 'Statistics:') to insert statistics into your
-          document, at the location of your cursor.
+          Click on the plus icon next to an individual statistic to insert that statistic or click on the plus icon next to 'Statistics:' to insert multiple statistics into your document, at the location of your cursor.
         </p>
 
         <p>
@@ -82,11 +80,7 @@ export default () => {
         </p>
 
         <p>
-          You can update reported statistics by uploading a new file and
-          clicking on the 'Update statistics' button. This will automatically
-          update all reported statistics with the statistics from the new file.
-          Note: This requires that the identifier of each analysis is kept the
-          same.
+          To update reported statistics, click on the 'Update statistics' button in the Actions tab after uploading a new file with corrected statistics. This will automatically update all reported statistics with the statistics from the new file that have the same identifier.
         </p>
 
         <h2>An example</h2>

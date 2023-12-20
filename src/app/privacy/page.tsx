@@ -20,7 +20,7 @@ export default () => {
         tidystats software does not contain any user analytics. In other words,
         I do not track anything you do when using tidystats. If you like using
         tidystats, simply let me know via{" "}
-        <a href="https://twitter.com/tidystats">Twitter</a> or send me an{" "}
+        <a href="https://x.com/tidystats">X</a> or send me an{" "}
         <a href="mailto:tidystats@gmail.com">e-mail</a>.
       </p>
 

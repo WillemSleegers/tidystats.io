@@ -119,8 +119,8 @@ const sections = [
 export const Footer = () => {
   return (
     <footer className="bg-gray-50 p-4 sm:p-6">
-      <div className="flex flex-col justify-between gap-3 sm:flex-row">
-        <div className="mb-6 flex-shrink-0 md:mb-0">
+      <div className="flex flex-col justify-between gap-3 lg:flex-row ">
+        <div className="mt-4 flex-shrink-0">
           <a href="https://tidystats.io" className="flex items-center">
             <img
               src="/assets/images/tidystats-white-bg.svg"
@@ -132,10 +132,10 @@ export const Footer = () => {
             </span>
           </a>
         </div>
-        <div className="flex flex-row flex-wrap gap-4 sm:flex-row-reverse">
+        <div className="mt-4 flex flex-row flex-wrap gap-5 md:gap-10">
           {sections.map((section) => {
             return (
-              <div key={section.id} className="w-40">
+              <div key={section.id}>
                 <a className="hover:underline" href={section.url}>
                   <h2 className="mb-3 font-semibold text-gray-900">
                     {section.text}
@@ -160,7 +160,7 @@ export const Footer = () => {
       <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
         <span className="text-base text-gray-500 sm:text-center">
-          <a href="https://flowbite.com" className="hover:underline">
+          <a href="https://www.tidystats.io/" className="hover:underline">
             Willem Sleegers &copy; 2023
           </a>
         </span>
