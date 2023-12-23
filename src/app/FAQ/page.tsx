@@ -32,6 +32,10 @@ export default () => {
           Both the tidystats R package and the Word add-in are completely free
           to use.
         </p>
+        <p>
+          If you would like to support tidystats, you can{" "}
+          <a href="/citation/">cite</a> the software in your work.
+        </p>
 
         <h2>Does tidystats require an internet connection?</h2>
         <p>

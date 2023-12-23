@@ -112,6 +112,11 @@ const sections = [
         text: "Privacy",
         url: "/privacy/",
       },
+      {
+        id: "about-citation",
+        text: "Citation",
+        url: "/citation/",
+      },
     ],
   },
 ];

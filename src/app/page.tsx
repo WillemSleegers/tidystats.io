@@ -126,6 +126,10 @@ export default () => {
           <a href="https://twitter.com/tidystats">X</a> or{" "}
           <a href="mailto:tidystats@gmail.com">e-mail</a>.
         </p>
+        <p>
+          If you would like to support tidystats, you can{" "}
+          <a href="/citation/">cite</a> the software in your work.
+        </p>
       </Section>
     </main>
   );
