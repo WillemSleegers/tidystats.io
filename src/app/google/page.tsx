@@ -24,10 +24,7 @@ export default () => {
           With the tidystats Google Docs add-in you will be able to insert
           statistics into a Google Docs document. Each Google Doc statistic
           becomes a link that is used to identify the statistic. This tracking
-          used to enable the feature to automatically update all statistics in
-          the document. See the{" "}
-          <a href="/google/statistic/">Google Docs Statistic</a> page for more
-          information on how this works.
+          is used to enable the feature to automatically update all statistics in the document. See the <a href="/google/statistic/">Google Docs Statistic</a> page for more information on how this works.
         </p>
       </div>
     </>

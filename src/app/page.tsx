@@ -101,10 +101,10 @@ export default () => {
           <div className="flex-grow-1">
             <h2>Google Docs add-in</h2>
             <p>
-              The tidystats Google Docs add-in is currently in development.
-              Currently, you can find this add-in on the GitHub page and install
-              it to test out the add-in. Soon it will be made available in the
-              Google Workspace Marketplace.
+              The tidystats Google Docs add-in is currently in development. You
+              can find this add-in on the GitHub page and install it to test out
+              the add-in. Soon it will be made available in the Google Workspace
+              Marketplace.
             </p>
             <a href="/about/">Learn more</a>
           </div>
@@ -119,8 +119,8 @@ export default () => {
       <Section>
         <h2 className="text-center">Support</h2>
         <p>
-          Check out the <a href="/support/FAQ/">FAQ</a> and{" "}
-          <a href="/support/tips/">tips</a> sections for frequently asked
+          Check out the <a href="/FAQ/">FAQ</a> and{" "}
+          <a href="/tips/">tips</a> sections for frequently asked
           questions and tips for how to use tidystats. If you need any
           additional support, feel free to contact me via{" "}
           <a href="https://twitter.com/tidystats">X</a> or{" "}

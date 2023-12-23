@@ -16,7 +16,7 @@ export default () => {
       <div id="content">
         <h1 className="text-center">About</h1>
         <p>
-          I developed test tidystats to solve two different problems in
+          I developed tidystats to solve two different problems in
           statistics reporting—incorrect statistics and incomplete statistics
           reporting.
         </p>
@@ -116,9 +116,9 @@ export default () => {
 
         <p>
           If you want to know more, check out the page about the{" "}
-          <a href="/r-package/">R package</a>,{" "}
-          <a href="/word-add-in/">Word add-in</a>, or the{" "}
-          <a href="/google-docs/">Google Docs add-in</a> that's currently in
+          <a href="/r/">R package</a>,{" "}
+          <a href="/microsoft/">Word add-in</a>, or the{" "}
+          <a href="/google/">Google Docs add-in</a> that's currently in
           development.
         </p>
 

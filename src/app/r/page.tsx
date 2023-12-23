@@ -19,9 +19,9 @@ export default () => {
 
         <p>
           tidystats is an R package designed to enable researchers to combine
-          the output of their analyses into a single file that can be shared
-          with others or used to report statistics. This means that to use
-          tidystats, you need to know R. There are many different places to
+          the output of their statistical analyses into a single file that can
+          be shared with others or used to report statistics. This means that to
+          use tidystats, you need to know R. There are many different places to
           learn R, such as this{" "}
           <a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf">
             introduction
@@ -50,8 +50,7 @@ export default () => {
           tidystats is designed to have a minimal impact on the way you would
           normally conduct analyses in R. The idea is that you run the analyses
           and store the output of each analysis in a variable. You then add
-          these variables to a list and save the list to a file on your
-          computer.
+          these variables to a list and save the list to a file.
         </p>
 
         <p>
@@ -68,8 +67,8 @@ export default () => {
             You can create an empty list with the <code>list()</code> function.
           </li>
           <li>
-            <code>output</code>: The output of a statistical test you want to
-            add to the list (e.g., the output of <code>t.test()</code> or
+            <code>output</code>: The output of a statistical analysis you want
+            to add to the list (e.g., the output of <code>t.test()</code> or
             <code>lm()</code>)
           </li>
         </ul>
@@ -78,10 +77,10 @@ export default () => {
 
         <ul>
           <li>
-            <code>identifier</code>: A name used to identify the model (e.g.,
+            <code>identifier</code>: A name used to identify the output (e.g.,
             "weight_height_correlation"). If you do not provide one, one is
             automatically created for you based on the name of the variable
-            containing the analysis.
+            containing the output.
           </li>
 
           <li>
@@ -97,30 +96,34 @@ export default () => {
 
           <li>
             <code>notes</code>: A character string to add additional information
-            which you may find fruitful.
+            which you may find useful.
           </li>
         </ul>
 
         <p>
           <code>write_stats()</code> is the function to save the statistics to a
-          file on your computer. It requires a list containing the analyses as
-          its first argument and a path name to a file on your computer as its
-          second argument.
+          file on your computer. It requires a list containing the output of the
+          analyses as its first argument and a path name to a file on your
+          computer as its second argument (with ".json" as the file extension).
         </p>
 
         <h2>An example</h2>
 
-        <p>Below I show an example of how to use tidystats.</p>
+        <p>
+          Below you can find an example of how to use tidystats to combine the
+          output of multiple statistical analyses.
+        </p>
 
         <p>The first step is to load the tidystats package.</p>
 
         <Code code={`library(tidystats)`} />
 
         <p>
-          In the code below I conduct three different types of analyses: a
-          <i>t</i>-test, a linear regression, and an ANOVA. I store the result
-          of each analysis in their own variable, called <code>sleep_test</code>{" "}
-          ,<code>lm_D9</code> and <code>npk_aov</code>, respectively.
+          The code below shows how to combine the output of three different
+          types of analyses: a <i>t</i>-test, a linear regression, and an ANOVA.
+          The output of each analysis is stored in their own variable, called{" "}
+          <code>sleep_t_test</code>, <code>D9_lm</code> and <code>npk_aov</code>
+          , respectively.
         </p>
 
         <Code
@@ -150,11 +153,12 @@ npk_aov <- aov(yield ~ block + N * P * K, npk)`}
         />
 
         <p>
-          Next, I use tidystats to collect the statistics of each analysis. I
-          start by creating an empty list called <code>results</code> and then
-          use the <code>add_stats()</code> function to add each analysis to this
-          list. I also add some additional meta-information such as whether the
-          analysis was a primary analysis or preregistered.
+          After storing the output in variables, create an empty list to collect
+          the statistics of each analysis. Below an empty list is created using{" "}
+          <code>list()</code> and stored in a variable called called{" "}
+          <code>statistics</code>. Use the <code>add_stats()</code> function to add the output of each analysis to this list. Additional
+          meta-information can be added such as whether the analysis was a
+          primary analysis or preregistered.
         </p>
 
         <Code
@@ -169,22 +173,30 @@ statistics <- statistics |>
         />
 
         <p>
-          With all the analyses now stored in a single list, I use the
+          With the output of the the analyses stored in a single list, use the
           <code>write_stats()</code> function to save the list to a file.
+          Remember to specify the file extension of the file as ".json".
         </p>
 
         <Code code={`write_stats(statistics, "statistics.json")`} />
 
         <p>
-          This produces a JSON file. The JSON file contains all statistics in a
-          machine-readable format. If you want to check out what the file of
-          this example looks like, click{" "}
-          <a href="/assets/data/statistics.json">here</a>.
+          This produces a file with the output stored in the{" "}
+          <a href="https://en.wikipedia.org/wiki/JSON">JSON</a> format. This is
+          a machine-readable format that makes it possible to easily extract
+          statistics using software (like the Microsoft Word add-in). Click{" "}
+          <a href="/assets/data/statistics.json">here</a> if you want to check
+          out what the file of this example looks like.
         </p>
 
         <h2>Supported R packages</h2>
 
-        <p>tidystats has built-in support functions:</p>
+        <p>
+          tidystats has built-in support for a range of functions from various
+          statistical analysis packages. This means that tidystats can
+          automatically extract the statistics that are returned by these
+          functions. See below for an overview of supported functions.
+        </p>
 
         <table className="mb-4">
           <thead>
